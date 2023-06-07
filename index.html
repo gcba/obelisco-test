@@ -14,9 +14,17 @@
     <link rel="stylesheet" href="./node_modules/@gcba/obelisco/dist/obelisco.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
+    <style type="text/css">
+      .container-border{
+        box-shadow: 0 0 0 2px #D1D8E0;
+      }
+     </style>
+
   </head>
 
-  <body>    
+  <body>  
+    
+    
     
     <main>
       <article class="pb-5 mb-4">
@@ -32,9 +40,76 @@
             </div>
           </div>
         </header>
-
+        
         <div class="container">
+          <div class="row">
+            <div class="col-8">
 
+              <!-- COMPONETE NUEVO -->
+              <div class="card bg-light container-border p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="m-0">
+                    Datos ingresados
+                  </h3>
+                  <button type="button" class="btn btn-link">Link</button>
+                </div>
+                <hr class="my-4">
+                <small>Opción seleccionada</small>
+                <p class="m-0">
+                  <strong>
+                    Documento
+                  </strong>
+                </p>
+                <hr class="my-4">
+                <small>Tipo de documento</small>
+                <p class="m-0">
+                  <strong>
+                    DNI
+                  </strong>
+                </p>
+                <hr class="my-4">
+                <small>Número de documento</small>
+                <p class="m-0">
+                  <strong>
+                    34271863
+                  </strong>
+                </p>
+              </div>
+              <!-- FIN COMPONETE NUEVO -->
+              <br>
+              <br>
+              <!-- COMPONETE NUEVO -->
+              <div class="card container-border p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="m-0">
+                    Legajos pendientes de pago                 
+                  </h4>
+                  <button type="button" class="btn btn-secondary btn-sm">Consultar legajos</button>
+                </div>
+              </div>
+              <!-- FIN COMPONETE NUEVO -->
+              <br>
+              <br>
+              <!-- COMPONETE NUEVO -->
+              <div class="card container-border p-4">
+                <div class="row">
+                  <div class="col-9">
+                    <h4 class="mb-1">
+                      Infracciones cometidas por otra persona
+                    </h4>
+                    <p class="m-0">
+                      Si las infracciones asociadas a tu vehículo fueron cometidas por otra persona, podés solicitar la revisión de quita de puntos y su resignación con un controlador.
+                    </p>
+                  </div>
+                  <div class="col-3 d-flex align-items-center justify-content-end">
+                    <button type="button" class="btn btn-link btn-sm">Sacar turno</button>
+                  </div>
+                </div>
+              </div>
+              <!-- FIN COMPONETE NUEVO -->
+
+            </div>
+          </div>
         </div>
       </article>
     </main>
