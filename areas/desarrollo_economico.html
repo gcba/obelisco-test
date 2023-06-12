@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
 
-  <title>Educación</title>
+  <title>Desarrollo Económico y Producción</title>
 
   <!-- Obelisco -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
@@ -16,16 +16,17 @@
   </link>
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 
 <body>
-  <header class="navbar navbar-light navbar-md">
+  <header class="navbar navbar-light navbar-lg">
     <div class="container">
-      <a href="https://www.buenosaires.gob.ar/" class="navbar-brand">
+      <a class="navbar-brand" href="#">
         <img
           class="header-logo"
           src="../assets/header/logoBA.svg"
-          alt="Ciudad de Buenos Aires"
+          alt="Logo de la ciudad de buenos aires"
         />
       </a>
       <div class="navbar-search d-responsive ml-auto">
@@ -34,10 +35,10 @@
             <input
               type="search"
               class="form-control form-control-sm input-search"
-              id="header-search-example-1"
+              id="header-search-example-3"
               name="header-search"
-              placeholder="Buscar..."
               aria-label="Ingrese su búsqueda"
+              placeholder="Buscar..."
             />
             <button class="reset" type="reset"></button>
           </div>
@@ -53,16 +54,32 @@
         Menú
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="list-group-content d-responsive ml-2">
+        <a
+          href="#"
+          aria-label="Cerrar sesión"
+          class="list-group-item list-group-item-logout logout-sm"
+        >
+          &nbsp;
+        </a>
+      </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="../index.html" class="nav-link nav-link-sm active">
-              <span>Inicio</span>
-            </a>
+            <a href="#" class="nav-link active"><span>Inicio</span></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-sm">
-              <span>Chateá con BOTI</span>
+            <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi actividad</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="Notificaciones" class="nav-link">
+              <i class="bx bxs-bell"></i>
             </a>
           </li>
           <li class="nav-item d-responsive">
@@ -72,18 +89,24 @@
                   <input
                     type="search"
                     class="form-control form-control-sm input-search"
-                    id="header-search-example-2"
+                    id="header-search-example-4"
                     name="header-search"
-                    placeholder="Buscar..."
                     aria-label="Ingrese su búsqueda"
+                    placeholder="Buscar..."
                   />
                   <button class="reset" type="reset"></button>
                 </div>
               </form>
             </div>
           </li>
-          <li class="nav-item">
-            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
+          <li class="nav-item d-responsive">
+            <a
+              href="#"
+              aria-label="Cerrar sesión"
+              class="list-group-item list-group-item-logout logout-sm"
+            >
+              &nbsp;
+            </a>
           </li>
         </ul>
       </div>
@@ -91,319 +114,343 @@
   </header>
   
   <main>
-    <article class="pb-5 mb-4">
+    <article class="mb-4 pb-2">
       <header class="bg-light pt-3 pb-5 mb-5">
         <div class="container pt-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
             </ol>
           </nav>
 
           <div class="row">
             <div class="col-12 col-lg-8">
-              <div class="mt-2 pt-1">
-                <h1 class="mb-3">Educación</h1>
-                <p class="lead">Nos ocupamos de crear, promover y ejecutar políticas educativas en sus niveles inicial,
-                  primario, secundario y superior, que conformen un sistema educativo innovador, único e integrado.
+              <div class="pt-1">
+                <h1>Desarrollo Económico y Producción</h1>
+                <p class="lead">Desarrollo del talento y la búsqueda de inversiones con el objetivo de fomentar el empleo y contribuir a una mejor calidad de vida de los vecinos de la Ciudad.
                 </p>
               </div>
-
               <div class="d-block d-md-flex pt-3">
-                <div class="dropdown mb-3 mr-1">
-                  <button
-                    type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
+                <div class="dropdown mr-0 mr-md-3 mb-3 mb-md-0">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Institucional
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ministerio de Educación</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Carrera Docente</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Coordinación Pedagógica y Equidad Educativa</a></li>
+                    <li><a class="dropdown-item" href="#">Ministerio de Desarrollo Económico y Producción</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría de Desarrollo Económico</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría Cooperación para el Desarrollo Económico y la Producción</a></li>
                   </ul>
                 </div>
-                <nav class="ml-0 ml-md-2 mb-3">
-                  <ul class="nav flex-row nav-pills">
-                    <li class="nav-item">
-                      <a class="nav-link border-link nav-link-sm" href="#"><span>Noticias</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border-link nav-link-sm" href="#"><span>Transparencia activa</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border-link nav-link-sm" href="#"><span>Agenda educativa 2023</span></a>
-                    </li>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Transparencia activa
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Informes de Auditoría</a></li>
+                    <li><a class="dropdown-item" href="#">Declaraciones juradas</a></li>
+                    <li><a class="dropdown-item" href="#">Presupuesto</a></li>
                   </ul>
-                </nav>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
 
+      <!-- inicio: tarjetas/atajos -->
+      <div class="container pb-3">
+        <div class="card-deck card-column pb-4 mb-5">
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">bar_chart</span>
+              <h4 class="card-title"><a href="#">Inversiones</a></h4>
+              <p class="card-text">
+                Oportunidades para hacer crecer tu negocio
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-package card-icon"></i>
+              <h4 class="card-title"><a href="#">Exportaciones y Cooperación</a></h4>
+              <p class="card-text">
+                Tu proyecto en sectores estratégicos
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-briefcase card-icon"></i>
+              <h4 class="card-title"><a href="#">Trabajo</a></h4>
+              <p class="card-text">
+                Enterate de todo lo relativo al mundo laboral en la Ciudad
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">lightbulb</span>
+              <h4 class="card-title"><a href="#">Herramientas para Emprender</a></h4>
+              <p class="card-text">
+                Recursos para potenciar tu empresa
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">bar_chart</span>
+              <h4 class="card-title"><a href="#">Estrategia Productiva</a></h4>
+              <p class="card-text">
+                Políticas productivas y datos económicos
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">shopping_bag</span>
+              <h4 class="card-title"><a href="#">Financiamiento y Beneficios Impositivos</a></h4>
+              <p class="card-text">
+                Línea de créditos y alivio fiscal
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">computer</span>
+              <h4 class="card-title"><a href="#">Capacitaciones</a></h4>
+              <p class="card-text">
+                Herramientas para tu desarrollo y el de tu negocio
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">handshake</span>
+              <h4 class="card-title"><a href="#">Patrocinio BA</a></h4>
+              <p class="card-text">
+                Experiencias únicas para tu marca
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin: tarjetas/atajos -->
+
+      <!-- inicio: tarjetas -->
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 col-lg-8">
-            <div class="alert alert-info" role="alert">
-              <p><strong>Inicio de clases 2023</strong><br /><a href="#">Conocé cómo va a ser la escuela este nuevo año escolar</a>.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-deck max-cards-3 mb-2 pb-1">
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">Inscripción escolar 2023</h4>
-              <p class="card-text">
-                Te invitamos a recorrer una experiencia virtual sobre las escuelas de la Ciudad.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">Terminá la Secundaria</h4>
-              <p class="card-text">
-                Conocé cómo sumarte para terminar la secundaria gratis, virtual y desde donde vivas.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">miEscuela</h4>
-              <p class="card-text">
-                Accedé a la plataforma que te permite gestionar las tareas administrativas y académicas de las escuelas.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card-deck py-5">
-          <div class="card card-simple">
-            <div class="card-body">
-              <i class="bx bxs-group card-icon"></i>
-              <h4 class="card-title"><a href="#">Estudiantes</a></h4>
-              <p class="card-text">
-                Inscripción escolar, boleto estudiantil y programas
-              </p>
-            </div>
-          </div>
-          <div class="card card-simple">
-            <div class="card-body">
-              <i class="bx bxs-book card-icon"></i>
-              <h4 class="card-title"><a href="#">Docentes</a></h4>
-              <p class="card-text">
-                Capacitación, información administrativa, beneficios
-              </p>
-            </div>
-          </div>
-          <div class="card card-simple">
-            <div class="card-body">
-              <i class="bx bxs-school card-icon"></i>
-              <h4 class="card-title"><a href="#">Escuelas</a></h4>
-              <p class="card-text">
-                Áreas y Programas
-              </p>
-            </div>
-          </div>
-          <div class="card card-simple">
-            <div class="card-body">
-              <i class="bx bx-group card-icon"></i>
-              <h4 class="card-title"><a href="#">Familias</a></h4>
-              <p class="card-text">
-                Acompañamos a las familias en el recorrido educativo
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-deck mb-5 pt-1 mt-2">
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">Prácticas educativas</h4>
-              <p class="card-text">
-                Experiencias pedagógicas para acompañar la transición.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">Educar en comunidad</h4>
-              <p class="card-text">
-                Conocé los aprendizajes esperados y los resultados.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">Conocé tu escuela</h4>
-              <p class="card-text">
-                Te acompañamos en el proceso de inscripción de los chicos y chicas.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
-            <div class="card-body">
-              <h4 class="card-title">Escuela Abierta</h4>
-              <p class="card-text">
-                Es un espacio de encuentro entre chicos, familia y comunidad.
-              </p>
-            </div>
-          </a>          
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-lg-4 mb-5">
-            <h2 class="mb-4 pt-1 mt-2">Los más consultados</h2>
-            <div class="card-deck max-cards-1">
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Aprendé Programando</h4>
-                  <p class="card-text">
-                    Sumate al mundo de la programación.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Terminá la Secundaria</h4>
-                  <p class="card-text">
-                    Conocé Adultos 2000, el Programa que te permite finalizar los estudios. 
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Secundaria del Futuro</h4>
-                  <p class="card-text">
-                    Profundiza la NES y propone un modelo de escuela más inclusivo.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Plan Sarmiento</h4>
-                  <p class="card-text">
-                    El camino hacia la innovación en los procesos de enseñanza y aprendizaje.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-12 col-lg-4 mb-5">
-            <h2 class="mb-4 pt-1 mt-2">Destacados</h2>
-            <div class="card-deck max-cards-1">
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">54 Nuevas Escuelas</h4>
-                  <p class="card-text">
-                    Mirá el Plan del Compromiso de Gobierno.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Materiales didácticos</h4>
-                  <p class="card-text">
-                    Elaboramos documentos curriculares, orientaciones y propuestas de enseñanza.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Escuelas Verdes</h4>
-                  <p class="card-text">
-                    Fomentamos el desarrollo sustentable a través de la Educación. 
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Calidad y Equidad Educativa</h4>
-                  <p class="card-text">
-                    Producimos estadísticas del sistema educativo para mejorar la calidad educativa.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 mb-5">
-            <h2 class="mb-4 pt-1 mt-2">Conocé más </h2>
-            <div class="card-deck max-cards-1">
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Ciudadanía Global</h4>
-                  <p class="card-text">
-                    Promovemos diversos recorridos de enseñanza y aprendizaje.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Consulta de Establecimientos</h4>
-                  <p class="card-text">
-                    Buscador de instituciones educativas de gestión estatal y privada.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Centro de Reciclado Creativo</h4>
-                  <p class="card-text">
-                    Destinado a docentes y estudiantes de nivel inicial y niños. 
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Educación inclusiva en la escuela</h4>
-                  <p class="card-text">
-                    Conocé los derechos de los niños, niñas y adolescentes con discapacidad.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="mb-4 pt-1 mt-2">Seguinos en</h2>
-          <div class="list-group list-group-row">               
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>Facebook</span>
+        <div class="pb-3">
+          <h2 class="mb-4 mt-3">Conocé nuestros programas</h2>
+          <div class="card-deck max-cards-2 mb-5">
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-1.png" class="card-img-top" alt="Plan de Empleo Joven" />
+              <div class="card-body">
+                <h4 class="card-title">Plan de Empleo Joven</h4>
+                <p class="card-text">
+                  Diez mil empleos para jóvenes de 18 a 24 años es posible. Hay chance
+                </p>
+              </div>
             </a>
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-instagram"></i>Instagram</span>
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-2.png" class="card-img-top" alt="Microcentro Porteño " />
+              <div class="card-body">
+                <h4 class="card-title">Microcentro Porteño </h4>
+                <p class="card-text">
+                  Es un plan para su transformación y reconversión en un área urbano, inteligente, sostenible y residencial.
+                </p>
+              </div>
             </a>
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>Twitter</span>
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-3.png" class="card-img-top" alt="Gastronomía" />
+              <div class="card-body">
+                <h4 class="card-title">Gastronomía</h4>
+                <p class="card-text">
+                  Conocé los programas, eventos y beneficios que ofrecemos para impulsar la industria gastronómica de la Ciudad.
+                </p>
+              </div>
             </a>
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-youtube"></i>YouTube</span>
+
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-4.png" class="card-img-top" alt="Distrito del vino" />
+              <div class="card-body">
+                <h4 class="card-title">Distrito del vino</h4>
+                <p class="card-text">
+                  Conocé todo lo que propone y sus beneficios.
+                </p>
+              </div>
             </a>
           </div>
         </div>
       </div>
+      <!-- fin: tarjetas -->
+
+      <!-- inicio: panel -->
+      <div class="container">
+        <div class="mb-5 py-3">
+          <div class="card card-simple panel-horizontal">
+            <img src="../assets/panel/desarrollo-panel.png" class="card-img" alt="Asistente PyME" />
+            <div class="card-body">
+              <h2 class="card-title">Asistente PyME</h2>
+              <p class="card-text">
+                Conocé los beneficios para tu PyME y todos los recursos para hacer crecer tu proyecto.
+              </p>
+              <ul>
+                <li>Programas con beneficios.</li>
+                <li>Exención de IIBB y ABL para comercios.</li>
+                <li>Créditos para pymes </li>
+              </ul>
+              <div class="panel-footer">
+                <button type="button" class="btn btn-lg btn-primary card-link">
+                  Ingresar ahora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin: panel -->
+
+      <!-- inicio: noticias -->
+      <div class="container mb-5 pb-3">
+        <h2 class="mb-4">Noticias</h2>
+        <div class="card-deck max-cards-3 mb-4">
+          <a class="card" href="#">
+            <img src="../assets/noticias/noticias-desarrollo-1.png" class="card-img-top" alt="Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad"/>
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-info">Actividades</span>
+              </div>
+              <h4 class="card-title">Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad</h4>
+              <p class="card-text">
+                Descripción del titular de una tarjeta con contenedor que puede contener hasta 2 líneas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>05/05/23</small>
+            </div>
+          </a>
+          <a class="card d-none d-sm-block" href="#">
+            <img src="../assets/noticias/noticias-desarrollo-2.png" class="card-img-top" alt="La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-secondary">distrito del vino</span>
+              </div>
+              <h4 class="card-title">La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas</h4>
+              <p class="card-text">
+                Descripción del titular de una tarjeta con contenedor que puede contener hasta 2 líneas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>05/05/23</small>
+            </div>
+          </a>
+          <a class="card d-none d-lg-block" href="#">
+            <img src="../assets/noticias/noticias-desarrollo-3.png" class="card-img-top" alt="Acelera BA, el programa de capacitaciones para emprendedores" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-secondary">Actividades</span>
+              </div>
+              <h4 class="card-title">Acelera BA, el programa de capacitaciones para emprendedores</h4>
+              <p class="card-text">
+                Descripción del titular de una tarjeta con contenedor que puede contener hasta 2 líneas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>05/05/23</small>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class="access" href="#" target="_blank" rel="noreferrer">
+            Ver todas las noticias
+          </a>
+        </div>
+      </div>
+      <!-- fin: noticias -->
+      <!-- inicio alerta -->
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-12 col-lg-8">
+            <div class="alert alert-info" role="alert">
+              <p><strong>¿No encontraste la información que buscabas?</strong><br />
+              Ingresá al siguiente <a href="#">enlace</a> y solicitá información.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin alerta -->
     </article>
+
+    <!-- inicio institucional -->
+    <section class="bg-light py-5">
+      <div class="container mb-3">
+        <h2 class="mb-4">Información institucional</h2>
+        <div class="card-deck max-cards-2 mb-5">
+          <div class="card card-horizontal card-lg unbordered" href="#">
+            <img
+              src="../assets/institucional/joseLuisGiusti.png"
+              class="card-img-left"
+              alt="descripción alternativa"
+            />
+            <div class="card-body">
+              <h4 class="card-title">José Luis Giusti</h4>
+              <p class="card-text">
+                Ministro de Desarrollo Económico y Productivo
+              </p>
+            </div>
+          </div>
+          <div class="card unbordered" href="#">
+            <div class="card-body">
+              <h4 class="card-title">Contacto</h4>
+              <p class="card-text">
+                Teléfono: 4323-9682 <br> Email: <a href="mailto:jlgiusti@buenosaires.gob.ar" target="_blank" rel="noreferrer">jlgiusti@buenosaires.gob.ar</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2 class="mb-4">Seguinos en</h2>
+            <div class="list-group mb-4 mb-md-0">
+              <a href="#" class="list-group-item">
+                <i class="bx bxl-facebook-circle"></i>
+                <div class="access-content">
+                  <span class="access-title">Facebook</span>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bx bxl-instagram-alt"></i>
+                <div class="access-content">
+                  <span class="access-title">Instagram</span>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bx bxl-twitter"></i>
+                <div class="access-content">
+                  <span class="access-title">Twitter</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="mb-1">Ubicación</h4>
+                <p class="mb-3">Dirección: Dirección del Ministerio</p>
+                <img 
+                  class="w-100 mb-3"
+                  src="../assets/noticias/mapa-hospital.png" 
+                  alt="Ubicación" 
+                />
+                <a href="#" class="btn btn-primary btn-lg">Cómo llego</a>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- fin: institucional -->
   </main>
 
   <footer class="main-footer">
@@ -515,13 +562,15 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">
+                <a
+                  href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
+                >
                   Oficios judiciales
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                  Transparencia activa
+                  Transparencia
                 </a>
               </li>
             </ul>
