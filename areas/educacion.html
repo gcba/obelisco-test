@@ -16,87 +16,84 @@
   </link>
   <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
   <header class="navbar navbar-light navbar-md">
     <div class="container">
-      <a href="https://www.buenosaires.gob.ar/" class="navbar-brand">
-        <img
-          class="header-logo"
-          src="../../assets/header/logoBA.svg"
-          alt="Ciudad de Buenos Aires"
-        />
+      <a class="navbar-brand" href="#">
+        <img class="header-logo" src="../assets/header/logoBA.svg" alt="Ciudad de buenos aires" />
       </a>
       <div class="navbar-search d-responsive ml-auto">
         <form class="form-search form-search-sm">
           <div class="form-group">
-            <input
-              type="search"
-              class="form-control form-control-sm input-search"
-              id="header-search-example-1"
-              name="header-search"
-              placeholder="Buscar..."
-              aria-label="Ingrese su búsqueda"
-            />
+            <input type="search" class="form-control form-control-sm input-search" id="header-search-example-3"
+              name="header-search" aria-label="Ingrese su búsqueda" placeholder="Buscar..." />
             <button class="reset" type="reset"></button>
           </div>
         </form>
       </div>
-      <button
-        class="navbar-toggler collapsed ml-2"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-      >
+      <button class="navbar-toggler collapsed ml-2" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false">
         Menú
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="list-group-content d-responsive ml-2">
+        <a href="#" aria-label="Cerrar sesión" class="list-group-item list-group-item-logout logout-sm">
+          &nbsp;
+        </a>
+      </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="../../index.html" class="nav-link nav-link-sm active">
-              <span>Inicio</span>
-            </a>
+            <a href="#" class="nav-link active"><span>Inicio</span></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-sm">
-              <span>Chateá con BOTI</span>
+            <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi actividad</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="Notificaciones" class="nav-link">
+              <i class="bx bxs-bell"></i>
             </a>
           </li>
           <li class="nav-item d-responsive">
             <div class="navbar-search">
               <form class="form-search form-search-sm">
                 <div class="form-group">
-                  <input
-                    type="search"
-                    class="form-control form-control-sm input-search"
-                    id="header-search-example-2"
-                    name="header-search"
-                    placeholder="Buscar..."
-                    aria-label="Ingrese su búsqueda"
-                  />
+                  <input type="search" class="form-control form-control-sm input-search" id="header-search-example-4"
+                    name="header-search" aria-label="Ingrese su búsqueda" placeholder="Buscar..." />
                   <button class="reset" type="reset"></button>
                 </div>
               </form>
             </div>
           </li>
-          <li class="nav-item">
-            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
+          <li class="nav-item d-responsive">
+            <a href="#" aria-label="Cerrar sesión" class="list-group-item list-group-item-logout logout-sm">
+              &nbsp;
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </header>
-  
+
+
   <main>
-    <article class="pb-5 mb-4">
+    <article>
       <header class="bg-light pt-3 pb-5 mb-5">
         <div class="container pt-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Página 3</a></li>
+              <li class="breadcrumb-item"><a href="#">Educación</a></li>
             </ol>
           </nav>
 
@@ -108,302 +105,493 @@
                   primario, secundario y superior, que conformen un sistema educativo innovador, único e integrado.
                 </p>
               </div>
-
               <div class="d-block d-md-flex pt-3">
-                <div class="dropdown mb-3 mr-1">
-                  <button
-                    type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
+                <div class="dropdown mr-1">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Institucional
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ministerio de Educación</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Carrera Docente</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Coordinación Pedagógica y Equidad Educativa</a></li>
+                    <li><a class="dropdown-item" href="#">Ministerio de Justicia y Seguridad</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría de Justicia</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría de Emergencia</a></li>
                   </ul>
                 </div>
-                <nav class="ml-0 ml-md-2 mb-3">
-                  <ul class="nav flex-row nav-pills">
-                    <li class="nav-item">
-                      <a class="nav-link border-link nav-link-sm" href="#"><span>Noticias</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border-link nav-link-sm" href="#"><span>Transparencia activa</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border-link nav-link-sm" href="#"><span>Agenda educativa 2023</span></a>
-                    </li>
+                <div class="dropdown mr-1 ml-0 ml-md-2">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Transparencia activa
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Informes de Auditoría</a></li>
+                    <li><a class="dropdown-item" href="#">Declaraciones juradas</a></li>
+                    <li><a class="dropdown-item" href="#">Gestión de proyectos</a></li>
+                    <li><a class="dropdown-item" href="#">Presupuesto</a></li>
                   </ul>
-                </nav>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 col-lg-8">
-            <div class="alert alert-info" role="alert">
-              <p><strong>Inicio de clases 2023</strong><br /><a href="#">Conocé cómo va a ser la escuela este nuevo año escolar</a>.</p>
+      <div class="container mb-5">
+        <div class="card-deck card-column mb-5">
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class='bx bxs-news card-icon'></i>
+              <h4 class="card-title"><a href="#">Estudiantes</a></h4>
+              <p class="card-text">
+                Inscripción escolar, boleto estudiantil y programas.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-news card-icon"></i>
+              <h4 class="card-title"><a href="#">Docentes</a></h4>
+              <p class="card-text">
+                Capacitación, información administrativa, beneficios.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-news card-icon"></i>
+              <h3 class="card-title"><a href="#">Escuelas</a></h3>
+              <p class="card-text">
+                Áreas y Programas.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-news card-icon"></i>
+              <h3 class="card-title"><a href="#">Familias</a></h3>
+              <p class="card-text">
+                Acompañamos a las familias en el recorrido educativo.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="card-deck max-cards-3 mb-2 pb-1">
+      <div class="container py-5">
+        <div class="card card-simple panel-horizontal">
+          <img src="https://gcba.github.io/Obelisco/panel/larreta.jpg" class="card-img" alt="descripción alternativa" />
+          <div class="card-body">
+            <h2 class="card-title">miEscuela</h2>
+            <p class="card-text">
+              Permite gestionar las tareas administrativas y académicas de las escuelas
+            </p>
+            <button type="button" class="btn btn-lg btn-primary card-link">
+              Acceder a la plataforma
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-2 mb-5">
+        <h2 class="my-4 ">Conocé nuestros programas</h2>
+        <div class="card-deck max-cards-3">
           <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
+            <img src="https://gcba.github.io/Obelisco/cards/evento.jpg" class="card-img-top"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">Inscripción escolar 2023</h4>
+              <h4 class="card-title">Hablemos de educación: La escuela primaria que queremos</h4>
               <p class="card-text">
-                Te invitamos a recorrer una experiencia virtual sobre las escuelas de la Ciudad.
+                Más de 14.600 personas dejaron sus aportes en el proceso participativo para la transformación de la escuela primaria en la Ciudad
               </p>
             </div>
           </a>
           <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
+            <img src="https://gcba.github.io/Obelisco/cards/evento.jpg" class="card-img-top"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">Terminá la Secundaria</h4>
+              <h4 class="card-title">Educación para el trabajo</h4>
+              <p class="card-text">
+                Encontrá la formación para desarrollarte profesionalmente. ¡Inscripciones abiertas!
+              </p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/evento.jpg" class="card-img-top"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Fluidez y compresión lectora</h4>
+              <p class="card-text">
+                El Programa fortalece la lecto-comprensión de los niños y las niñas en tercer grado. 
+              </p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/evento.jpg" class="card-img-top"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Práticas educativas</h4>
+              <p class="card-text">
+                Experiencias pedagógicas para acompañar la transición al mundo del trabajo y los estudiantes 
+              </p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/evento.jpg" class="card-img-top"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Educar en comunidad</h4>
+              <p class="card-text">
+                Conocé los aprendizajes esperados, los resultados de las evaluaciones y explorá las propuestas para acompañar en  casa.
+              </p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/evento.jpg" class="card-img-top"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Terminá la secundaria</h4>
               <p class="card-text">
                 Conocé cómo sumarte para terminar la secundaria gratis, virtual y desde donde vivas.
               </p>
             </div>
           </a>
-          <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
+        </div>
+      </div>
+
+      <div class="container mb-4 pb-2 pt-2">
+        <h2 class="pt-4 mb-4">Lo más consultado</h2>
+        <div class="card-deck max-cards-3 card-column">
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">miEscuela</h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Accedé a la plataforma que te permite gestionar las tareas administrativas y académicas de las escuelas.
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
           </a>
         </div>
+      </div>
 
-        <div class="card-deck py-5">
-          <div class="card card-simple">
+      <div class="container mb-4 pb-2 pt-2">
+        <h2 class="pt-4 mb-4">Destacadas</h2>
+        <div class="card-deck max-cards-3 card-column">
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <i class="bx bxs-group card-icon"></i>
-              <h4 class="card-title"><a href="#">Estudiantes</a></h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Inscripción escolar, boleto estudiantil y programas
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
-          </div>
-          <div class="card card-simple">
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <i class="bx bxs-book card-icon"></i>
-              <h4 class="card-title"><a href="#">Docentes</a></h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Capacitación, información administrativa, beneficios
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
-          </div>
-          <div class="card card-simple">
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <i class="bx bxs-school card-icon"></i>
-              <h4 class="card-title"><a href="#">Escuelas</a></h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Áreas y Programas
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
-          </div>
-          <div class="card card-simple">
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <i class="bx bx-group card-icon"></i>
-              <h4 class="card-title"><a href="#">Familias</a></h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Acompañamos a las familias en el recorrido educativo
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
-          </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
         </div>
+      </div>
 
-        <div class="card-deck mb-5 pt-1 mt-2">
-          <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
+      <div class="container mb-4 pb-2 pt-2">
+        <h2 class="pt-4 mb-4">Conocé más</h2>
+        <div class="card-deck max-cards-3 card-column">
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">Prácticas educativas</h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Experiencias pedagógicas para acompañar la transición.
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
           </a>
-          <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">Educar en comunidad</h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Conocé los aprendizajes esperados y los resultados.
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
           </a>
-          <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">Conocé tu escuela</h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Te acompañamos en el proceso de inscripción de los chicos y chicas.
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
           </a>
-          <a class="card" href="#">
-            <img src="../../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
             <div class="card-body">
-              <h4 class="card-title">Escuela Abierta</h4>
+              <h4 class="card-title">Título de tarjeta</h4>
               <p class="card-text">
-                Es un espacio de encuentro entre chicos, familia y comunidad.
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
               </p>
             </div>
-          </a>          
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+          <a class="card card-horizontal" href="#">
+            <img src="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png" class="card-img-left"
+              alt="descripción alternativa" />
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
         </div>
+      </div>
 
+      <div class="container pt-4 mt-2">
+        <h2 class="mb-4">Noticias</h2>
+        <div class="card-deck max-cards-3">
+          <a class="card" href="#">
+            <img src="../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-info">Dengue</span>
+              </div>
+              <h4 class="card-title">Dengue: Cuáles son los síntomas y cómo prevenir los contagios</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>Fecha de publicación: 22/04/2022</small>
+            </div>
+          </a>
+          <a class="card d-none d-sm-block" href="#">
+            <img src="../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-primary">Etiqueta 1</span>
+              </div>
+              <h4 class="card-title">En la ciudad, 7.850 personas recibieron la vacuna ...</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>Fecha de publicación: 22/04/2022</small>
+            </div>
+          </a>
+          <a class="card d-none d-lg-block" href="#">
+            <img src="../assets/noticias/noticias-4.png" class="card-img-top" alt="descripción alternativa" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-secondary">Etiqueta 1</span>
+              </div>
+              <h4 class="card-title">Inscribite a los Concursos Públicos Abiertos</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>Fecha de publicación: 22/04/2022</small>
+            </div>
+          </a>
+        </div>
+        <div class="mt-4 pt-2 mb-5">
+          <a class="access" href="#" target="_blank" rel="noreferrer">
+            Ver todos los eventos
+          </a>
+        </div>
+      </div>
+
+      <div class="container mb-5 pt-2">
+        <h2 class="pt-4 mb-2">Mapa de acceso al Ministerio de Educación</h2>
+        <div class="col-8 p-0">
+          <p>
+            Conocé todos los medios de transporte que te llevan al edificio del Ministerio ubicado en Carlos H. Perette 750 en el barrio de Retiro.
+          </p>
+        </div>
+          <div class="gallery-grid gallery-max-1 mt-4 pt-2">
+            <div class="gallery-grid-item">
+              <img src="../assets/galeria/mapa.png" alt="Texto alternativo de la imagen" />
+            </div>
+          </div>
+      </div>
+    </article>
+
+    <section class="bg-light py-5">
+      <div class="container mb-3">
+        <h2 class="mb-4">Información institucional</h2>
+        <div class="card-deck max-cards-2 mb-3 pb-3">
+          <a class="card card-horizontal card-lg bg-transparent" href="#">
+            <img src="../../assets/institucional/joseLuisGiusti.png" class="card-img-left"
+              alt="descripción alternativa">
+            <div class="card-body">
+              <h4 class="card-title">José Luis Giusti</h4>
+              <p class="card-text">
+                Ministro de Desarrollo Económico y Producción
+              </p>
+            </div>
+          </a>
+          <a class="card bg-transparent" href="#">
+            <div class="card-body">
+              <h4 class="card-title">Contacto</h4>
+              <p class="card-text">
+                Teléfono: 5030-9400 <br> Mail: jlgiusti@buenosaires.gob.ar
+              </p>
+            </div>
+          </a>
+        </div>
         <div class="row">
-          <div class="col-12 col-lg-4 mb-5">
-            <h2 class="mb-4 pt-1 mt-2">Los más consultados</h2>
-            <div class="card-deck max-cards-1">
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Aprendé Programando</h4>
-                  <p class="card-text">
-                    Sumate al mundo de la programación.
-                  </p>
-                </div>
+          <div class="col-12 col-md-6">
+            <h2 class="mb-4">Seguinos en</h2>
+            <div class="list-group mb-4">
+              <a href="#" class="list-group-item">
+                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-facebook-circle"></i>Facebook</span>
               </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Terminá la Secundaria</h4>
-                  <p class="card-text">
-                    Conocé Adultos 2000, el Programa que te permite finalizar los estudios. 
-                  </p>
-                </div>
+              <a href="#" class="list-group-item">
+                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-instagram"></i>Instagram</span>
               </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Secundaria del Futuro</h4>
-                  <p class="card-text">
-                    Profundiza la NES y propone un modelo de escuela más inclusivo.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/card-horizontal.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Plan Sarmiento</h4>
-                  <p class="card-text">
-                    El camino hacia la innovación en los procesos de enseñanza y aprendizaje.
-                  </p>
-                </div>
+              <a href="#" class="list-group-item">
+                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-twitter"></i>Twitter</span>
               </a>
             </div>
           </div>
-          
-          <div class="col-12 col-lg-4 mb-5">
-            <h2 class="mb-4 pt-1 mt-2">Destacados</h2>
-            <div class="card-deck max-cards-1">
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">54 Nuevas Escuelas</h4>
-                  <p class="card-text">
-                    Mirá el Plan del Compromiso de Gobierno.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Materiales didácticos</h4>
-                  <p class="card-text">
-                    Elaboramos documentos curriculares, orientaciones y propuestas de enseñanza.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Escuelas Verdes</h4>
-                  <p class="card-text">
-                    Fomentamos el desarrollo sustentable a través de la Educación. 
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-5.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Calidad y Equidad Educativa</h4>
-                  <p class="card-text">
-                    Producimos estadísticas del sistema educativo para mejorar la calidad educativa.
-                  </p>
-                </div>
-              </a>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="mb-1">Ubicación</h4>
+                <p>
+                  Dirección:
+                  <a class="" href="#" target="_blank" rel="noreferrer">
+                    Martin García 346, 2° piso
+                  </a>
+                </p>
+                <img class="w-100 mb-3" src="../../assets/noticias/maps.png" alt="">
+                <a href="#" class="btn btn-primary btn-lg mt-3">Cómo llego</a>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4 mb-5">
-            <h2 class="mb-4 pt-1 mt-2">Conocé más </h2>
-            <div class="card-deck max-cards-1">
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Ciudadanía Global</h4>
-                  <p class="card-text">
-                    Promovemos diversos recorridos de enseñanza y aprendizaje.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Consulta de Establecimientos</h4>
-                  <p class="card-text">
-                    Buscador de instituciones educativas de gestión estatal y privada.
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Centro de Reciclado Creativo</h4>
-                  <p class="card-text">
-                    Destinado a docentes y estudiantes de nivel inicial y niños. 
-                  </p>
-                </div>
-              </a>
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-4.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h4 class="card-title">Educación inclusiva en la escuela</h4>
-                  <p class="card-text">
-                    Conocé los derechos de los niños, niñas y adolescentes con discapacidad.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="mb-4 pt-1 mt-2">Seguinos en</h2>
-          <div class="list-group list-group-row">               
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>Facebook</span>
-            </a>
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-instagram"></i>Instagram</span>
-            </a>
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>Twitter</span>
-            </a>
-            <a href="#" class="list-group-item item-sm">
-              <span class="access-title"><i class="bx bx-sm align-middle mr-2 bxl-youtube"></i>YouTube</span>
-            </a>
           </div>
         </div>
       </div>
-    </article>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -439,34 +627,27 @@
         <ul class="list-inline">
           <li class="list-inline-item redes-items">
             <a href="https://www.facebook.com/GCBA">
-              <i class="bx bxl-facebook"></i>
-              Facebook
+              <i class="bx bxl-facebook"></i>Facebook
             </a>
           </li>
           <li class="list-inline-item redes-items">
             <a href="https://www.instagram.com/buenosaires">
-              <i class="bx bxl-instagram"></i>
-              Instagram
+              <i class="bx bxl-instagram"></i>Instagram
             </a>
           </li>
           <li class="list-inline-item redes-items">
             <a href="https://twitter.com/gcba">
-              <i class="bx bxl-twitter"></i>
-              Twitter
+              <i class="bx bxl-twitter"></i>Twitter
             </a>
           </li>
           <li class="list-inline-item redes-items">
             <a href="https://www.youtube.com/user/GCBA">
-              <i class="bx bxl-youtube"></i>
-              YouTube
+              <i class="bx bxl-youtube"></i>YouTube
             </a>
           </li>
           <li class="list-inline-item redes-items">
-            <a
-              href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
-            >
-              <i class="bx bxl-linkedin"></i>
-              LinkedIn
+            <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
+              <i class="bx bxl-linkedin"></i>LinkedIn
             </a>
           </li>
         </ul>
@@ -477,23 +658,10 @@
       <section class="footer-legal-section">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-            <img
-              class="d-lg-none"
-              src="../../assets/footer/ciudad-ba-sm.svg"
-              alt="Ciudad de Buenos Aires"
-              height="48"
-            />
-            <img
-              class="d-none d-lg-inline"
-              src="../../assets/footer/ciudad-ba.svg"
-              alt="Ciudad de Buenos Aires"
-              height="40"
-            />
-            <img
-              class="img-vamos-ba"
-              src="../../assets/footer/vamos-ba.svg"
-              alt="Vamos Buenos Aires"
-            />
+            <img class="d-lg-none" src="../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
+            <img class="d-none d-lg-inline" src="../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
+              height="40" />
+            <img class="img-vamos-ba" src="../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
           </div>
           <div class="col-12">
             <ul class="list-inline">
@@ -503,9 +671,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
-                >
+                <a href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones">
                   Términos y condiciones
                 </a>
               </li>
@@ -521,7 +687,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                  Transparencia activa
+                  Transparencia
                 </a>
               </li>
             </ul>
@@ -536,7 +702,6 @@
       </section>
     </div>
   </footer>
-  
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
