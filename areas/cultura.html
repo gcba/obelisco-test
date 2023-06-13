@@ -17,6 +17,72 @@
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <style type="text/css">
+    /* dropdown */
+    .dropdown .dropdown-menu {
+      min-width: 15rem;
+      @media screen and (min-width: 752px) {
+          width: 340px;
+      }   
+    }
+    /* panel */
+    .card.panel-horizontal .card-body .card-title {
+      margin: 0 0 0.8125rem;
+      @media screen and (max-width: 976px) {
+          margin: 2rem 0 0.8125rem;
+      } 
+    }
+    .card.panel-horizontal {
+        display: flex;
+        align-items: center;
+    }
+    .card.panel-horizontal .card-body .panel-footer .btn-lg {
+        font-weight: 700;
+        padding: 0.75rem 1.25rem;
+        @media screen and (max-width: 592px) {
+            width: 100%;
+        } 
+    }
+    /* card-column */
+    .card-deck.max-cards-3.card-column .card {
+      max-width: calc(calc(100% / 3) - 30px);
+
+      @media screen and (max-width: 752px) {
+          max-width: calc(calc(100% / 2) - 30px);
+      }
+
+      @media screen and (max-width: 592px) {
+          max-width: 100%;
+      } 
+    }
+    @media (max-width: 592px) {
+      .card-deck .card:nth-of-type(2) {
+          margin-top: 30px;
+      }
+    }
+    /* accesos */
+    a.list-group-item {
+        padding: 1.5rem;
+        display: flex;
+    }
+    a.list-group-item i, a.list-group-item .material-icons-round {
+        font-size: 1.25rem;
+        align-self: center;
+        margin-right: 0.75rem;
+        vertical-align: middle;
+    }
+    a.list-group-item .access-content {
+        width: 100%;
+    }
+    /* contenedor con mapa */
+    .card .card-body .btn-lg {
+        font-weight: 700;
+        padding: 0.75rem 1.25rem;
+        @media screen and (max-width: 592px) {
+            width: 100%;
+        } 
+    }
+  </style>
 </head>
 
 <body>
@@ -81,7 +147,7 @@
         <div class="container pt-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
             </ol>
           </nav>
 
@@ -468,7 +534,7 @@
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 mb-5">
-          <div class="card card-horizontal card-lg unbordered" href="#">
+          <div class="card card-horizontal card-lg bg-transparent">
             <img
               src="../assets/institucional/enriqueAvogadro.png"
               class="card-img-left"
@@ -481,7 +547,7 @@
               </p>
             </div>
           </div>
-          <div class="card unbordered" href="#">
+          <div class="card bg-transparent">
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">

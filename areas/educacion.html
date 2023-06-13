@@ -14,14 +14,158 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
-  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <style>
+    .card-deck.card-column .card,
+    .card-deck.card-column .group-access {
+      max-width: calc((100% / 4) - 30px);
+    }
+
+    @media (max-width: 992px) {
+      .card-deck.card-column .card,
+      .card-deck.card-column .group-access {
+        max-width: calc((100% / 3) - 30px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card-deck.card-column .card,
+      .card-deck.card-column .group-access {
+        max-width: calc((100% / 2) - 30px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-deck.card-column .card,
+      .card-deck.card-column .group-access {
+        max-width: 100%;
+      }
+    }
+
+    .card-deck.max-cards-3.card-column .card,
+    .card-deck.max-cards-3.card-column .group-access {
+      max-width: calc((100% / 3) - 30px);
+    }
+
+    @media (max-width: 576px) {
+      .card-deck.max-cards-3.card-column .card,
+      .card-deck.max-cards-3.card-column .group-access {
+        max-width: 100%;
+      }
+    }
+
+    .card-deck.max-cards-2.card-column .card,
+    .card-deck.max-cards-2.card-column .group-access {
+      max-width: calc((100% / 2) - 30px);
+    }
+
+    @media (max-width: 576px) {
+      .card-deck.max-cards-2.card-column .card,
+      .card-deck.max-cards-2.card-column .group-access {
+        max-width: 100%;
+      }
+    }
+
+    .card-deck.max-cards-1.card-column .card,
+    .card-deck.max-cards-1.card-column .group-access {
+      max-width: calc((100% / 3) - 30px);
+    }
+
+    .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
+      margin-top: 0px;
+    }
+
+    @media (max-width: 576px) {
+      .card-deck.max-cards-1.card-column .card,
+      .card-deck.max-cards-1.card-column .group-access {
+        max-width: calc((100% / 2) - 30px);
+      }
+
+      .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-deck.max-cards-1.card-column .card,
+      .card-deck.max-cards-1.card-column .group-access {
+        max-width: 100%;
+      }
+    }
+
+    .card .card-body {
+      word-break: break-word;
+    }
+
+    .card.panel-horizontal .card-body .card-title {
+      margin: 0 0 0.8125rem;
+
+      @media screen and (max-width: 976px) {
+        margin: 2rem 0 0.8125rem;
+      }
+    }
+
+    .card.panel-horizontal {
+      display: flex;
+      align-items: center;
+    }
+
+    .card.panel-horizontal .card-body .panel-footer .btn-lg {
+      font-weight: 700;
+      padding: 0.75rem 1.25rem;
+
+      @media screen and (max-width: 592px) {
+        width: 100%;
+      }
+    }
+
+    .card .card-body .btn-lg {
+      font-weight: 700;
+      padding: 0.75rem 1.25rem;
+
+      @media screen and (max-width: 592px) {
+        width: 100%;
+      }
+    }
+
+    a.list-group-item {
+      padding: 1.5rem;
+      display: flex;
+    }
+
+    a.list-group-item i,
+    a.list-group-item .material-icons-round {
+      font-size: 1.25rem;
+      align-self: center;
+      margin-right: 0.75rem;
+      vertical-align: middle;
+    }
+
+    a.list-group-item .access-content {
+      width: 100%;
+    }
+
+    .dropdown .dropdown-menu {
+      min-width: 15rem;
+      @media screen and (min-width: 752px) {
+        width: 340px;
+      }
+    }
+
+    @media (max-width: 592px) {
+      .card-deck .card:nth-of-type(2) {
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="navbar navbar-light navbar-md">
+  <header class="navbar navbar-light navbar-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img class="header-logo" src="../assets/header/logoBA.svg" alt="Ciudad de buenos aires" />
@@ -91,9 +235,7 @@
         <div class="container pt-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item"><a href="#">Página 3</a></li>
-              <li class="breadcrumb-item"><a href="#">Educación</a></li>
+              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
             </ol>
           </nav>
 
@@ -106,7 +248,7 @@
                 </p>
               </div>
               <div class="d-block d-md-flex pt-3">
-                <div class="dropdown mr-1">
+                <div class="dropdown mr-0 mr-md-3 mb-3 mb-md-0">
                   <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Institucional
@@ -136,7 +278,7 @@
       </header>
 
       <div class="container mb-5">
-        <div class="card-deck card-column mb-5">
+        <div class="card-deck max-cards-3 card-column mb-5">
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">group</span>
@@ -193,20 +335,19 @@
 
       <div class="container pt-2 mb-5">
         <h2 class="my-4 ">Conocé nuestros programas</h2>
-        <div class="card-deck max-cards-3">
+        <div class="card-deck max-cards-3 card-column">
           <a class="card" href="#">
-            <img src="../assets/educacion/card-1.png" class="card-img-top"
-              alt="descripción alternativa" />
+            <img src="../assets/educacion/card-1.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Hablemos de educación: La escuela primaria que queremos</h4>
               <p class="card-text">
-                Más de 14.600 personas dejaron sus aportes en el proceso participativo para la transformación de la escuela primaria en la Ciudad
+                Más de 14.600 personas dejaron sus aportes en el proceso participativo para la transformación de la
+                escuela primaria en la Ciudad
               </p>
             </div>
           </a>
           <a class="card" href="#">
-            <img src="../assets/educacion/card-2.png" class="card-img-top"
-              alt="descripción alternativa" />
+            <img src="../assets/educacion/card-2.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Educación para el trabajo</h4>
               <p class="card-text">
@@ -215,38 +356,35 @@
             </div>
           </a>
           <a class="card" href="#">
-            <img src="../assets/educacion/card-3.png" class="card-img-top"
-              alt="descripción alternativa" />
+            <img src="../assets/educacion/card-3.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Fluidez y compresión lectora</h4>
               <p class="card-text">
-                El Programa fortalece la lecto-comprensión de los niños y las niñas en tercer grado. 
+                El Programa fortalece la lecto-comprensión de los niños y las niñas en tercer grado.
               </p>
             </div>
           </a>
           <a class="card" href="#">
-            <img src="../assets/educacion/card-4.png" class="card-img-top"
-              alt="descripción alternativa" />
+            <img src="../assets/educacion/card-4.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Práticas educativas</h4>
               <p class="card-text">
-                Experiencias pedagógicas para acompañar la transición al mundo del trabajo y los estudiantes 
+                Experiencias pedagógicas para acompañar la transición al mundo del trabajo y los estudiantes
               </p>
             </div>
           </a>
           <a class="card" href="#">
-            <img src="../assets/educacion/card-5.png" class="card-img-top"
-              alt="descripción alternativa" />
+            <img src="../assets/educacion/card-5.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Educar en comunidad</h4>
               <p class="card-text">
-                Conocé los aprendizajes esperados, los resultados de las evaluaciones y explorá las propuestas para acompañar en  casa.
+                Conocé los aprendizajes esperados, los resultados de las evaluaciones y explorá las propuestas para
+                acompañar en casa.
               </p>
             </div>
           </a>
           <a class="card" href="#">
-            <img src="../assets/educacion/card-6.png" class="card-img-top"
-              alt="descripción alternativa" />
+            <img src="../assets/educacion/card-6.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Terminá la secundaria</h4>
               <p class="card-text">
@@ -464,7 +602,7 @@
 
       <div class="container pt-4 mt-2">
         <h2 class="mb-4">Noticias</h2>
-        <div class="card-deck max-cards-3">
+        <div class="card-deck max-cards-3 card-column">
           <a class="card" href="#">
             <img src="../assets/educacion/notice-1.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
@@ -522,24 +660,24 @@
         <h2 class="pt-4 mb-2">Mapa de acceso al Ministerio de Educación</h2>
         <div class="col-8 p-0">
           <p>
-            Conocé todos los medios de transporte que te llevan al edificio del Ministerio ubicado en Carlos H. Perette 750 en el barrio de Retiro.
+            Conocé todos los medios de transporte que te llevan al edificio del Ministerio ubicado en Carlos H. Perette
+            750 en el barrio de Retiro.
           </p>
         </div>
-          <div class="gallery-grid gallery-max-1 mt-4 pt-2">
-            <div class="gallery-grid-item">
-              <img src="../assets/galeria/mapa.png" alt="Texto alternativo de la imagen" />
-            </div>
+        <div class="gallery-grid gallery-max-1 mt-4 pt-2">
+          <div class="gallery-grid-item">
+            <img src="../assets/galeria/mapa.png" alt="Texto alternativo de la imagen" />
           </div>
+        </div>
       </div>
     </article>
 
     <section class="bg-light py-5">
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
-        <div class="card-deck max-cards-2 mb-3 pb-3">
+        <div class="card-deck max-cards-2 mb-3 pb-3 card-column">
           <a class="card card-horizontal card-lg bg-transparent" href="#">
-            <img src="../assets/educacion/institucional.png" class="card-img-left"
-              alt="descripción alternativa">
+            <img src="../assets/educacion/institucional.png" class="card-img-left" alt="descripción alternativa">
             <div class="card-body">
               <h4 class="card-title">Soledad Acuña</h4>
               <p class="card-text">
@@ -559,15 +697,24 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <h2 class="mb-4">Seguinos en</h2>
-            <div class="list-group mb-4">
+            <div class="list-group mb-4 mb-md-0">
               <a href="#" class="list-group-item">
-                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-facebook-circle"></i>Facebook</span>
+                <i class="bx bxl-facebook-circle"></i>
+                <div class="access-content">
+                  <span class="access-title">Facebook</span>
+                </div>
               </a>
               <a href="#" class="list-group-item">
-                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-instagram"></i>Instagram</span>
+                <i class="bx bxl-instagram-alt"></i>
+                <div class="access-content">
+                  <span class="access-title">Instagram</span>
+                </div>
               </a>
               <a href="#" class="list-group-item">
-                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-twitter"></i>Twitter</span>
+                <i class="bx bxl-twitter"></i>
+                <div class="access-content">
+                  <span class="access-title">Twitter</span>
+                </div>
               </a>
             </div>
           </div>
