@@ -16,6 +16,47 @@
   </link>
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  
+  <style type="text/css">
+    /*card-atajos*/
+    .card-deck.max-cards-3.card-column .card {
+        max-width: calc(calc(100% / 3) - 30px);
+    }
+
+    @media screen and (max-width: 752px) {
+      .card-deck.max-cards-3.card-column .card{
+        max-width: calc(calc(100% / 2) - 30px);
+      }
+    }
+
+    @media screen and (max-width: 592px) {
+      .card-deck.max-cards-3.card-column .card{
+        max-width: 100%;
+    } 
+  }
+  /*fin:card-atajos*/
+  
+  /*panel*/
+  @media screen and (max-width: 975.98px) {
+    .card.panel-horizontal {
+      flex-direction: column;
+    }
+    .card.panel-horizontal .card-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .card.panel-horizontal {
+    width: 100%;
+    align-items: center;
+  }
+
+  .card.panel-horizontal .card-img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  /*fin:panel*/
+  </style>
 </head>
 
 <body>
@@ -283,7 +324,7 @@
       <div class="container my-1 py-2">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 mb-5">
-          <div class="card card-horizontal card-lg" href="#">
+          <div class="bg-light card card-horizontal card-lg" href="#">
             <img
               src="../assets/institucional/joseLuisGiusti.png"
               class="card-img-left"
@@ -296,11 +337,11 @@
               </p>
             </div>
           </div>
-          <div class="card" href="#">
+          <div class="bg-light card" href="#">
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">
-                Teléfono: 5091-7863 <br> Email: fquiros@buenosaires.gob.ar
+                Teléfono: 5091-7863 <br> Email: email@buenosaires.gob.ar
               </p>
             </div>
           </div>
@@ -324,17 +365,12 @@
             <div class="card">
               <div class="card-body">
                 <h4>Ubicación</h4>
-                  <img 
-                    class="w-100 mb-3"
-                    src="../assets/noticias/maps.png" 
-                    alt="" 
-                    />
-                <p class="mb-0">
-                  Dirección:
-                  <a class="" href="#" target="_blank" rel="noreferrer">
-                    Martin García 346, 2° piso
-                  </a>
-                </p>
+                <p>Dirección: Martin García 346, 2° piso</p>
+                <img 
+                  class="w-100 mb-3"
+                  src="../assets/noticias/maps.png" 
+                  alt="" 
+                  />
                 <a href="#" class="btn btn-primary btn-lg mt-3">Cómo llego</a>
               </div>
             </div>
