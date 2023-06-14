@@ -1,0 +1,86 @@
+.accordion.accordion-form .card .card-header,
+.accordion.accordion-form .card .card-link {
+  display: flex;
+  box-shadow: inset 0 0 0 2px #e6ebf0;
+}
+.accordion.accordion-form .card .card-header:focus,
+.accordion.accordion-form .card .card-link:focus {
+  box-shadow: 0 0 0 4px #005386;
+}
+.accordion.accordion-form .card .card-header:after,
+.accordion.accordion-form .card .card-link:after {
+  content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 0.87);"><path d="M15.88 9.29L12 13.17 8.12 9.29c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.39-1.42 0z"/></svg>');
+  height: spaceUnits(6);
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(180deg);
+}
+.accordion.accordion-form .card .card-header .custom-control,
+.accordion.accordion-form .card .card-header .custom-checkbox,
+.accordion.accordion-form .card .card-link .custom-control,
+.accordion.accordion-form .card .card-link .custom-checkbox {
+  width: 1.4rem;
+}
+.accordion.accordion-form .card .card-header .custom-control .custom-control-label::before, .accordion.accordion-form .card .card-header .custom-control .custom-control-label::after,
+.accordion.accordion-form .card .card-header .custom-checkbox .custom-control-label::before,
+.accordion.accordion-form .card .card-header .custom-checkbox .custom-control-label::after,
+.accordion.accordion-form .card .card-link .custom-control .custom-control-label::before,
+.accordion.accordion-form .card .card-link .custom-control .custom-control-label::after,
+.accordion.accordion-form .card .card-link .custom-checkbox .custom-control-label::before,
+.accordion.accordion-form .card .card-link .custom-checkbox .custom-control-label::after {
+  top: 0.175rem;
+  left: 0;
+  border-color: white;
+}
+.accordion.accordion-form .card .card-header .custom-radio .custom-control-label::after,
+.accordion.accordion-form .card .card-link .custom-radio .custom-control-label::after {
+  width: 10.5px;
+}
+.accordion.accordion-form .card .card-header .custom-radio .custom-control-input:checked ~ .custom-control-label::after,
+.accordion.accordion-form .card .card-link .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background: white;
+}
+.accordion.accordion-form .card .card-header h4, .accordion.accordion-form .card .card-header span,
+.accordion.accordion-form .card .card-link h4,
+.accordion.accordion-form .card .card-link span {
+  word-break: break-word;
+}
+.accordion.accordion-form .card .card-header.collapsed:after,
+.accordion.accordion-form .card .card-link.collapsed:after {
+  content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(56, 72, 92, 0.87);"><path d="M15.88 9.29L12 13.17 8.12 9.29c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.39-1.42 0z"/></svg>');
+  height: spaceUnits(5);
+  margin-left: auto;
+  transform: rotate(360deg);
+}
+.accordion.accordion-form .card .card-header.collapsed .custom-control-label::before, .accordion.accordion-form .card .card-header.collapsed .custom-control-label::after,
+.accordion.accordion-form .card .card-link.collapsed .custom-control-label::before,
+.accordion.accordion-form .card .card-link.collapsed .custom-control-label::after {
+  top: 0.175rem;
+  left: 0;
+  border-color: #38485c;
+}
+.accordion.accordion-form .card .card-header.collapsed .custom-radio .custom-control-input:checked ~ .custom-control-label::after,
+.accordion.accordion-form .card .card-link.collapsed .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background: #007bc7;
+}
+.accordion.accordion-form .card .card-header .custom-control-label,
+.accordion.accordion-form .card .card-link .custom-control-label {
+  border-color: white;
+}
+.accordion.accordion-form .card .card-body ul {
+  padding: 0;
+  list-style: none;
+}
+.accordion.accordion-form .card .card-body ul li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.accordion.accordion-form .card .card-body ul li p {
+  margin: 0;
+  line-height: 1.375rem;
+}
+.accordion.accordion-form .card .card-body ul li p strong {
+  color: #38485c;
+}
+
+/*# sourceMappingURL=scoring.css.map */

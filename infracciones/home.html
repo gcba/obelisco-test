@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
+
+    <title>Home infracciones</title>
+
+    <!-- Obelisco -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
+    <link rel="stylesheet" href="./scoring.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <style rel="stylesheet" type="text/css"></style>
+
+  </head>
+
+  <body>
+    <header class="navbar navbar-light navbar-lg">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
+          <img
+            class="header-logo"
+            src="../assets/header/logoBA.svg"
+            alt="Ciudad de buenos aires"
+          />
+        </a>
+        <div class="navbar-search d-responsive ml-auto">
+          <form class="form-search form-search-sm">
+            <div class="form-group">
+              <input
+                type="search"
+                class="form-control form-control-sm input-search"
+                id="header-search-example-3"
+                name="header-search"
+                aria-label="Ingrese su búsqueda"
+                placeholder="Buscar..."
+              />
+              <button class="reset" type="reset"></button>
+            </div>
+          </form>
+        </div>
+        <button
+          class="navbar-toggler collapsed ml-2"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          Menú
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="list-group-content d-responsive ml-2">
+          <a
+            href="#"
+            aria-label="Cerrar sesión"
+            class="list-group-item list-group-item-logout logout-sm"
+          >
+            &nbsp;
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link active"><span>Inicio</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Mi actividad</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" aria-label="Notificaciones" class="nav-link">
+                <i class="bx bxs-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item d-responsive">
+              <div class="navbar-search">
+                <form class="form-search form-search-sm">
+                  <div class="form-group">
+                    <input
+                      type="search"
+                      class="form-control form-control-sm input-search"
+                      id="header-search-example-4"
+                      name="header-search"
+                      aria-label="Ingrese su búsqueda"
+                      placeholder="Buscar..."
+                    />
+                    <button class="reset" type="reset"></button>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item d-responsive">
+              <a
+                href="#"
+                aria-label="Cerrar sesión"
+                class="list-group-item list-group-item-logout logout-sm"
+              >
+                &nbsp;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <article class="pb-5 mb-4">
+        <header class="bg-light pt-3 pb-5 mb-5">
+          <div class="container pt-1">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Jefatura de Gabinete</a></li>
+                <li class="breadcrumb-item"><a href="#">Infracciones</a></li>
+                <li class="breadcrumb-item"><a href="#">Consulta de infracciones de tránsito y scoring</a></li>
+              </ol>
+            </nav>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="mt-2 pt-1">
+                  <h1 class="mb-3">Consulta de infracciones de tránsito y scoring</h1>
+                  <p class="lead">Accedé a la información de tránsito pendiente de pago y tu puntaje en la ciudad de Buenos Aires.</p>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <p class="lead">Modalidad: </p>
+                  </div>
+                  <div>
+                    <span class="badge badge-secondary ml-2 mt-1">Presencial</span>
+                    <span class="badge badge-secondary">en línea</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!--Seccion para hacer consulta de infracciones con formulario-->
+        <div class="container pt-3 pb-2">
+          <section>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+
+                <!-- inicio: Alerta -->
+                <div class="alert alert-info" role="alert">
+                  <p>
+                    Recordá que podés tener <a href="#">otro tipo de infracciones</a> que no son de tránsito y pueden impedirte realizar algunos trámites.
+                  </p>
+                </div>
+                <!-- fin: Alerta -->
+                
+                <!-- inicio: Formulario -->
+                <div class="pt-4 mb-5">
+                  <h2 class="mb-4">Datos sobre Patente o Documento</h2>
+                  <p class="lead">Visualizá si tu licencia o vehículo tienen infracciones pendientes, cuál es tu puntaje de scoring como así también descargar el comprobante libre de deuda.</p>
+                  <form>
+                    <div class="card p-4">
+                      <h3>Seleccioná una de las opaciones</h3>
+                      <div class="d-flex">
+                        <div class="custom-control custom-radio">
+                          <input
+                            class="custom-control-input"
+                            type="radio"
+                            name="profession"
+                            id="profession-designer"
+                            value="designer"
+                            checked=""
+                          />
+                          <label class="custom-control-label" for="profession-designer">
+                            Patente
+                          </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            class="custom-control-input"
+                            type="radio"
+                            name="profession"
+                            id="profession-developer"
+                            value="developer"
+                          />
+                          <label class="custom-control-label" for="profession-developer">
+                            Documento
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex mt-2 flex-wrap flex-lg-nowrap">
+                        <div class="form-group col-12 col-lg-4 px-1">
+                          <label for="lista-de-seleccion">Tipo de documento</label>
+                          <select class="custom-select" id="lista-de-seleccion">
+                            <option>DNI</option>
+                            <option>PASAPORTE</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-12 col-lg-6 px-1">
+                          <label for="number-input">Número de documento*</label>
+                          <input type="number" class="form-control" id="number-input" name="number" value="34271863">
+                        </div>         
+                      </div>
+                      <small>Si tu búsqueda es por Documento, y tu DNI es menor a 10.000.000, utilizá las opciones de Libreta de Enrolamiento (LE) o Libreta Cívica (LC) Consultá los <a href="#">términos y condiciones.</a></small>
+                    </div>
+                    <div class="w-100 mt-3 pt-3 text-right">
+                      <button type="button" class="btn btn-primary btn-lg">Consultar</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- fin: Formulario -->
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- inicio: Cards -->  
+        <div class="container my-1 py-2">
+
+          <!--inicio seccion cards Resolvé tus infracciones de transito-->
+          <section>
+            <h2>Resolvé tus infracciones de tránsito</h2>
+
+            <!--inicio row uno-->
+            <div class="row pt-3">
+              <div class="col-12 col-lg-4">
+                <div class="mb-3 pb-2">
+                  <a class="card" href="#">
+                    <div class="card-body">
+                      <h4 class="card-title">Resolver de forma Online</h4>
+                      <p class="card-text">
+                        Resolvelas con un controlador de faltas si sos titular o si estas autorizada con cédula azul.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="mb-3 pb-2">
+                  <a class="card" href="#">
+                    <div class="card-body">
+                      <h4 class="card-title">Resolver de forma presencial</h4>
+                      <p class="card-text">
+                        Acercate a alguna sede comunal y resolvelas con un controlador de faltas.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--fin row uno-->
+
+            <!--inicio row dos-->
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="mb-3 pb-2">
+                  <a class="card" href="#">
+                    <div class="card-body">
+                      <h4 class="card-title">Consulta de legajos</h4>
+                      <p class="card-text">
+                        Accedé a la información sobre comprobantes de legajo pendientes de pago en la Ciudad de Buenos Aires.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--fin row dos-->
+          </section>
+          <!--fin seccion cards Resolvé tus infracciones de transito-->
+
+          <!--inicio seccion Tramites relacionados-->
+          <section>
+            <div class="pt-4">
+              <h2>Trámites relacionados</h2>
+  
+              <div class="row pt-3">
+                <div class="col-12 col-lg-4">
+                  <div class="mb-3 pb-2">
+                    <a class="card" href="#">
+                      <div class="card-body">
+                        <h4 class="card-title">Realizá tus consultas y solicitudes</h4>
+                        <p class="card-text">
+                          Consultá en Gestión colaborativa tus solicitudes relacionadas a infracciones.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="mb-3 pb-2">
+                    <a class="card" href="#">
+                      <div class="card-body">
+                        <h4 class="card-title">Denuncia por venta de dominio</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="mb-3 pb-2">
+                    <a class="card" href="#">
+                      <div class="card-body">
+                        <h4 class="card-title">Transporte de personas con discapacidad</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--fin seccion tramites relacionados-->
+
+        </div>
+        <!-- fin: card -->
+      </article>
+    </main>
+  
+    <footer class="main-footer">
+      <div class="container">
+        <section>
+          <h4>Teléfonos útiles</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item phone-items">
+              <a href="tel:102">102 - Niñez y Adolescencia</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:103">103 - Emergencias</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:107">107 - SAME</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:911">911 - Policía</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:144">144 - Violencia de género</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:147">147 - Atención ciudadana</a>
+            </li>
+          </ul>
+          <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+            Ver todos los teléfonos
+          </a>
+        </section>
+        <section>
+          <h4>Redes de la ciudad</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item redes-items">
+              <a href="https://www.facebook.com/GCBA">
+                <i class="bx bxl-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.instagram.com/buenosaires">
+                <i class="bx bxl-instagram"></i>
+                Instagram
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://twitter.com/gcba">
+                <i class="bx bxl-twitter"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.youtube.com/user/GCBA">
+                <i class="bx bxl-youtube"></i>
+                YouTube
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a
+                href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+              >
+                <i class="bx bxl-linkedin"></i>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <hr class="divider" />
+      <div class="container">
+        <section class="footer-legal-section">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+              <img
+                class="d-lg-none"
+                src="../assets/footer/ciudad-ba-sm.svg"
+                alt="Ciudad de Buenos Aires"
+                height="48"
+              />
+              <img
+                class="d-none d-lg-inline"
+                src="../assets/footer/ciudad-ba.svg"
+                alt="Ciudad de Buenos Aires"
+                height="40"
+              />
+              <img
+                class="img-vamos-ba"
+                src="../assets/footer/vamos-ba.svg"
+                alt="Vamos Buenos Aires"
+              />
+            </div>
+            <div class="col-12">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://boletinoficial.buenosaires.gob.ar">
+                    Boletín oficial
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
+                  >
+                    Términos y condiciones
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/privacidad">
+                    Política de privacidad
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">
+                    Oficios judiciales
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                    Transparencia activa
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="footer-license-text">
+            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+            Commons Reconocimiento 2.5 Argentina License.
+          </div>
+        </section>
+      </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
