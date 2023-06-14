@@ -31,9 +31,9 @@
         margin-bottom: 5px;
       }
 
-      .icon-scoring-list {
-        height: 25px;
-        margin-right: 5px;
+      .align-icon {
+        display: flex;
+        align-items: center;
       }
 
       .cost-and-discount > .crossing-out{
@@ -218,17 +218,21 @@
                   <a href="#">¿Cómo funciona el sistema de puntos?</a>
                 </div>
                 <hr class="my-4">
-                <small>Puntos</small>
+                <small>Puntos:</small>
                 <ul class="custom-list-style">
                   <li>
-                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAmJJREFUSEvF1rFv00AUBvDvxa0UsXSs1CXt0LFlaBsnthOCxEQZWyQqQIwoE1vhL6BiYkFdQaIgEbFRNkRo7EuctAPtyFCyVOrYBUVq7YccQXASJz47RMnm+Pn73dOdfUeY0I8m5CI23DCMW0zE6UrlS5zBx4Lr2azGiYTZBpl1VYhqVDwWbOt6A8DqH8xULSs3dtjWtHUQffJDDKxnLOtzFDxyx3XDOGbmJT9CRCdp01weG2wbxhaY9wIBoi3VNN/L4tIdf9jcVFJnZz8ALAwIP23OzS3eLZUcGVwarhtGkZlfDQsl5mJaiN3/Bn8tFJLXLi9/ApgNCT3/NT09f7NcboXhUh3Xdf0pA899Yd9doifedYL5JYDrnXvM26oQL0aGD1dWZpxksglgxhf+TRWi4F3bmlYG0Q0fdKG0WqnVo6OLodMSNjJb03ZAtN1VxzwMBgM7Gct6FhuuqeosTU15c5uMAgNo8dXVfMa2zwfhQ+fY1nVvhT7uezik43Y90a5qmsXIsJ3PL8BxvPdWiQUDDhRlUT04OA3CB3Zsa9o7EN0bMOImiF637zE/ApAaULenWtZ9aVhks0tKInEctvBk7juuu6xVqye9tYEd27q+D+C2THBoDdG+app3QuGarhsEVIYGyiyu7oA11bIO/X/1ddyzyQf70eG+w0IXHLTJj7i4/n3seg4LXXDQJh86h5IFvYeFDlzTtA0iKknmxCpj5o2MEB/b35e/CbZhPATzm1iJkg8R84O0EG+7YAaokcvlHWaprVLS6pQpruuuCVEheHuIr+OoQaPWj6U7mUFNDP4Ni8b2H+lV83kAAAAASUVORK5CYII=" class="icon-scoring-list" /></div>
-                    <div>
+                    <div class="align-icon">
+                      <i class='bx bxs-error bx-sm mr-1' style='color:#c93b3b'  ></i>
+                    </div>
+                    <div class="align-icon">
                       <small>Total a descontar: <strong class="text-danger">15</strong></small>
                     </div>
                   </li>
                   <li>
-                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA5pJREFUSEvFll9sFFUUxr9zZ2lFKjH+CbFELaE7tGp8Q6gPpImGsFuWhASISkJ4ERMjBoOUnYWHjWl3t5aYAL6ADypBEiCGB+wMVh5NQCo+KOluZ7dYo1Yi8kJoCOvMPWYWts7uznRnt02Yt51zvu93zt175x7CQ3roIXHRGPjMVmVV4c5aEDoki2dKRQueZil+LXQuvoJtZ+2gjQQCd3+8MSyl1BjYDMbj3uZ8C6BzDErntZHr9QqYE9yejD3a1mJlQPQuAKWe2YN4kcDDyr22j8aTZ4t+Gl9w90D0eVuhEYBfDAisThuzQ9bGyX2jf3vpPcHhob5usvl7EJ5oElqW/WnbVs/kwdHfq31qwCsGNy1bJKyrAJbPE1qWZx8JWat/3jc64/arAaup6GkQti0QtGTDwOG8pu/xBaupWBfIzi4ktLzhFGl3ZA98+1fZu6JjNR39EsCOZsBE/JOEuE7MWzz1TCkzMXKgBvxCcmuL1TrzD4DHmgD/sqjV7uXbS+9YrTPfAVjn4TFlavqKGrA6uOE1CHGxUSgD1xRu7c0lzt1ytOFM325iPuLloyhCzfZ/k3dis0sdTkd3EvB5g+CcZF5XSBg3HZ2aiewA0xduX7efJN5UiBvnK8Gpvg+JeNgDfBcst4DEIQDd/8epIFm+OgtNRd4G0TE/aAlG2DMR1w9XgNV0ZC9AjnlFkWAZMxMX9M5U5Gkh6AcwnP9pKqSgZ7xfv1Hq9D70eN3VYuw1E/on1Uv9JgGnqsQM4p1m3DjhvF85sP5ZRQl9JQW/Vdhv/FGCpiPvAXS0LrSUwG+YmnG6Atw5FFkrJF3yPgq8y0wYn1XH1HT0AwClDoI8JLB6Yr/+YwUYDFIzkZsAPeltwrtNzfi0HAv77wm/Gm6Ycb0d5HzIXLv6wbIdA2iXn5KB/rymD6uZSAJMg0G6nM1hPmomjPfLvyu+XF2pqCoJubl2JgDnrL/eEBSQAnJlTrsw5Ql2XobTfScJvL1B4zrpfNzUjHfcSbW306HYU/jXHgPQsUDwnLzHawpJ4/acYCfozFi2JS/PfxDgaSmwpnz06oKdhK70hg4b4jwBLzXTOQNXQ9KOua/CQGAn6eXh9Uvu2soAMTm7UQQsoAjmTKjYNtjUsOeG3B8QrDhAmwEs9Tnnzu30tWJTKntQ/61ekYHm6rJJb7I3NN2ypIdIPuce6CExmS++MoZkUtYD+h6noML55jXU8Xxhbv1/onNHLkUeNnIAAAAASUVORK5CYII=" class="icon-scoring-list" /></div>
-                    <div>
+                    <div class="align-icon">
+                      <i class='bx bxs-error-circle bx-sm mr-1' style='color:#26874a'  ></i>
+                    </div>
+                    <div class="align-icon">
                       <small>Total a reasignar: <strong class="text-success">3</strong></small>
                     </div>
                   </li>
@@ -292,8 +296,8 @@
                       <label class="custom-control-label" for="skills-collapseOne-input"></label>
                     </div>
                       <div class="d-block">
-                        <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <span class="collapse-label">Acta N°E00416407 - 15-05-2018 13:12</span>
+                        <h4 class="collapse-title">Conducir utilizando celular/Auricular/Reproductor de video</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
@@ -357,12 +361,12 @@
                   <div class="card">
                     <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
                     <div class="custom-control custom-checkbox">
-                      <input class="custom-control-input" type="checkbox" id="skills-collapseTwo-input" name="skills" value="collapseTwo">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseTwo-input" name="skills" value="collapseTwo" checked>
                       <label class="custom-control-label" for="skills-collapseTwo-input"></label>
                     </div>
                       <div class="d-block">
-                        <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <span class="collapse-label">Acta N°Q17773119 - 15-05-2018 14:10</span>
+                        <h4 class="collapse-title text-info">Prohib. circular según día/hora/carac. vehíc.</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
@@ -424,18 +428,18 @@
                 <!--Accordion 3-->
                 <div class="accordion accordion-form" id="accordionExample">
                   <div class="card">
-                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
+                    <button class="card-header  card-link" data-toggle="collapse" data-target="#collapseThree">
                     <div class="custom-control custom-checkbox">
-                      <input class="custom-control-input" type="checkbox" id="skills-collapseThree-input" name="skills" value="collapseThree">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseThree-input" name="skills" value="collapseThree" checked>
                       <label class="custom-control-label" for="skills-collapseThree-input"></label>
                     </div>
                       <div class="d-block">
                         <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <h4 class="collapse-title">Estac. lugar prohib./forma indebida/antirreglamentaria</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
-                    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
                           <li>
@@ -499,8 +503,8 @@
                       <label class="custom-control-label" for="skills-collapseFour-input"></label>
                     </div>
                       <div class="d-block">
-                        <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <span class="collapse-label">Acta N°I01697830 - 21-01-2022 14:51</span>
+                        <h4 class="collapse-title">Exceso de velocidad de 30% más de la velocidad permitida hasta 140 Km/h (particualres)</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
@@ -562,18 +566,18 @@
                 <!--Accordion 5-->
                 <div class="accordion accordion-form" id="accordionExample">
                   <div class="card">
-                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFive">
+                    <button class="card-header card-link" data-toggle="collapse" data-target="#collapseFive">
                     <div class="custom-control custom-checkbox">
                       <input class="custom-control-input" type="checkbox" id="skills-collapseFive-input" name="skills" value="collapseFive">
                       <label class="custom-control-label" for="skills-collapseFive-input"></label>
                     </div>
                       <div class="d-block">
-                        <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <span class="collapse-label">Acta N°E00111086 - 105-12-2017 11:10</span>
+                        <h4 class="collapse-title">No usó cinturón de seguridad</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
-                    <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                    <div id="collapseFive" class="collapse show" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
                           <li>
@@ -633,12 +637,12 @@
                   <div class="card">
                     <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSix">
                     <div class="custom-control custom-checkbox">
-                      <input class="custom-control-input" type="checkbox" id="skills-collapseSix-input" name="skills" value="collapseSix">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseSix-input" name="skills" value="collapseSix" checked>
                       <label class="custom-control-label" for="skills-collapseSix-input"></label>
                     </div>
                       <div class="d-block">
                         <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <h4 class="collapse-title text-info">Violar luz roja</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
@@ -710,28 +714,8 @@
                       <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <small class="text-success">$200,00</small>
-                            <h5 class="mb-0">Solicitud de informes varios</h5>
-                            <small>Boleta N° 2549-48758798</small>
-                          </div>
-                          <div>
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                class="custom-control-input"
-                                type="checkbox"
-                                id="skills-design-input"
-                                name="skills"
-                                value="design"
-                              />
-                              <label class="custom-control-label" for="skills-design-input"></label>
-                            </div>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>
-                            <small class="text-success">$200,00</small>
-                            <h5 class="mb-0">Solicitud de informes varios</h5>
+                            <small class="text-success">$1.785,00</small>
+                            <h5 class="mb-0">Prohib. circular según día/hora/carac. vehíc.</h5>
                             <small>Boleta N° 2549-48758798</small>
                           </div>
                           <div>
@@ -742,6 +726,7 @@
                                 id="skills-develop-input"
                                 name="skills"
                                 value="develop"
+                                checked
                               />
                               <label class="custom-control-label" for="skills-develop-input"></label>
                             </div>
@@ -750,8 +735,29 @@
                         <hr />
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <small class="text-success">$200,00</small>
-                            <h5 class="mb-0">Solicitud de informes varios</h5>
+                            <small class="text-success">$1.785,00</small>
+                            <h5 class="mb-0">Estac. lugar prohib./forma indebida/antirreglamentaria</h5>
+                            <small>Boleta N° 2549-48758798</small>
+                          </div>
+                          <div>
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                class="custom-control-input"
+                                type="checkbox"
+                                id="skills-design-input"
+                                name="skills"
+                                value="design"
+                                checked
+                              />
+                              <label class="custom-control-label" for="skills-design-input"></label>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-success">$1.785,00</small>
+                            <h5 class="mb-0">Violar luz roja</h5>
                             <small>Boleta N° 2549-48758798</small>
                           </div>
                           <div>
@@ -762,6 +768,7 @@
                                 id="skills-content-input"
                                 name="skills"
                                 value="content"
+                                checked
                               />
                               <label class="custom-control-label" for="skills-content-input"></label>
                             </div>
