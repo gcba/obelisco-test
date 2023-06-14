@@ -83,4 +83,8 @@
   color: #38485c;
 }
 
+.accordion.accordion-form .card .card-link.collapsed .custom-checkbox:has(.custom-control-input:checked) + .d-block .collapse-title {
+  color: #007bc7;
+}
+
 /*# sourceMappingURL=scoring.css.map */

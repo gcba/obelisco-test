@@ -40,6 +40,14 @@
         text-decoration: line-through;
         color: #9EAAB8;
       }
+
+      .text-yellow {
+        color: #FFA82E;
+      }
+
+      .l-height {
+        line-height: 1.5rem;
+      }
     </style>
 
   </head>
@@ -184,45 +192,41 @@
                   <h3 class="m-0">
                     Datos ingresados
                   </h3>
-                  <button type="button" class="btn btn-link">Editar</button>
+                  <button type="button" class="btn btn-link btn-sm">Editar</button>
                 </div>
                 <hr class="my-4">
-                <small>Opción seleccionada</small>
-                <p class="m-0">
-                  <strong>
-                    Documento
-                  </strong>
-                </p>
+                <small class="mb-1">Opción seleccionada</small>
+                <h6 class="m-0">
+                  Documento
+                </h6>
                 <hr class="my-4">
-                <small>Tipo de documento</small>
-                <p class="m-0">
-                  <strong>
-                    DNI
-                  </strong>
-                </p>
+                <small class="mb-1">Tipo de documento</small>
+                <h6 class="m-0">
+                  DNI
+                </h6>
                 <hr class="my-4">
-                <small>Número de documento</small>
-                <p class="m-0">
-                  <strong>
-                    34271863
-                  </strong>
-                </p>
+                <small class="mb-1">Número de documento</small>
+                <h6 class="m-0">
+                  34271863
+                </h6>
               </div>
 
               <!--Organismo Puntaje actual -->
-              <div class="card container-border mb-4 p-4">
+              <div class="card container-border mb-3 p-4">
                 <div>
-                  <h3>
+                  <h3 class="mb-0">
                     Puntaje actual: 20 puntos
                   </h3>
-                  <a href="#">¿Cómo funciona el sistema de puntos?</a>
+                  <small class="mb-1">
+                    <a href="#">¿Cómo funciona el sistema de puntos?</a>
+                  </small>
                 </div>
                 <hr class="my-4">
                 <small>Puntos:</small>
                 <ul class="custom-list-style">
                   <li>
                     <div class="align-icon">
-                      <i class='bx bxs-error bx-sm mr-1' style='color:#c93b3b'  ></i>
+                      <span class="material-icons-round mr-1 text-danger">warning</span>
                     </div>
                     <div class="align-icon">
                       <small>Total a descontar: <strong class="text-danger">15</strong></small>
@@ -230,7 +234,7 @@
                   </li>
                   <li>
                     <div class="align-icon">
-                      <i class='bx bxs-error-circle bx-sm mr-1' style='color:#26874a'  ></i>
+                      <span class="material-icons-round mr-1 text-success">check_circle</span>
                     </div>
                     <div class="align-icon">
                       <small>Total a reasignar: <strong class="text-success">3</strong></small>
@@ -247,9 +251,9 @@
                   <p class="m-0">
                     Infracciones cometidas
                   </p>
-                  <p class="m-0">
-                    <strong>32 infracciones</strong>
-                  </p>
+                  <h6 class="m-0">
+                    32 infracciones
+                  </h6>
                 </div>
                 <hr class="my-4">
                 <div class="list-group">
@@ -266,7 +270,7 @@
                             </small>
                           </div>
                         </div>
-                        <span class="card-access-icon material-icons-round">info</span>
+                        <span class="card-access-icon material-icons-round">monetization_on</span>
                       </div>
                     </div>
                   </div>
@@ -280,7 +284,7 @@
 
         <!-- inicio: Formulario -->
         
-        <div class="container my-1 py-2">
+        <div class="container py-3">
           <div class="row">
             <div class="col-12 col-lg-8">
               <form>
@@ -304,51 +308,79 @@
                     <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
-                          <li>
-                            <p class="">
-                              <strong>N° de infracción:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                N° de infracción:
+                              </strong>
+                            </h5>
+                            <span>
                               6780
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-danger">
-                              <strong>Puntos a descontar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a descontar:
+                              </strong>
+                            </h5>
+                            <span class="text-danger">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-success">
-                              <strong>Puntos a resignar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a resignar:
+                              </strong>
+                            </h5>
+                            <span class="text-success">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Lugar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Lugar:
+                              </strong>
+                            </h5>
+                            <span>
                               Bartolomé Mitre 900
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Estado del acta:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Estado del acta:
+                              </strong>
+                            </h5>
+                            <span>
                               Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
                               65 de 14:00 hs. a 19:30 hs.
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Legajo:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Legajo:
+                              </strong>
+                            </h5>
+                            <span>
                               537405-000/18
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Controlador:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Controlador:
+                              </strong>
+                            </h5>
+                            <span>
                               4
-                            </p>
+                            </span>
                           </li>
                         </ul>
-                        <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noreferrer">
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" target="_blank" rel="noreferrer">
                           Descargar foto
                         </a>
                       </div>
@@ -366,58 +398,86 @@
                     </div>
                       <div class="d-block">
                         <span class="collapse-label">Acta N°Q17773119 - 15-05-2018 14:10</span>
-                        <h4 class="collapse-title text-info">Prohib. circular según día/hora/carac. vehíc.</h4>
+                        <h4 class="collapse-title ">Prohib. circular según día/hora/carac. vehíc.</h4>
                         <span class="collapse-subtitle">$1.785,00</span>
                       </div>
                     </button>
                     <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
-                          <li>
-                            <p class="">
-                              <strong>N° de infracción:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                N° de infracción:
+                              </strong>
+                            </h5>
+                            <span>
                               6780
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-danger">
-                              <strong>Puntos a descontar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a descontar:
+                              </strong>
+                            </h5>
+                            <span class="text-danger">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-success">
-                              <strong>Puntos a resignar:</strong>
+                            <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a resignar:
+                              </strong>
+                            </h5>
+                            <span class="text-success">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Lugar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Lugar:
+                              </strong>
+                            </h5>
+                            <span>
                               Bartolomé Mitre 900
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Estado del acta:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Estado del acta:
+                              </strong>
+                            </h5>
+                            <span>
                               Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
                               65 de 14:00 hs. a 19:30 hs.
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Legajo:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Legajo:
+                              </strong>
+                            </h5>
+                            <span>
                               537405-000/18
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Controlador:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Controlador:
+                              </strong>
+                            </h5>
+                            <span>
                               4
-                            </p>
+                            </span>
                           </li>
                         </ul>
-                        <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noreferrer">
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" target="_blank" rel="noreferrer">
                           Descargar foto
                         </a>
                       </div>
@@ -442,51 +502,79 @@
                     <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
-                          <li>
-                            <p class="">
-                              <strong>N° de infracción:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                N° de infracción:
+                              </strong>
+                            </h5>
+                            <span>
                               6780
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-danger">
-                              <strong>Puntos a descontar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a descontar:
+                              </strong>
+                            </h5>
+                            <span class="text-danger">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-success">
-                              <strong>Puntos a resignar:</strong>
+                            <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a resignar:
+                              </strong>
+                            </h5>
+                            <span class="text-success">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Lugar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Lugar:
+                              </strong>
+                            </h5>
+                            <span>
                               Bartolomé Mitre 900
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Estado del acta:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Estado del acta:
+                              </strong>
+                            </h5>
+                            <span>
                               Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
                               65 de 14:00 hs. a 19:30 hs.
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Legajo:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Legajo:
+                              </strong>
+                            </h5>
+                            <span>
                               537405-000/18
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Controlador:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Controlador:
+                              </strong>
+                            </h5>
+                            <span>
                               4
-                            </p>
+                            </span>
                           </li>
                         </ul>
-                        <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noreferrer">
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" target="_blank" rel="noreferrer">
                           Descargar foto
                         </a>
                       </div>
@@ -511,51 +599,79 @@
                     <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
-                          <li>
-                            <p class="">
-                              <strong>N° de infracción:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                N° de infracción:
+                              </strong>
+                            </h5>
+                            <span>
                               6780
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-danger">
-                              <strong>Puntos a descontar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a descontar:
+                              </strong>
+                            </h5>
+                            <span class="text-danger">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-success">
-                              <strong>Puntos a resignar:</strong>
+                            <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a resignar:
+                              </strong>
+                            </h5>
+                            <span class="text-success">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Lugar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Lugar:
+                              </strong>
+                            </h5>
+                            <span>
                               Bartolomé Mitre 900
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Estado del acta:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Estado del acta:
+                              </strong>
+                            </h5>
+                            <span>
                               Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
                               65 de 14:00 hs. a 19:30 hs.
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Legajo:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Legajo:
+                              </strong>
+                            </h5>
+                            <span>
                               537405-000/18
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Controlador:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Controlador:
+                              </strong>
+                            </h5>
+                            <span>
                               4
-                            </p>
+                            </span>
                           </li>
                         </ul>
-                        <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noreferrer">
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" target="_blank" rel="noreferrer">
                           Descargar foto
                         </a>
                       </div>
@@ -580,51 +696,79 @@
                     <div id="collapseFive" class="collapse show" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
-                          <li>
-                            <p class="">
-                              <strong>N° de infracción:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                N° de infracción:
+                              </strong>
+                            </h5>
+                            <span>
                               6780
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-danger">
-                              <strong>Puntos a descontar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a descontar:
+                              </strong>
+                            </h5>
+                            <span class="text-danger">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-success">
-                              <strong>Puntos a resignar:</strong>
+                            <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a resignar:
+                              </strong>
+                            </h5>
+                            <span class="text-success">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Lugar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Lugar:
+                              </strong>
+                            </h5>
+                            <span>
                               Bartolomé Mitre 900
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Estado del acta:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Estado del acta:
+                              </strong>
+                            </h5>
+                            <span>
                               Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
                               65 de 14:00 hs. a 19:30 hs.
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Legajo:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Legajo:
+                              </strong>
+                            </h5>
+                            <span>
                               537405-000/18
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Controlador:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Controlador:
+                              </strong>
+                            </h5>
+                            <span>
                               4
-                            </p>
+                            </span>
                           </li>
                         </ul>
-                        <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noreferrer">
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" target="_blank" rel="noreferrer">
                           Descargar foto
                         </a>
                       </div>
@@ -642,58 +786,92 @@
                     </div>
                       <div class="d-block">
                         <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
-                        <h4 class="collapse-title text-info">Violar luz roja</h4>
-                        <span class="collapse-subtitle">$1.785,00</span>
+                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <div class="cost-and-discount">
+                          <small class="crossing-out">$76.823,00</small>
+                          <small class="without-crossing-out">
+                            <strong>$60.835,00</strong>
+                            <strong class="text-yellow">(Hasta: 16-06-2023)</strong>
+                          </small>
+                        </div>
                       </div>
                     </button>
                     <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
                       <div class="card-body">
                         <ul>
-                          <li>
-                            <p class="">
-                              <strong>N° de infracción:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                N° de infracción:
+                              </strong>
+                            </h5>
+                            <span>
                               6780
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-danger">
-                              <strong>Puntos a descontar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a descontar:
+                              </strong>
+                            </h5>
+                            <span class="text-danger">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="text-success">
-                              <strong>Puntos a resignar:</strong>
+                            <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Puntos a resignar:
+                              </strong>
+                            </h5>
+                            <span class="text-success">
                               0 puntos a descontar
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Lugar:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Lugar:
+                              </strong>
+                            </h5>
+                            <span>
                               Bartolomé Mitre 900
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Estado del acta:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Estado del acta:
+                              </strong>
+                            </h5>
+                            <span>
                               Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
                               65 de 14:00 hs. a 19:30 hs.
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Legajo:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Legajo:
+                              </strong>
+                            </h5>
+                            <span>
                               537405-000/18
-                            </p>
+                            </span>
                           </li>
-                          <li>
-                            <p class="">
-                              <strong>Controlador:</strong>
+                          <li class="l-height">
+                            <h5 class="m-0 mr-1 l-height">
+                              <strong>
+                                Controlador:
+                              </strong>
+                            </h5>
+                            <span>
                               4
-                            </p>
+                            </span>
                           </li>
                         </ul>
-                        <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noreferrer">
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" target="_blank" rel="noreferrer">
                           Descargar foto
                         </a>
                       </div>
