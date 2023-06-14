@@ -72,15 +72,18 @@
   list-style: none;
 }
 .accordion.accordion-form .card .card-body ul li {
-  display: flex;
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
-.accordion.accordion-form .card .card-body ul li p {
+.accordion.accordion-form .card .card-body ul li h5 {
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
   margin: 0;
-  line-height: 1.375rem;
 }
-.accordion.accordion-form .card .card-body ul li p strong {
-  color: #38485c;
+.accordion.accordion-form .card .card-body ul li span {
+  vertical-align: middle;
+  line-height: 1.2;
 }
 
 .accordion.accordion-form .card .card-link.collapsed .custom-checkbox:has(.custom-control-input:checked) + .d-block .collapse-title {
