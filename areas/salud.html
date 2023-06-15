@@ -20,14 +20,14 @@
   <style>
     .card-deck.card-column .card,
     .card-deck.card-column .group-access {
-      max-width: calc((100% / 4) - 30px);
+      max-width: calc((100% / 4) - 30px) !important;
     }
 
     @media (max-width: 992px) {
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 3) - 30px);
+        max-width: calc((100% / 3) - 30px) !important;
       }
     }
 
@@ -35,7 +35,7 @@
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px) !important;
       }
     }
 
@@ -43,54 +43,54 @@
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-3.card-column .card,
     .card-deck.max-cards-3.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px) !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-3.card-column .card,
       .card-deck.max-cards-3.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-2.card-column .card,
     .card-deck.max-cards-2.card-column .group-access {
-      max-width: calc((100% / 2) - 30px);
+      max-width: calc((100% / 2) - 30px) !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-2.card-column .card,
       .card-deck.max-cards-2.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-1.card-column .card,
     .card-deck.max-cards-1.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px) !important;
     }
 
     .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-      margin-top: 0px;
+      margin-top: 0px !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px) !important;
       }
 
       .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-        margin-top: 30px;
+        margin-top: 30px !important;
       }
     }
 
@@ -98,51 +98,51 @@
 
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card .card-body {
-      word-break: break-word;
+      word-break: break-word !important;
     }
 
     .card .card-body .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
 
       @media screen and (max-width: 592px) {
-        width: 100%;
+        width: 100% !important;
       }
     }
 
     a.list-group-item {
-      padding: 1.5rem;
-      display: flex;
+      padding: 1.5rem !important;
+      display: flex !important;
     }
 
     a.list-group-item i,
     a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
+      font-size: 1.25rem !important;
+      align-self: center !important;
+      margin-right: 0.75rem !important;
+      vertical-align: middle !important;
     }
 
     a.list-group-item .access-content {
-      width: 100%;
+      width: 100% !important;
     }
 
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem !important;
 
       @media screen and (min-width: 752px) {
-        width: 340px;
+        width: 340px !important;
       }
     }
 
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-        margin-top: 30px;
+        margin-top: 30px !important;
       }
     }
   </style>
@@ -242,7 +242,7 @@
           </div>
         </div>
       </header>
-
+      <!-- inicio: tarjetas / atajos -->
       <div class="container mb-5">
         <div class="card-deck max-cards-3 card-column mb-5">
           <div class="card card-simple">
@@ -311,7 +311,8 @@
           </div>
         </div>
       </div>
-
+      <!-- fin: tarjetas / atajos -->
+      <!-- inicio: tarjetas / "Nuestros servicios" -->
       <div class="container pt-2 mb-5">
         <h2 class="my-4 ">Nuestros servicios</h2>
         <div class="card-deck max-cards-2 card-column">
@@ -336,7 +337,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Nuestros servicios" -->
+      <!-- inicio: tarjetas / "Servicios de Salud" -->
       <div class="container mb-5 pt-2">
         <h2 class="pt-4 mb-4">Servicios de Salud</h2>
         <div class="card-deck max-cards-2 card-column">
@@ -397,7 +399,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Servicios de Salud" -->
+      <!-- inicio: tarjetas / "Más información" -->
       <div class="container mb-5 pt-2">
         <h2 class="pt-4 mb-4">Más información</h2>
         <div class="card-deck max-cards-2 card-column">
@@ -461,7 +464,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Más información" -->
+      <!-- inicio: noticias -->
       <div class="container pt-2">
         <h2 class="my-4">Noticias</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -523,8 +527,9 @@
           </a>
         </div>
       </div>
+      <!-- fin: noticias -->
     </article>
-
+    <!-- inicio institucional -->
     <section class="bg-light py-5">
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
@@ -594,6 +599,7 @@
         </div>
       </div>
     </section>
+    <!-- fin: institucional -->
   </main>
 
   <footer class="main-footer">

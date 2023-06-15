@@ -22,14 +22,14 @@
   <style>
     .card-deck.card-column .card,
     .card-deck.card-column .group-access {
-      max-width: calc((100% / 4) - 30px);
+      max-width: calc((100% / 4) - 30px) !important;
     }
 
     @media (max-width: 992px) {
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 3) - 30px);
+        max-width: calc((100% / 3) - 30px)  !important;
       }
     }
 
@@ -37,7 +37,7 @@
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px)  !important;
       }
     }
 
@@ -45,54 +45,54 @@
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card-deck.max-cards-3.card-column .card,
     .card-deck.max-cards-3.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px)  !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-3.card-column .card,
       .card-deck.max-cards-3.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card-deck.max-cards-2.card-column .card,
     .card-deck.max-cards-2.card-column .group-access {
-      max-width: calc((100% / 2) - 30px);
+      max-width: calc((100% / 2) - 30px)  !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-2.card-column .card,
       .card-deck.max-cards-2.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card-deck.max-cards-1.card-column .card,
     .card-deck.max-cards-1.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px)  !important;
     }
 
     .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-      margin-top: 0px;
+      margin-top: 0px  !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px)  !important;
       }
 
       .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-        margin-top: 30px;
+        margin-top: 30px  !important;
       }
     }
 
@@ -100,73 +100,73 @@
 
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card .card-body {
-      word-break: break-word;
+      word-break: break-word  !important;
     }
 
     .card.panel-horizontal .card-body .card-title {
-      margin: 0 0 0.8125rem;
+      margin: 0 0 0.8125rem  !important;
 
       @media screen and (max-width: 976px) {
-        margin: 2rem 0 0.8125rem;
+        margin: 2rem 0 0.8125rem  !important;
       }
     }
 
     .card.panel-horizontal {
-      display: flex;
-      align-items: center;
+      display: flex  !important;
+      align-items: center  !important;
     }
 
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700  !important;
+      padding: 0.75rem 1.25rem  !important;
 
       @media screen and (max-width: 592px) {
-        width: 100%;
+        width: 100%  !important;
       }
     }
 
     .card .card-body .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700  !important;
+      padding: 0.75rem 1.25rem  !important;
 
       @media screen and (max-width: 592px) {
-        width: 100%;
+        width: 100%  !important;
       }
     }
 
     a.list-group-item {
-      padding: 1.5rem;
-      display: flex;
+      padding: 1.5rem  !important;
+      display: flex  !important;
     }
 
     a.list-group-item i,
     a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
+      font-size: 1.25rem  !important;
+      align-self: center  !important;
+      margin-right: 0.75rem  !important;
+      vertical-align: middle  !important;
     }
 
     a.list-group-item .access-content {
-      width: 100%;
+      width: 100%  !important;
     }
 
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem  !important;
 
       @media screen and (min-width: 752px) {
-        width: 340px;
+        width: 340px  !important;
       }
     }
 
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-        margin-top: 30px;
+        margin-top: 30px  !important;
       }
     }
   </style>
@@ -318,7 +318,7 @@
           </div>
         </div>
       </header>
-
+      <!-- inicio: tarjetas / atajos -->
       <div class="container mb-5">
         <div class="card-deck max-cards-3 card-column mb-5">
           <div class="card card-simple">
@@ -359,7 +359,8 @@
           </div>
         </div>
       </div>
-
+      <!-- fin: tarjetas / atajos -->
+      <!-- inicio: panel -->
       <div class="container py-5">
         <div class="card card-simple panel-horizontal">
           <img src="../assets/educacion/panel.png" class="card-img" alt="descripción alternativa" />
@@ -374,7 +375,8 @@
           </div>
         </div>
       </div>
-
+      <!-- fin: panel -->
+      <!-- inicio: tarjetas / "Conocé nuestros programas" -->
       <div class="container pt-2 mb-5">
         <h2 class="my-4 ">Conocé nuestros programas</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -437,7 +439,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Conocé nuestros programas" -->
+      <!-- inicio: tarjetas / "Lo más consultado" -->
       <div class="container mb-4 pb-2 pt-2">
         <h2 class="pt-4 mb-4">Lo más consultado</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -501,7 +504,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Lo más consultado" -->
+      <!-- inicio: tarjetas / "Destacadas" -->
       <div class="container mb-4 pb-2 pt-2">
         <h2 class="pt-4 mb-4">Destacadas</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -574,7 +578,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Destacadas" -->
+      <!-- inicio: tarjetas / "Conocé más" -->
       <div class="container mb-4 pb-2 pt-2">
         <h2 class="pt-4 mb-4">Conocé más</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -652,7 +657,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Conocé más" -->
+      <!-- inicio: noticias -->
       <div class="container pt-4 mt-2">
         <h2 class="mb-4">Noticias</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -715,7 +721,8 @@
           </a>
         </div>
       </div>
-      
+      <!-- fin: noticias -->
+      <!-- inicio: "Mapa de acceso al Ministerio de Educación" -->
       <div class="container mb-5 pt-2">
         <h2 class="pt-4 mb-2">Mapa de acceso al Ministerio de Educación</h2>
         <div class="col-8 p-0">
@@ -730,8 +737,9 @@
           </div>
         </div>
       </div>
+      <!-- fin: "Mapa de acceso al Ministerio de Educación" -->
     </article>
-
+    <!-- inicio institucional -->
     <section class="bg-light py-5">
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
@@ -806,6 +814,7 @@
         </div>
       </div>
     </section>
+    <!-- fin: institucional -->
   </main>
 
   <footer class="main-footer">
