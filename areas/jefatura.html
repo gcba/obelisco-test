@@ -56,6 +56,21 @@
     object-fit: cover;
   }
   /*fin:panel*/
+  /*accesos*/
+  a.list-group-item {
+    padding: 1.5rem;
+    display: flex;
+  }
+  a.list-group-item i, a.list-group-item .material-icons-round {
+      font-size: 1.25rem;
+      align-self: center;
+      margin-right: 0.75rem;
+      vertical-align: middle;
+  }
+  a.list-group-item .access-content {
+      width: 100%;
+  } 
+  /*fin:accesos*/
   </style>
 </head>
 
@@ -200,45 +215,45 @@
           <div class="card card-simple">
             <div class="card-body">
               <i class='bx bxs-rocket card-icon'></i>
-              <h4 class="card-title"><a href="#">Inversiones</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/tramites">Trámites</a></h4>
               <p class="card-text">
-                Oportunidades para hacer crecer tu negocio
+                Consultá tu trámite
               </p>
             </div>
           </div>
           <div class="card card-simple">
             <div class="card-body">
               <i class='bx bxs-business card-icon'></i>
-              <h4 class="card-title"><a href="#">Exportaciones y Cooperación</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/jefaturadegabinete/atencion-ciudadana-y-gestion-comunal">Atención y Gestión Ciudadana</a></h4>
               <p class="card-text">
-                Tu proyeco
+                Escuchar al vecino, interpretar sus demandas y necesidades
               </p>
             </div>
           </div>
           <div class="card card-simple">
             <div class="card-body">
               <i class='bx bxs-briefcase card-icon'></i>
-              <h4 class="card-title"><a href="#">Trabajo</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/jefaturadegabinete/movilidad">Tránsito y Transporte</a></h4>
               <p class="card-text">
-                Información sobre medidas, testeos y vacunación
+                Plan de Movilidad Sustentable
               </p>
             </div>
           </div>
           <div class="card card-simple">
             <div class="card-body">
               <i class='bx bxs-rocket card-icon'></i>
-              <h4 class="card-title"><a href="#">Estrategia Productiva</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/innovacion">Innovación Digital</a></h4>
               <p class="card-text">
-                Participá de talleres en todos los barrios.
+                Soluciones tecnológicas y gobierno digital.
               </p>
             </div>
           </div>
           <div class="card card-simple">
             <div class="card-body">
               <i class='bx bxs-business card-icon'></i>
-              <h4 class="card-title"><a href="#">Financiamiento y Beneficios Impositivos</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/jefaturadegabinete/organogarante">Órgano Garante</a></h4>
               <p class="card-text">
-                Solicitá subsidios y apoyo para tus proyectos.
+                Acceso a la información pública para la ciudadanía
               </p>
             </div>
           </div>
@@ -248,17 +263,22 @@
       <!-- inicio: panel -->
       <div class="container pt-5 pb-4 mt-4 mb-5">
         <div class="card card-simple panel-horizontal">
-          <img src="../assets/galeria/galeria-2.png" class="card-img" alt="descripción alternativa" />
+          <img
+            src="../assets/galeria/galeria-2.png"
+            alt="descripción alternativa"
+            class="card-img"
+          />
           <div class="card-body">
             <h2 class="card-title">Instituto Superior de la Carrera</h2>
             <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nostrum
-              quo animi dignissimos omnis dicta quia placeat, nesciunt quasi hic autem
-              iure eum necessitatibus ea expedita quas. Rem, aspernatur repudiandae.
+              Descripción de hasta 3 líneas para mantener los estándares de lectura en
+              los componentes de Obelisco.
             </p>
-            <button type="button" class="btn btn-lg btn-primary card-link">
-              Conocé más
-            </button>
+            <div class="panel-footer">
+              <a href="https://isc.buenosaires.gob.ar/" class="btn btn-lg btn-primary card-link">
+                Conocé más
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -341,23 +361,38 @@
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">
-                Teléfono: 5091-7863 <br> Email: email@buenosaires.gob.ar
+                Teléfono: XXXX-XXXX <br> Email: email@buenosaires.gob.ar
               </p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <h2 class="mb-4">Encabezado</h2>
-            <div class="list-group mb-4">             
-              <a href="#" class="list-group-item">
-                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-facebook-circle"></i>Facebook</span>
+            <h2 class="mb-4">Seguinos en</h2>
+            <div class="list-group">
+              <a href="https://www.facebook.com/FelipeMiguelBA/" class="list-group-item item-sm">
+                <i class="bx bx-sm align-middle bxl-facebook-circle"></i>
+                <div class="access-content">
+                  <span class="access-title">Facebook</span>
+                </div>
               </a>
-              <a href="#" class="list-group-item">
-                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-instagram"></i>Instagram</span>
+              <a href="https://www.instagram.com/felipemiguelba/" class="list-group-item item-sm">
+                <i class="bx bx-sm bxl-instagram"></i>
+                <div class="access-content">
+                  <span class="access-title">Instagram</span>
+                </div>
               </a>
-              <a href="#" class="list-group-item">
-                <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-twitter"></i>Twitter</span>
+              <a href="https://twitter.com/FelipeMiguelBA/" class="list-group-item item-sm">
+                <i class="bx bx-sm bxl-twitter"></i>
+                <div class="access-content">
+                  <span class="access-title">Twitter</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/felipe-miguel-252842138/" class="list-group-item item-sm">
+                <i class="bx bx-sm bxl-linkedin"></i>
+                <div class="access-content">
+                  <span class="access-title">Linkedin</span>
+                </div>
               </a>
             </div>
           </div>
@@ -365,13 +400,12 @@
             <div class="card">
               <div class="card-body">
                 <h4>Ubicación</h4>
-                <p>Dirección: Martin García 346, 2° piso</p>
-                <img 
-                  class="w-100 mb-3"
-                  src="../assets/noticias/maps.png" 
-                  alt="" 
-                  />
-                <a href="#" class="btn btn-primary btn-lg mt-3">Cómo llego</a>
+                <p>Dirección: (Dirección del ministerio)</p>
+                <!-- <img class="w-100 mb-3" src="../assets/noticias/maps.png"  alt="" /> -->
+                <div class="">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.561138616702!2d-58.40988132450125!3d-34.640529072941064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0de7f4d675%3A0xfc2ef5324296a64!2sUspallata%203160%2C%20C1437JCL%20CABA!5e0!3m2!1ses!2sar!4v1686841925764!5m2!1ses!2sar" width="450" height="300" style="border:0; border-radius: 0.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>                  
+                <a href="https://goo.gl/maps/isivrvzgkRdUqUzS7" class="btn btn-primary btn-lg mt-3">Cómo llego</a>
               </div>
             </div>
           </div>
