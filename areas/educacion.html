@@ -18,107 +18,116 @@
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- inicio: material icons round -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <style>
+  <!-- fin: material icons round -->
+
+  <!-- inicio: estilos -->
+  <style type="text/css">
+    /* Card-Colum */
     .card-deck.card-column .card,
     .card-deck.card-column .group-access {
-      max-width: calc((100% / 4) - 30px) !important;
+      max-width: calc(calc(100% / 4) - 30px) !important;
     }
 
     @media (max-width: 992px) {
-
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 3) - 30px)  !important;
+        max-width: calc(calc(100% / 3) - 30px) !important;
       }
     }
 
     @media (max-width: 768px) {
-
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 2) - 30px)  !important;
+        max-width: calc(calc(100% / 2) - 30px) !important;
       }
     }
 
     @media (max-width: 576px) {
-
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: 100%  !important;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-3.card-column .card,
     .card-deck.max-cards-3.card-column .group-access {
-      max-width: calc((100% / 3) - 30px)  !important;
+      max-width: calc(calc(100% / 3) - 30px) !important;
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-3.card-column .card,
       .card-deck.max-cards-3.card-column .group-access {
-        max-width: 100%  !important;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-2.card-column .card,
     .card-deck.max-cards-2.card-column .group-access {
-      max-width: calc((100% / 2) - 30px)  !important;
+      max-width: calc(calc(100% / 2) - 30px) !important;
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-2.card-column .card,
       .card-deck.max-cards-2.card-column .group-access {
-        max-width: 100%  !important;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-1.card-column .card,
     .card-deck.max-cards-1.card-column .group-access {
-      max-width: calc((100% / 3) - 30px)  !important;
+      max-width: calc(calc(100% / 3) - 30px) !important;
     }
 
     .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-      margin-top: 0px  !important;
+      margin-top: 0px !important;
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: calc((100% / 2) - 30px)  !important;
+        max-width: calc(calc(100% / 2) - 30px) !important;
       }
 
       .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-        margin-top: 30px  !important;
+        margin-top: 30px !important;
       }
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: 100%  !important;
+        max-width: 100% !important;
+      }
+    }
+    
+    @media (max-width: 592px) {
+      .card-deck .card:nth-of-type(2) {
+        margin-top: 30px !important;
       }
     }
 
+
+    /* Tarjetas */
     .card .card-body {
-      word-break: break-word  !important;
+      word-break: break-word !important;
     }
 
+    /* panel */
     .card.panel-horizontal .card-body .card-title {
-      margin: 0 0 0.8125rem  !important;
+      margin: 0 0 0.8125rem !important;
+    }
 
-      @media screen and (max-width: 976px) {
-        margin: 2rem 0 0.8125rem  !important;
+    @media screen and (max-width: 976px) {
+      .card.panel-horizontal .card-body .card-title {
+        margin: 2rem 0 0.8125rem !important;
       }
     }
 
     .card.panel-horizontal {
-      display: flex  !important;
-      align-items: center  !important;
+      display: flex !important;
+      align-items: center !important;
     }
 
     .card.panel-horizontal .card-body .panel-footer {
@@ -126,64 +135,47 @@
     }
 
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
-      font-weight: 700  !important;
-      padding: 0.75rem 1.25rem  !important;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+    }
 
-      @media screen and (max-width: 592px) {
-        width: 100%  !important;
+    @media screen and (max-width: 592px) {
+      .card.panel-horizontal .card-body .panel-footer .btn-lg {
+        width: 100% !important;
       }
     }
 
+    /* Contenedor con mapa */
     .card .card-body .btn-lg {
-      font-weight: 700  !important;
-      padding: 0.75rem 1.25rem  !important;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+    }
 
-      @media screen and (max-width: 592px) {
-        width: 100%  !important;
+    @media screen and (max-width: 592px) {
+      .card .card-body .btn-lg {
+        width: 100% !important;
       }
     }
 
-    a.list-group-item {
-      padding: 1.5rem  !important;
-      display: flex  !important;
+    /* accesos */
+    .list-group a.list-group-item {
+      margin-bottom: 1rem !important;
     }
 
-    a.list-group-item i,
-    a.list-group-item .material-icons-round {
-      font-size: 1.25rem  !important;
-      align-self: center  !important;
-      margin-right: 0.75rem  !important;
-      vertical-align: middle  !important;
-    }
-
-    a.list-group-item .access-content {
-      width: 100%  !important;
-    }
-
-    .dropdown .dropdown-menu {
-      min-width: 15rem  !important;
-
-      @media screen and (min-width: 752px) {
-        width: 340px  !important;
-      }
-    }
-
-    @media (max-width: 592px) {
-      .card-deck .card:nth-of-type(2) {
-        margin-top: 30px  !important;
-      }
-    }
-
+    /* panel chico */
     .card.panel-sm-horizontal {
       flex-direction: row !important;
     }
+
     .card.panel-sm-horizontal img+.card-body {
       margin-left: 1.5rem !important;
     }
+
     .card.panel-sm-horizontal .card-body .card-title {
       font-size: 1.3125rem !important;
       font-weight: 600 !important;
     }
+
     .card.panel-sm-horizontal .card-body .card-text {
       margin: 0.25rem 0 0 !important;
     }
@@ -762,11 +754,8 @@
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 mb-3 pb-3 card-column">
           <div class="card card-simple panel-sm-horizontal">
-            <img src="../assets/educacion/institucional.png" 
-            class="rounded-lg"
-            width="104"
-            height="104"
-            alt="descripción alternativa">
+            <img src="../assets/educacion/institucional.png" class="rounded-lg" width="104" height="104"
+              alt="descripción alternativa">
             <div class="card-body">
               <h4 class="card-title">Soledad Acuña</h4>
               <p class="card-text">
@@ -798,7 +787,7 @@
                   <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>Instagram
                 </span>
               </a>
-              <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ"  class="list-group-item">
+              <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ" class="list-group-item">
                 <span class="access-title">
                   <i class="bx bx-sm align-middle mr-2 bxl-youtube"></i>Youtube
                 </span>
