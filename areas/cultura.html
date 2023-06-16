@@ -16,100 +16,96 @@
   </link>
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- inicio: material icons round -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- fin: material icons round -->
+
+  <!-- inicio: estilos -->
   <style type="text/css">
     /* dropdown */
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem !important;
       @media screen and (min-width: 752px) {
-          width: 340px;
+          width: 340px !important;
       }   
     }
     /* panel */
     .card.panel-horizontal {
-      display: flex;
-      align-items: center;
+      display: flex !important;
+      align-items: center !important;
       @media screen and (max-width: 976px) {
-        width: 100%;
+        width: 100% !important;
       }
     }
     .card.panel-horizontal .card-body .card-title {
-      margin: 0 0 0.8125rem;
+      margin: 0 0 0.8125rem !important;
       @media screen and (max-width: 976px) {
-          margin: 2rem 0 0.8125rem;
+          margin: 2rem 0 0.8125rem !important;
       } 
     }
     .card.panel-horizontal .card-body .card-text {
-      margin: 0; 
+      margin: 0 !important; 
     }
     .card.panel-horizontal .card-img {
       @media screen and (max-width: 976px) {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
       }
     }
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
-      margin-right: 0;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+      margin-right: 0 !important;
       @media screen and (max-width: 592px) {
-          width: 100%;
+          width: 100% !important;
       } 
     }
     /* card-column */
     .card-deck.max-cards-3.card-column .card {
-      max-width: calc(calc(100% / 3) - 30px);
+      max-width: calc(calc(100% / 3) - 30px) !important;
 
       @media screen and (max-width: 752px) {
-          max-width: calc(calc(100% / 2) - 30px);
+          max-width: calc(calc(100% / 2) - 30px) !important;
       }
 
       @media screen and (max-width: 592px) {
-          max-width: 100%;
+        max-width: 100% !important;
       } 
     }
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-          margin-top: 30px;
+          margin-top: 30px !important;
       }
     }
     /* accesos */
-    a.list-group-item {
-      padding: 1.5rem;
-      display: flex;
-    }
-    a.list-group-item i, a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
-    }
-    a.list-group-item .access-content {
-      width: 100%;
+    .list-group a.list-group-item {
+      margin-bottom: 1rem !important;
     }
     /* contenedor con mapa */
     .card .card-body .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
       @media screen and (max-width: 592px) {
-          width: 100%;
+          width: 100% !important;
       } 
     }
     /* panel chico horizontal */
     .card.panel-sm-horizontal {
-      flex-direction: row;
+      flex-direction: row !important;
     }
     .card.panel-sm-horizontal img+.card-body {
-      margin-left: 1.5rem;
+      margin-left: 1.5rem !important;
     }
     .card.panel-sm-horizontal .card-body .card-title {
-      font-size: 1.3125rem;
-      font-weight: 600;
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
     }
     .card.panel-sm-horizontal .card-body .card-text {
-      margin: 0.25rem 0 0;
+      margin: 0.25rem 0 0 !important;
     }
   </style>
+  <!-- fin: estilos -->
 </head>
 
 <body>
@@ -295,7 +291,7 @@
       <div class="container">
         <div class="mb-5 py-3">
           <div class="card card-simple panel-horizontal my-3">
-            <img src="../assets/panel/cultura-panel.png" class="card-img" alt="Vivamos Cultura" />
+            <img src="../assets/cultura/cultura-panel.png" class="card-img" alt="Vivamos Cultura" />
             <div class="card-body">
               <h2 class="card-title">Vivamos Cultura</h2>
               <p class="card-text">
@@ -318,7 +314,7 @@
           <h2 class="mb-4">Guía cultural</h2>
           <div class="card-deck max-cards-3 mb-5">
             <a class="card" href="https://disfrutemosba.buenosaires.gob.ar/">
-              <img src="../assets/cards/cultura-1.png" class="card-img-top" alt="Disfrutemos BA" />
+              <img src="../assets/cultura/cultura-1.png" class="card-img-top" alt="Disfrutemos BA" />
               <div class="card-body">
                 <h4 class="card-title">Disfrutemos BA</h4>
                 <p class="card-text">
@@ -327,7 +323,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/promocioncultural">
-              <img src="../assets/cards/cultura-2.png" class="card-img-top" alt="Promoción del libro, las Bibliotecas y la Cultura" />
+              <img src="../assets/cultura/cultura-2.png" class="card-img-top" alt="Promoción del libro, las Bibliotecas y la Cultura" />
               <div class="card-body">
                 <h4 class="card-title">Promoción del libro, las Bibliotecas y la Cultura</h4>
                 <p class="card-text">
@@ -336,7 +332,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/datacultura">
-              <img src="../assets/cards/cultura-3.png" class="card-img-top" alt="Data Cultura" />
+              <img src="../assets/cultura/cultura-3.png" class="card-img-top" alt="Data Cultura" />
               <div class="card-body">
                 <h4 class="card-title">Data Cultura</h4>
                 <p class="card-text">
@@ -346,7 +342,7 @@
             </a>
 
             <a class="card" href="https://buenosaires.gob.ar/cultura/patrimonio-de-la-ciudad">
-              <img src="../assets/cards/cultura-4.png" class="card-img-top" alt="Patrimonio" />
+              <img src="../assets/cultura/cultura-4.png" class="card-img-top" alt="Patrimonio" />
               <div class="card-body">
                 <h4 class="card-title">Patrimonio</h4>
                 <p class="card-text">
@@ -355,7 +351,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/festivalesba">
-              <img src="../assets/cards/cultura-5.png" class="card-img-top" alt="Festivales" />
+              <img src="../assets/cultura/cultura-5.png" class="card-img-top" alt="Festivales" />
               <div class="card-body">
                 <h4 class="card-title">Festivales</h4>
                 <p class="card-text">
@@ -364,7 +360,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/baaudiovisual">
-              <img src="../assets/cards/cultura-6.png" class="card-img-top" alt="BA Audiovisual" />
+              <img src="../assets/cultura/cultura-6.png" class="card-img-top" alt="BA Audiovisual" />
               <div class="card-body">
                 <h4 class="card-title">BA Audiovisual</h4>
                 <p class="card-text">
@@ -383,7 +379,7 @@
           <h2 class="mb-4">Espacios Culturales</h2>
           <div class="card-deck card-column max-cards-3 mb-5">
             <a class="card" href="https://buenosaires.gob.ar/cultura/museos">
-              <img src="../assets/cards/cultura-7.png" class="card-img-top" alt="Museos" />
+              <img src="../assets/cultura/cultura-7.png" class="card-img-top" alt="Museos" />
               <div class="card-body">
                 <h4 class="card-title">Museos</h4>
                 <p class="card-text">
@@ -392,7 +388,7 @@
               </div>
             </a>
             <a class="card" href="http://www.centroculturalrecoleta.org/">
-              <img src="../assets/cards/cultura-8.png" class="card-img-top" alt="Centro Cultural Recoleta" />
+              <img src="../assets/cultura/cultura-8.png" class="card-img-top" alt="Centro Cultural Recoleta" />
               <div class="card-body">
                 <h4 class="card-title">Centro Cultural Recoleta</h4>
                 <p class="card-text">
@@ -401,7 +397,7 @@
               </div>
             </a>
             <a class="card" href="https://elculturalsanmartin.ar/">
-              <img src="../assets/cards/cultura-9.png" class="card-img-top" alt="El Cultural San Martín" />
+              <img src="../assets/cultura/cultura-9.png" class="card-img-top" alt="El Cultural San Martín" />
               <div class="card-body">
                 <h4 class="card-title">El Cultural San Martín</h4>
                 <p class="card-text">
@@ -410,7 +406,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/usina-del-arte">
-              <img src="../assets/cards/cultura-10.png" class="card-img-top" alt="Usina del Arte" />
+              <img src="../assets/cultura/cultura-10.png" class="card-img-top" alt="Usina del Arte" />
               <div class="card-body">
                 <h4 class="card-title">Usina del Arte</h4>
                 <p class="card-text">
@@ -419,7 +415,7 @@
               </div>
             </a>
             <a class="card" href="http://www.teatrocolon.org.ar/">
-              <img src="../assets/cards/cultura-11.png" class="card-img-top" alt="Teatro Colón" />
+              <img src="../assets/cultura/cultura-11.png" class="card-img-top" alt="Teatro Colón" />
               <div class="card-body">
                 <h4 class="card-title">Teatro Colón</h4>
                 <p class="card-text">
@@ -428,7 +424,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/estudiourbano">
-              <img src="../assets/cards/cultura-12.png" class="card-img-top" alt="Estudio Urbano" />
+              <img src="../assets/cultura/cultura-12.png" class="card-img-top" alt="Estudio Urbano" />
               <div class="card-body">
                 <h4 class="card-title">Estudio Urbano</h4>
                 <p class="card-text">
@@ -437,7 +433,7 @@
               </div>
             </a>
             <a class="card" href="https://complejoteatral.gob.ar/">
-              <img src="../assets/cards/cultura-13.png" class="card-img-top" alt="Completo Teatral" />
+              <img src="../assets/cultura/cultura-13.png" class="card-img-top" alt="Completo Teatral" />
               <div class="card-body">
                 <h4 class="card-title">Complejo Teatral</h4>
                 <p class="card-text">
@@ -446,7 +442,7 @@
               </div>
             </a>
             <a class="card" href="http://www.cc25.org/">
-              <img src="../assets/cards/cultura-14.png" class="card-img-top" alt="Centro Cultural 25 de mayo" />
+              <img src="../assets/cultura/cultura-14.png" class="card-img-top" alt="Centro Cultural 25 de mayo" />
               <div class="card-body">
                 <h4 class="card-title">Centro Cultural 25 de mayo</h4>
                 <p class="card-text">
@@ -455,7 +451,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/musica">
-              <img src="../assets/cards/cultura-15.png" class="card-img-top" alt="Música" />
+              <img src="../assets/cultura/cultura-15.png" class="card-img-top" alt="Música" />
               <div class="card-body">
                 <h4 class="card-title">Música</h4>
                 <p class="card-text">
@@ -464,7 +460,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/casco-historico">
-              <img src="../assets/cards/cultura-16.png" class="card-img-top" alt="Casco histórico" />
+              <img src="../assets/cultura/cultura-16.png" class="card-img-top" alt="Casco histórico" />
               <div class="card-body">
                 <h4 class="card-title">Casco histórico</h4>
                 <p class="card-text">
@@ -473,7 +469,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/ensenanza-artistica">
-              <img src="../assets/cards/cultura-17.png" class="card-img-top" alt="Enseñanza Artística" />
+              <img src="../assets/cultura/cultura-17.png" class="card-img-top" alt="Enseñanza Artística" />
               <div class="card-body">
                 <h4 class="card-title">Enseñanza Artística</h4>
                 <p class="card-text">
@@ -482,7 +478,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/casa-de-la-cultura">
-              <img src="../assets/cards/cultura-18.png" class="card-img-top" alt="Espacio Casa de la Cultura" />
+              <img src="../assets/cultura/cultura-18.png" class="card-img-top" alt="Espacio Casa de la Cultura" />
               <div class="card-body">
                 <h4 class="card-title">Espacio Casa de la Cultura</h4>
                 <p class="card-text">
@@ -491,7 +487,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/cultura/artes-visuales">
-              <img src="../assets/cards/cultura-19.png" class="card-img-top" alt="Artes visuales" />
+              <img src="../assets/cultura/cultura-19.png" class="card-img-top" alt="Artes visuales" />
               <div class="card-body">
                 <h4 class="card-title">Artes visuales</h4>
                 <p class="card-text">
@@ -509,7 +505,7 @@
         <h2 class="mb-4">Noticias</h2>
         <div class="card-deck max-cards-3 mb-4 pb-2">
           <a class="card" href="#">
-            <img src="../assets/noticias/noticias-cultura-1.png" class="card-img-top" alt="Todas las propuestas para disfrutar el fin de semana"/>
+            <img src="../assets/cultura/noticias-cultura-1.png" class="card-img-top" alt="Todas las propuestas para disfrutar el fin de semana"/>
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-info">Cultura</span>
@@ -524,7 +520,7 @@
             </div>
           </a>
           <a class="card d-none d-sm-block" href="#">
-            <img src="../assets/noticias/noticias-cultura-2.png" class="card-img-top" alt="Actividades para disfrutar los últimos días de la Feria del Libro" />
+            <img src="../assets/cultura/noticias-cultura-2.png" class="card-img-top" alt="Actividades para disfrutar los últimos días de la Feria del Libro" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-danger">Cultura</span>
@@ -540,7 +536,7 @@
             </div>
           </a>
           <a class="card d-none d-lg-block" href="#">
-            <img src="../assets/noticias/noticias-cultura-3.png" class="card-img-top" alt="Últimos días para disfrutar del BAFICI" />
+            <img src="../assets/cultura/noticias-cultura-3.png" class="card-img-top" alt="Últimos días para disfrutar del BAFICI" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-danger">Cultura</span>
@@ -564,6 +560,7 @@
       </div>
       <!-- fin: noticias -->
     </article>
+
     <!-- inicio institucional -->
     <section class="bg-light py-5">
       <div class="container mb-3">
@@ -571,7 +568,7 @@
         <div class="card-deck max-cards-2 mb-5">
           <div class="card card-simple panel-sm-horizontal">
             <img
-              src="../assets/institucional/enriqueAvogadro.png"
+              src="../assets/cultura/enriqueAvogadro.png"
               alt="Enrique Avogadro"
               class="rounded-lg"
               width="104"
@@ -596,22 +593,22 @@
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
               <a href="https://www.facebook.com/BACultura/" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>
+                  Facebook
+                </span>
               </a>
               <a href="https://www.instagram.com/bacultura/?hl=es-la" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>
+                  Instagram
+                </span>
               </a>
               <a href="https://twitter.com/datacultura" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>
+                  Twitter
+                </span>
               </a>
             </div>
           </div>

@@ -16,109 +16,105 @@
   </link>
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- inicio: material icons round -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- fin: material icons round -->
+
+  <!-- inicio: estilos -->
   <style type="text/css">
     /* dropdown */
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem !important;
       @media screen and (min-width: 752px) {
-          width: 340px;
+        width: 340px !important;
       }   
     }
     /* panel */
     .card.panel-horizontal {
-      display: flex;
-      align-items: center;
+      display: flex !important;
+      align-items: center !important;
       @media screen and (max-width: 976px) {
-        width: 100%;
+        width: 100% !important;
       }
     }
     .card.panel-horizontal .card-body .card-title {
-      margin: 0 0 0.8125rem;
+      margin: 0 0 0.8125rem !important;
       @media screen and (max-width: 976px) {
-          margin: 2rem 0 0.8125rem;
+        margin: 2rem 0 0.8125rem !important;
       } 
     }
     .card.panel-horizontal .card-body .card-text {
-      margin: 0; 
+      margin: 0 !important; 
     }
     .card.panel-horizontal .card-img {
       @media screen and (max-width: 976px) {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
       }
     }
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
-      margin-right: 0;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+      margin-right: 0 !important;
       @media screen and (max-width: 592px) {
-          width: 100%;
+        width: 100% !important;
       } 
     }
     /* card-column */
     .card-deck.card-column .card {
-      max-width: calc(calc(100% / 4) - 30px);
+      max-width: calc(calc(100% / 4) - 30px) !important;
       @media screen and (max-width: 976px) {
-          max-width: calc((100% / 3) - 30px);
+        max-width: calc((100% / 3) - 30px) !important;
       }
       
       @media screen and (max-width: 752px) {
-          max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px) !important;
       }
       
       @media screen and (max-width: 592px) {
-          max-width: 100%;
+        max-width: 100% !important;
       }
     }
     .card-deck.max-cards-2.card-column .card {
-      max-width: calc(calc(100% / 2) - 30px);
+      max-width: calc(calc(100% / 2) - 30px) !important;
       @media screen and (max-width: 592px) {
-          max-width: 100%;
+        max-width: 100% !important;
       }
     }
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-          margin-top: 30px;
+        margin-top: 30px !important;
       }
     }
     /* accesos */
-    a.list-group-item {
-      padding: 1.5rem;
-      display: flex;
-    }
-    a.list-group-item i, a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
-    }
-    a.list-group-item .access-content {
-      width: 100%;
+    .list-group a.list-group-item {
+      margin-bottom: 1rem !important;
     }
     /* contenedor con mapa */
     .card .card-body .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
       @media screen and (max-width: 592px) {
-          width: 100%;
+          width: 100% !important;
       } 
     }
      /* panel chico horizontal */
      .card.panel-sm-horizontal {
-      flex-direction: row;
+      flex-direction: row !important;
     }
     .card.panel-sm-horizontal img+.card-body {
-      margin-left: 1.5rem;
+      margin-left: 1.5rem !important;
     }
     .card.panel-sm-horizontal .card-body .card-title {
-      font-size: 1.3125rem;
-      font-weight: 600;
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
     }
     .card.panel-sm-horizontal .card-body .card-text {
-      margin: 0.25rem 0 0;
+      margin: 0.25rem 0 0 !important;
     }
   </style>
+  <!-- fin: estilos -->
 </head>
 
 <body>
@@ -128,7 +124,7 @@
         <img
           class="header-logo"
           src="../assets/header/logoBA.svg"
-          alt="Logo de la ciudad de buenos aires"
+          alt="Ciudad de Buenos Aires"
         />
       </a>
       <div class="navbar-search d-responsive ml-auto">
@@ -358,7 +354,7 @@
           <h2 class="mb-4 mt-3">Conocé nuestros programas</h2>
           <div class="card-deck max-cards-2 card-column mb-5">
             <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/plan-empleo-joven-una-iniciativa-para-las-empresas-de-la-ciudad">
-              <img src="../assets/cards/desarrollo-1.png" class="card-img-top" alt="Plan de Empleo Joven" />
+              <img src="../assets/desarrollo/desarrollo-1.png" class="card-img-top" alt="Plan de Empleo Joven" />
               <div class="card-body">
                 <h4 class="card-title">Plan de Empleo Joven</h4>
                 <p class="card-text">
@@ -367,7 +363,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/plan-de-transformacion-y-reconversion-del-microcentro-porteno">
-              <img src="../assets/cards/desarrollo-2.png" class="card-img-top" alt="Microcentro Porteño " />
+              <img src="../assets/desarrollo/desarrollo-2.png" class="card-img-top" alt="Microcentro Porteño " />
               <div class="card-body">
                 <h4 class="card-title">Microcentro Porteño </h4>
                 <p class="card-text">
@@ -376,7 +372,7 @@
               </div>
             </a>
             <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/gastronomia/mercado-argentino-de-productos-y-productores-agroalimentarios-mappa">
-              <img src="../assets/cards/desarrollo-3.png" class="card-img-top" alt="Gastronomía" />
+              <img src="../assets/desarrollo/desarrollo-3.png" class="card-img-top" alt="Gastronomía" />
               <div class="card-body">
                 <h4 class="card-title">Gastronomía</h4>
                 <p class="card-text">
@@ -386,7 +382,7 @@
             </a>
 
             <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/distrito-del-vino">
-              <img src="../assets/cards/desarrollo-4.png" class="card-img-top" alt="Distrito del vino" />
+              <img src="../assets/desarrollo/desarrollo-4.png" class="card-img-top" alt="Distrito del vino" />
               <div class="card-body">
                 <h4 class="card-title">Distrito del vino</h4>
                 <p class="card-text">
@@ -403,7 +399,7 @@
       <div class="container">
         <div class="mb-5 py-3">
           <div class="card card-simple panel-horizontal">
-            <img src="../assets/panel/desarrollo-panel.png" class="card-img" alt="Asistente PyME" />
+            <img src="../assets/desarrollo/desarrollo-panel.png" class="card-img" alt="Asistente PyME" />
             <div class="card-body">
               <h2 class="card-title">Asistente PyME</h2>
               <p class="card-text">
@@ -430,7 +426,7 @@
         <h2 class="mb-4">Noticias</h2>
         <div class="card-deck max-cards-3 mb-4">
           <a class="card" href="#">
-            <img src="../assets/noticias/noticias-desarrollo-1.png" class="card-img-top" alt="Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad"/>
+            <img src="../assets/desarrollo/noticias-desarrollo-1.png" class="card-img-top" alt="Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad"/>
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-info">Actividades</span>
@@ -445,7 +441,7 @@
             </div>
           </a>
           <a class="card d-none d-sm-block" href="#">
-            <img src="../assets/noticias/noticias-desarrollo-2.png" class="card-img-top" alt="La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas" />
+            <img src="../assets/desarrollo/noticias-desarrollo-2.png" class="card-img-top" alt="La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-secondary">distrito del vino</span>
@@ -460,7 +456,7 @@
             </div>
           </a>
           <a class="card d-none d-lg-block" href="#">
-            <img src="../assets/noticias/noticias-desarrollo-3.png" class="card-img-top" alt="Acelera BA, el programa de capacitaciones para emprendedores" />
+            <img src="../assets/desarrollo/noticias-desarrollo-3.png" class="card-img-top" alt="Acelera BA, el programa de capacitaciones para emprendedores" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-secondary">Actividades</span>
@@ -482,6 +478,7 @@
         </div>
       </div>
       <!-- fin: noticias -->
+
       <!-- inicio alerta -->
       <div class="container">
         <div class="col-12 col-lg-8 pt-3 px-0">
@@ -503,7 +500,7 @@
         <div class="card-deck max-cards-2 mb-5">
           <div class="card card-simple panel-sm-horizontal">
             <img
-              src="../assets/institucional/jLGiusti.png"
+              src="../assets/desarrollo/jLGiusti.png"
               alt="José Luis Giusti"
               class="rounded-lg"
               width="104"
@@ -528,22 +525,22 @@
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
               <a href="https://www.facebook.com/DesarrolloEconomicoBA" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>
+                  Facebook
+                </span>
               </a>
               <a href="https://www.instagram.com/desarrolloeconomicoba/" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>
+                  Instagram
+                </span>
               </a>
               <a href="https://twitter.com/DesEconomicoBA" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>
+                  Twitter
+                </span>
               </a>
             </div>
           </div>
