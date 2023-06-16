@@ -20,122 +20,144 @@
   <style>
     .card-deck.card-column .card,
     .card-deck.card-column .group-access {
-      max-width: calc((100% / 4) - 30px);
+      max-width: calc((100% / 4) - 30px) !important;
     }
 
     @media (max-width: 992px) {
+
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 3) - 30px);
+        max-width: calc((100% / 3) - 30px) !important;
       }
     }
 
     @media (max-width: 768px) {
+
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px) !important;
       }
     }
 
     @media (max-width: 576px) {
+
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-3.card-column .card,
     .card-deck.max-cards-3.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px) !important;
     }
 
     @media (max-width: 576px) {
+
       .card-deck.max-cards-3.card-column .card,
       .card-deck.max-cards-3.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-2.card-column .card,
     .card-deck.max-cards-2.card-column .group-access {
-      max-width: calc((100% / 2) - 30px);
+      max-width: calc((100% / 2) - 30px) !important;
     }
 
     @media (max-width: 576px) {
+
       .card-deck.max-cards-2.card-column .card,
       .card-deck.max-cards-2.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card-deck.max-cards-1.card-column .card,
     .card-deck.max-cards-1.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px) !important;
     }
 
     .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-      margin-top: 0px;
+      margin-top: 0px !important;
     }
 
     @media (max-width: 576px) {
+
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px) !important;
       }
 
       .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-        margin-top: 30px;
+        margin-top: 30px !important;
       }
     }
 
     @media (max-width: 576px) {
+
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     .card .card-body {
-      word-break: break-word;
+      word-break: break-word !important;
     }
 
     .card .card-body .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
 
       @media screen and (max-width: 592px) {
-        width: 100%;
+        width: 100% !important;
       }
     }
 
     a.list-group-item {
-      padding: 1.5rem;
-      display: flex;
+      padding: 1.5rem !important;
+      display: flex !important;
     }
 
     a.list-group-item i,
     a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
+      font-size: 1.25rem !important;
+      align-self: center !important;
+      margin-right: 0.75rem !important;
+      vertical-align: middle !important;
     }
 
     a.list-group-item .access-content {
-      width: 100%;
+      width: 100% !important;
     }
 
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem !important;
+
       @media screen and (min-width: 752px) {
-        width: 340px;
+        width: 340px !important;
       }
     }
 
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-        margin-top: 30px;
+        margin-top: 30px !important;
       }
+    }
+
+    .card.panel-sm-horizontal {
+      flex-direction: row !important;
+    }
+    .card.panel-sm-horizontal img+.card-body {
+      margin-left: 1.5rem !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-title {
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-text {
+      margin: 0.25rem 0 0 !important;
     }
   </style>
 </head>
@@ -234,13 +256,14 @@
           </div>
         </div>
       </header>
-
+      <!-- inicio: tarjetas / atajos -->
       <div class="container mb-5">
         <div class="card-deck max-cards-3 card-column mb-5">
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h4 class="card-title"><a href="#">Hospitales y establecimientos de salud</a></h4>
+              <span class="material-icons-round card-icon">local_hospital</span>
+              <h4 class="card-title"><a href="/salud/hospitales-y-establecimientos-de-salud">Hospitales y
+                  establecimientos de salud</a></h4>
               <p class="card-text">
                 Consultá su ubicación y participá de las actividades
               </p>
@@ -248,8 +271,8 @@
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h4 class="card-title"><a href="#">Servicios de salud</a></h4>
+              <i class='bx bx-list-check card-icon'></i>
+              <h4 class="card-title"><a href="/salud/serviciosdesalud">Servicios de salud</a></h4>
               <p class="card-text">
                 Servicios gratuitos orientados al bienestar de la pobalción
               </p>
@@ -257,8 +280,8 @@
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h3 class="card-title"><a href="#">Bienestar integral</a></h3>
+              <span class="material-icons-round card-icon">groups</span>
+              <h3 class="card-title"><a href="/salud/bienestar-integral">Bienestar integral</a></h3>
               <p class="card-text">
                 Programas y servicios para una vida saludable
               </p>
@@ -266,8 +289,8 @@
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h3 class="card-title"><a href="#">Programas y redes de salud</a></h3>
+              <span class="material-icons-round card-icon">volunteer_activism</span>
+              <h3 class="card-title"><a href="/salud/programas-y-redes-de-salud">Programas y redes de salud</a></h3>
               <p class="card-text">
                 Promoción y prevención de la salud destinada a la comunidad
               </p>
@@ -275,17 +298,17 @@
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h3 class="card-title"><a href="#">Prevención en salud</a></h3>
+              <span class="material-icons-round card-icon">warning</span>
+              <h3 class="card-title"><a href="/salud/prevencionensalud">Prevención</a></h3>
               <p class="card-text">
-                La prevención es la forma de resguardar nuestra salud
+                Cuidados de la salud
               </p>
             </div>
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h3 class="card-title"><a href="#">Turnos</a></h3>
+              <span class="material-icons-round card-icon">today</span>
+              <h3 class="card-title"><a href="/turnos-en-hospitales-y-establecimientos-de-salud">Turnos</a></h3>
               <p class="card-text">
                 Información de hospitales y establecimientos en salud
               </p>
@@ -293,8 +316,8 @@
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bxs-info-circle card-icon"></i>
-              <h3 class="card-title"><a href="#">Coronavirus</a></h3>
+              <span class="material-icons-round card-icon">vaccines</span>
+              <h3 class="card-title"><a href="/coronavirus">Coronavirus</a></h3>
               <p class="card-text">
                 Información sobre medidas, testeos y vacunación
               </p>
@@ -302,11 +325,12 @@
           </div>
         </div>
       </div>
-
+      <!-- fin: tarjetas / atajos -->
+      <!-- inicio: tarjetas / "Nuestros servicios" -->
       <div class="container pt-2 mb-5">
         <h2 class="my-4 ">Nuestros servicios</h2>
         <div class="card-deck max-cards-2 card-column">
-          <a class="card" href="#">
+          <a class="card" href="/salud/instituto-de-trasplante">
             <img src="../assets/salud/salud-1.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Instituto de Transplante</h4>
@@ -315,7 +339,7 @@
               </p>
             </div>
           </a>
-          <a class="card" href="#">
+          <a class="card" href="/tramites/certificado-de-discapacidad-otorgamiento">
             <img src="../assets/salud/salud-2.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Certificado de discapacidad</h4>
@@ -327,11 +351,12 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Nuestros servicios" -->
+      <!-- inicio: tarjetas / "Servicios de Salud" -->
       <div class="container mb-5 pt-2">
         <h2 class="pt-4 mb-4">Servicios de Salud</h2>
         <div class="card-deck max-cards-2 card-column">
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/same">
             <img src="../assets/salud/th-1.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">SAME 107</h4>
@@ -340,7 +365,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/vacunas">
             <img src="../assets/salud/th-2.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Vacunas e inmunización</h4>
@@ -349,7 +374,8 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal"
+            href="https://buenosaires.gob.ar/salud/coordinacion-salud-sexual-vih-infecciones-de-transmision-sexual">
             <img src="../assets/salud/th-3.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Salud Sexual, VIH e ITS</h4>
@@ -358,7 +384,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/servicio-de-toxicologia">
             <img src="../assets/salud/th-4.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Toxicología</h4>
@@ -367,7 +393,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/epidemiologia">
             <img src="../assets/salud/th-5.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Epidemiología</h4>
@@ -376,7 +402,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/salud-mental">
             <img src="../assets/salud/th-6.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Salud Mental</h4>
@@ -387,11 +413,12 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Servicios de Salud" -->
+      <!-- inicio: tarjetas / "Más información" -->
       <div class="container mb-5 pt-2">
         <h2 class="pt-4 mb-4">Más información</h2>
         <div class="card-deck max-cards-2 card-column">
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/teleconsultas">
             <img src="../assets/salud/th-7.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Teleconsultas</h4>
@@ -401,7 +428,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/docenciaeinvestigacion">
             <img src="../assets/salud/th-8.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Docencia, Investigación y Desarrollo Profesional</h4>
@@ -411,7 +438,8 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal"
+            href="/salud/plan-dengue-y-otras-enfermedades-transmitidas-por-mosquitos-aedes-aegypti">
             <img src="../assets/salud/th-9.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Dengue, Zika y Chikungunia</h4>
@@ -420,7 +448,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/sumar">
             <img src="../assets/salud/th-10.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Programa Sumar</h4>
@@ -430,7 +458,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/instituto-superior-de-tecnicaturas-para-la-salud/sistema-de-ingreso">
             <img src="../assets/salud/th-11.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Instituto Superior de Tecnicaturas para la Salud</h4>
@@ -439,7 +467,7 @@
               </p>
             </div>
           </a>
-          <a class="card card-horizontal" href="#">
+          <a class="card card-horizontal" href="/salud/recursos-humanos">
             <img src="../assets/salud/th-12.png" class="card-img-left" alt="descripción alternativa" />
             <div class="card-body">
               <h4 class="card-title">Recursos Humanos</h4>
@@ -450,11 +478,13 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Más información" -->
+      <!-- inicio: noticias -->
       <div class="container pt-2">
         <h2 class="my-4">Noticias</h2>
         <div class="card-deck max-cards-3 card-column">
-          <a class="card" href="#">
+          <a class="card"
+            href="https://buenosaires.gob.ar/noticias/rodriguez-larreta-seguimos-fortaleciendo-el-sistema-de-salud-para-garantizar-un-servicio">
             <img src="../assets/salud/notice-1.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <div class="mb-2">
@@ -462,15 +492,16 @@
               </div>
               <h4 class="card-title">Dengue: Cuáles son los síntomas y cómo prevenir los contagios</h4>
               <p class="card-text">
-                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
-                una lectura óptima.
+                Rodríguez Larreta: "Seguimos fortaleciendo el sistema de salud para garantizar un servicio de calidad a
+                todos los vecinos"
               </p>
             </div>
             <div class="card-footer">
               <small>Fecha de publicación: 22/04/2022</small>
             </div>
           </a>
-          <a class="card d-none d-sm-block" href="#">
+          <a class="card d-none d-sm-block"
+            href="https://buenosaires.gob.ar/noticias/dia-mundial-del-donante-de-sangre-14-de-junio">
             <img src="../assets/salud/notice-2.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <div class="mb-2">
@@ -486,7 +517,8 @@
               <small>Fecha de publicación: 22/04/2022</small>
             </div>
           </a>
-          <a class="card d-none d-lg-block" href="#">
+          <a class="card d-none d-lg-block"
+            href="https://buenosaires.gob.ar/noticias/dengue-cuales-son-los-sintomas-y-como-prevenir-los-contagios">
             <img src="../assets/salud/notice-3.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <div class="mb-2">
@@ -509,26 +541,33 @@
           </a>
         </div>
       </div>
+      <!-- fin: noticias -->
     </article>
-
+    <!-- inicio institucional -->
     <section class="bg-light py-5">
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 card-column mb-3 pb-3">
-          <div class="card card-horizontal card-lg bg-transparent">
-            <img src="../assets/salud/institucional.png" class="card-img-left" alt="descripción alternativa">
+          <div class="card card-simple panel-sm-horizontal">
+            <img src="../assets/salud/institucional.png" 
+            class="rounded-lg"
+            width="104"
+            height="104"
+            alt="descripción alternativa">
             <div class="card-body">
-              <h4 class="card-title">José Luis Giusti</h4>
+              <h3 class="card-title">Fernán González Bernaldo de Quirós
+              </h3>
               <p class="card-text">
-                Ministro de Desarrollo Económico y Producción
+                Ministro de Salud
               </p>
             </div>
           </div>
-          <div class="card bg-transparent">
+          <div class="card card-simple panel-sm-horizontal">
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">
-                Teléfono: 4323-9682 <br> Email: <a href="mailto:mailto@buenosaires.gob.ar" target="_blank" rel="noreferrer">mailto@buenosaires.gob.ar</a>
+                Teléfono: 5030-9400 <br> Email: <a href="mailto:fquiros@buenosaires.gob.ar" target="_blank"
+                  rel="noreferrer">fquiros@buenosaires.gob.ar</a>
               </p>
             </div>
           </div>
@@ -537,23 +576,20 @@
           <div class="col-12 col-md-6">
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
-              <a href="#" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+              <a href="https://www.facebook.com/BASalud/" class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>Facebook
+                </span>
               </a>
-              <a href="#" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+              <a href="https://www.instagram.com/saludba/" class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>Instagram
+                </span>
               </a>
-              <a href="#" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+              <a href="https://twitter.com/BASalud" class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>Twitter
+                </span>
               </a>
             </div>
           </div>
@@ -562,16 +598,23 @@
               <div class="card-body">
                 <h4 class="mb-1">Ubicación</h4>
                 <p>
-                  Dirección: Dirección del Ministerio
+                  Dirección: Monasterio 480, 1° piso
                 </p>
-                <img class="w-100 mb-3" src="../assets/salud/mapa.png" alt="">
-                <a href="#" class="btn btn-primary btn-lg mt-3">Cómo llego</a>
+                <div class="w-100 mb-3">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3282.523168661738!2d-58.394536303888955!3d-34.64148832006072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95bccb4005a34f55%3A0x2a31d1a45015c6d4!2sC1284AEJ%2C%20Monasterio%20480%2C%20C1284%20CABA!3m2!1d-34.6410365!2d-58.393299!5e0!3m2!1ses-419!2sar!4v1686852495193!5m2!1ses-419!2sar"
+                    width="100%;" height="146" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.628870&lng=-58.369911&zl=15&modo=transporte&dir=Garcia%2C+Martin+Av.+346&ilat=-34.628908&ilng=-58.369939"
+                  class="btn btn-primary btn-lg mt-3">Cómo llego</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- fin: institucional -->
   </main>
 
   <footer class="main-footer">

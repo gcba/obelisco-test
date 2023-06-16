@@ -22,14 +22,14 @@
   <style>
     .card-deck.card-column .card,
     .card-deck.card-column .group-access {
-      max-width: calc((100% / 4) - 30px);
+      max-width: calc((100% / 4) - 30px) !important;
     }
 
     @media (max-width: 992px) {
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 3) - 30px);
+        max-width: calc((100% / 3) - 30px)  !important;
       }
     }
 
@@ -37,7 +37,7 @@
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px)  !important;
       }
     }
 
@@ -45,54 +45,54 @@
 
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card-deck.max-cards-3.card-column .card,
     .card-deck.max-cards-3.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px)  !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-3.card-column .card,
       .card-deck.max-cards-3.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card-deck.max-cards-2.card-column .card,
     .card-deck.max-cards-2.card-column .group-access {
-      max-width: calc((100% / 2) - 30px);
+      max-width: calc((100% / 2) - 30px)  !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-2.card-column .card,
       .card-deck.max-cards-2.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card-deck.max-cards-1.card-column .card,
     .card-deck.max-cards-1.card-column .group-access {
-      max-width: calc((100% / 3) - 30px);
+      max-width: calc((100% / 3) - 30px)  !important;
     }
 
     .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-      margin-top: 0px;
+      margin-top: 0px  !important;
     }
 
     @media (max-width: 576px) {
 
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px)  !important;
       }
 
       .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
-        margin-top: 30px;
+        margin-top: 30px  !important;
       }
     }
 
@@ -100,74 +100,92 @@
 
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: 100%;
+        max-width: 100%  !important;
       }
     }
 
     .card .card-body {
-      word-break: break-word;
+      word-break: break-word  !important;
     }
 
     .card.panel-horizontal .card-body .card-title {
-      margin: 0 0 0.8125rem;
+      margin: 0 0 0.8125rem  !important;
 
       @media screen and (max-width: 976px) {
-        margin: 2rem 0 0.8125rem;
+        margin: 2rem 0 0.8125rem  !important;
       }
     }
 
     .card.panel-horizontal {
-      display: flex;
-      align-items: center;
+      display: flex  !important;
+      align-items: center  !important;
+    }
+
+    .card.panel-horizontal .card-body .panel-footer {
+      margin-top: 1.5rem !important;
     }
 
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700  !important;
+      padding: 0.75rem 1.25rem  !important;
 
       @media screen and (max-width: 592px) {
-        width: 100%;
+        width: 100%  !important;
       }
     }
 
     .card .card-body .btn-lg {
-      font-weight: 700;
-      padding: 0.75rem 1.25rem;
+      font-weight: 700  !important;
+      padding: 0.75rem 1.25rem  !important;
 
       @media screen and (max-width: 592px) {
-        width: 100%;
+        width: 100%  !important;
       }
     }
 
     a.list-group-item {
-      padding: 1.5rem;
-      display: flex;
+      padding: 1.5rem  !important;
+      display: flex  !important;
     }
 
     a.list-group-item i,
     a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
+      font-size: 1.25rem  !important;
+      align-self: center  !important;
+      margin-right: 0.75rem  !important;
+      vertical-align: middle  !important;
     }
 
     a.list-group-item .access-content {
-      width: 100%;
+      width: 100%  !important;
     }
 
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem  !important;
 
       @media screen and (min-width: 752px) {
-        width: 340px;
+        width: 340px  !important;
       }
     }
 
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-        margin-top: 30px;
+        margin-top: 30px  !important;
       }
+    }
+
+    .card.panel-sm-horizontal {
+      flex-direction: row !important;
+    }
+    .card.panel-sm-horizontal img+.card-body {
+      margin-left: 1.5rem !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-title {
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-text {
+      margin: 0.25rem 0 0 !important;
     }
   </style>
 </head>
@@ -261,7 +279,6 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Institucional
                   </button>
-                  <!-- Esto es una etiqueta A, si lo cambiamos a una A y le agregamos el href no funcionaa ? V:  -->
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/ministerio-de-educacion">Ministerio de Educación</a></li>
                     <li><a class="dropdown-item" href="/subsecretaria-de-carrera-docente">Subsecretaría de Carrera
@@ -318,9 +335,9 @@
           </div>
         </div>
       </header>
-
+      <!-- inicio: tarjetas / atajos -->
       <div class="container mb-5">
-        <div class="card-deck max-cards-3 card-column mb-5">
+        <div class="card-deck max-cards-4 card-column mb-5">
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">group</span>
@@ -359,7 +376,8 @@
           </div>
         </div>
       </div>
-
+      <!-- fin: tarjetas / atajos -->
+      <!-- inicio: panel -->
       <div class="container py-5">
         <div class="card card-simple panel-horizontal">
           <img src="../assets/educacion/panel.png" class="card-img" alt="descripción alternativa" />
@@ -374,7 +392,8 @@
           </div>
         </div>
       </div>
-
+      <!-- fin: panel -->
+      <!-- inicio: tarjetas / "Conocé nuestros programas" -->
       <div class="container pt-2 mb-5">
         <h2 class="my-4 ">Conocé nuestros programas</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -437,7 +456,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Conocé nuestros programas" -->
+      <!-- inicio: tarjetas / "Lo más consultado" -->
       <div class="container mb-4 pb-2 pt-2">
         <h2 class="pt-4 mb-4">Lo más consultado</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -501,7 +521,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Lo más consultado" -->
+      <!-- inicio: tarjetas / "Destacadas" -->
       <div class="container mb-4 pb-2 pt-2">
         <h2 class="pt-4 mb-4">Destacadas</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -574,7 +595,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Destacadas" -->
+      <!-- inicio: tarjetas / "Conocé más" -->
       <div class="container mb-4 pb-2 pt-2">
         <h2 class="pt-4 mb-4">Conocé más</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -652,7 +674,8 @@
           </a>
         </div>
       </div>
-
+      <!-- fin: tarjetas / "Conocé más" -->
+      <!-- inicio: noticias -->
       <div class="container pt-4 mt-2">
         <h2 class="mb-4">Noticias</h2>
         <div class="card-deck max-cards-3 card-column">
@@ -715,7 +738,8 @@
           </a>
         </div>
       </div>
-      
+      <!-- fin: noticias -->
+      <!-- inicio: "Mapa de acceso al Ministerio de Educación" -->
       <div class="container mb-5 pt-2">
         <h2 class="pt-4 mb-2">Mapa de acceso al Ministerio de Educación</h2>
         <div class="col-8 p-0">
@@ -730,14 +754,19 @@
           </div>
         </div>
       </div>
+      <!-- fin: "Mapa de acceso al Ministerio de Educación" -->
     </article>
-
+    <!-- inicio institucional -->
     <section class="bg-light py-5">
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 mb-3 pb-3 card-column">
-          <div class="card card-horizontal card-lg bg-transparent">
-            <img src="../assets/educacion/institucional.png" class="card-img-left" alt="descripción alternativa">
+          <div class="card card-simple panel-sm-horizontal">
+            <img src="../assets/educacion/institucional.png" 
+            class="rounded-lg"
+            width="104"
+            height="104"
+            alt="descripción alternativa">
             <div class="card-body">
               <h4 class="card-title">Soledad Acuña</h4>
               <p class="card-text">
@@ -745,7 +774,7 @@
               </p>
             </div>
           </div>
-          <div class="card bg-transparent">
+          <div class="card card-simple panel-sm-horizontal">
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">
@@ -760,28 +789,24 @@
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
               <a href="https://www.facebook.com/EducacionBA/" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>Facebook
+                </span>
               </a>
               <a href="https://www.instagram.com/educacionba/" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>Instagram
+                </span>
               </a>
-              <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ" class="list-group-item">
-                <i class="bx bxl-youtube"></i>
-                <div class="access-content">
-                  <span class="access-title">Youtube</span>
-                </div>
+              <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ"  class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-youtube"></i>Youtube
+                </span>
               </a>
               <a href="https://twitter.com/EducacionBA" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>Twitter
+                </span>
               </a>
             </div>
           </div>
@@ -806,6 +831,7 @@
         </div>
       </div>
     </section>
+    <!-- fin: institucional -->
   </main>
 
   <footer class="main-footer">

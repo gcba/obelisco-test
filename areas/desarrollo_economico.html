@@ -16,92 +16,118 @@
   </link>
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- inicio: material icons round -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- fin: material icons round -->
+
+  <!-- inicio: estilos -->
   <style type="text/css">
     /* dropdown */
     .dropdown .dropdown-menu {
-      min-width: 15rem;
+      min-width: 15rem !important;
       @media screen and (min-width: 752px) {
-          width: 340px;
+        width: 340px !important;
       }   
     }
     /* panel */
-    .card.panel-horizontal .card-body .card-title {
-      margin: 0 0 0.8125rem;
+    .card.panel-horizontal {
+      display: flex !important;
+      align-items: center !important;
       @media screen and (max-width: 976px) {
-          margin: 2rem 0 0.8125rem;
+        width: 100% !important;
+      }
+    }
+    .card.panel-horizontal .card-body .card-title {
+      margin: 0 0 0.8125rem !important;
+      @media screen and (max-width: 976px) {
+        margin: 2rem 0 0.8125rem !important;
       } 
     }
-    .card.panel-horizontal {
-        display: flex;
-        align-items: center;
+    .card.panel-horizontal .card-body .card-text {
+      margin: 0 !important; 
+    }
+    .card.panel-horizontal .card-img {
+      @media screen and (max-width: 976px) {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+    .card.panel-horizontal .card-body .panel-footer {
+      margin-top: 1.5rem !important;
     }
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
-        font-weight: 700;
-        padding: 0.75rem 1.25rem;
-        @media screen and (max-width: 592px) {
-            width: 100%;
-        } 
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+      margin-right: 0 !important;
+      @media screen and (max-width: 592px) {
+        width: 100% !important;
+      } 
     }
     /* card-column */
     .card-deck.card-column .card {
-      max-width: calc(calc(100% / 4) - 30px);
+      max-width: calc(calc(100% / 4) - 30px) !important;
       @media screen and (max-width: 976px) {
-          max-width: calc((100% / 3) - 30px);
+        max-width: calc((100% / 3) - 30px) !important;
       }
       
       @media screen and (max-width: 752px) {
-          max-width: calc((100% / 2) - 30px);
+        max-width: calc((100% / 2) - 30px) !important;
       }
       
       @media screen and (max-width: 592px) {
-          max-width: 100%;
+        max-width: 100% !important;
       }
     }
     .card-deck.max-cards-2.card-column .card {
-      max-width: calc(calc(100% / 2) - 30px);
+      max-width: calc(calc(100% / 2) - 30px) !important;
       @media screen and (max-width: 592px) {
-          max-width: 100%;
+        max-width: 100% !important;
       }
     }
     @media (max-width: 592px) {
       .card-deck .card:nth-of-type(2) {
-          margin-top: 30px;
+        margin-top: 30px !important;
       }
     }
     /* accesos */
-    a.list-group-item {
-        padding: 1.5rem;
-        display: flex;
-    }
-    a.list-group-item i, a.list-group-item .material-icons-round {
-        font-size: 1.25rem;
-        align-self: center;
-        margin-right: 0.75rem;
-        vertical-align: middle;
-    }
-    a.list-group-item .access-content {
-        width: 100%;
+    .list-group a.list-group-item {
+      margin-bottom: 1rem !important;
     }
     /* contenedor con mapa */
     .card .card-body .btn-lg {
-        font-weight: 700;
-        padding: 0.75rem 1.25rem;
-        @media screen and (max-width: 592px) {
-            width: 100%;
-        } 
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+      @media screen and (max-width: 592px) {
+          width: 100% !important;
+      } 
+    }
+     /* panel chico horizontal */
+     .card.panel-sm-horizontal {
+      flex-direction: row !important;
+    }
+    .card.panel-sm-horizontal img+.card-body {
+      margin-left: 1.5rem !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-title {
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-text {
+      margin: 0.25rem 0 0 !important;
     }
   </style>
+  <!-- fin: estilos -->
 </head>
 
 <body>
   <header class="navbar navbar-light navbar-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="https://buenosaires.gob.ar/inicio/">
         <img
           class="header-logo"
           src="../assets/header/logoBA.svg"
-          alt="Logo de la ciudad de buenos aires"
+          alt="Ciudad de Buenos Aires"
         />
       </a>
       <div class="navbar-search d-responsive ml-auto">
@@ -141,7 +167,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link active"><span>Inicio</span></a>
+            <a href="https://buenosaires.gob.ar/inicio/" class="nav-link active"><span>Inicio</span></a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
@@ -194,7 +220,7 @@
         <div class="container pt-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+              <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/inicio/">Buenos Aires</a></li>
             </ol>
           </nav>
 
@@ -212,9 +238,16 @@
                     Institucional
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ministerio de Desarrollo Económico y Producción</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Desarrollo Económico</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría Cooperación para el Desarrollo Económico y la Producción</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/ministerio-de-desarrollo-economico-y-produccion">Ministerio de Desarrollo Económico y Producción</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-desarrollo-economico">Subsecretaría de Desarrollo Económico</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-de-cooperacion-para-el-desarrollo-economico-y-la-produccion">Subsecretaría Cooperación para el Desarrollo Económico y la Producción</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-de-administracion-de-bienes-inmuebles">Subsecretaría de Administración de Bienes Inmuebles</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-de-trabajo-industria-y-comercio">Subsecretaría de Trabajo, Industria y Comercio</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-de-micro-pequenas-y-medianas-empresas">Subsecretaría de Micro, Pequeñas y Medianas Empresas</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-de-desarrollo-inclusivo-0">Subsecretaría de Desarrollo Inclusivo</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/subsecretaria-de-politicas-gastronomicas">Subsecretaría de Políticas Gastronómicas</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/secretaria-de-deportes">Secretaría de Deportes</a></li>
+                    <li><a class="dropdown-item" href="https://www.buenosaires.gob.ar/areas/organigrama/min_des_economico_y_produccion.php">Organigrama</a></li>
                   </ul>
                 </div>
                 <div class="dropdown">
@@ -223,9 +256,14 @@
                     Transparencia activa
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Informes de Auditoría</a></li>
-                    <li><a class="dropdown-item" href="#">Declaraciones juradas</a></li>
-                    <li><a class="dropdown-item" href="#">Presupuesto</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/control-e-integridad">Informes de Auditoría</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/declaraciones-juradas">Declaraciones juradas</a></li>
+                    <li><a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/presupuesto-ejecutado">Presupuesto</a></li>
+                    <li><a class="dropdown-item" href="https://www.buenosairescompras.gob.ar/Default.aspx">Compras y contrataciones</a></li>
+                    <li><a class="dropdown-item" href="https://concursosgcaba.buenosaires.gob.ar/concursos">Concurso de personal</a></li>
+                    <li><a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/sueldo-funcionarios">Sueldos de Autoridades</a></li>
+                    <li><a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/grilla-salarial">Escala Salarial de Personal</a></li>
+                    <li><a class="dropdown-item" href="https://buenosaires.gob.ar/desarrolloeconomico/administracion-de-bienes-inmuebles/listado-de-concesiones">Concesiones</a></li>
                   </ul>
                 </div>
               </div>
@@ -240,7 +278,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">bar_chart</span>
-              <h4 class="card-title"><a href="#">Inversiones</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/inversiones">Inversiones</a></h4>
               <p class="card-text">
                 Oportunidades para hacer crecer tu negocio
               </p>
@@ -249,7 +287,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <i class="bx bx-package card-icon"></i>
-              <h4 class="card-title"><a href="#">Exportaciones y Cooperación</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/desarrolloeconomico/exportaciones-y-cooperacion">Exportaciones y Cooperación</a></h4>
               <p class="card-text">
                 Tu proyecto en sectores estratégicos
               </p>
@@ -258,7 +296,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <i class="bx bx-briefcase card-icon"></i>
-              <h4 class="card-title"><a href="#">Trabajo</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/desarrolloeconomico/trabajo-">Trabajo</a></h4>
               <p class="card-text">
                 Enterate de todo lo relativo al mundo laboral en la Ciudad
               </p>
@@ -267,7 +305,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">lightbulb</span>
-              <h4 class="card-title"><a href="#">Herramientas para Emprender</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/desarrolloeconomico/herramientasparaemprender">Herramientas para Emprender</a></h4>
               <p class="card-text">
                 Recursos para potenciar tu empresa
               </p>
@@ -276,7 +314,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">bar_chart</span>
-              <h4 class="card-title"><a href="#">Estrategia Productiva</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/desarrolloeconomico/subsecretaria-desarrollo-economico/estrategia-productiva">Estrategia Productiva</a></h4>
               <p class="card-text">
                 Políticas productivas y datos económicos
               </p>
@@ -285,7 +323,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">shopping_bag</span>
-              <h4 class="card-title"><a href="#">Financiamiento y Beneficios Impositivos</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/desarrolloeconomico/financiamiento-y-beneficiosimpositivos">Financiamiento y Beneficios Impositivos</a></h4>
               <p class="card-text">
                 Línea de créditos y alivio fiscal
               </p>
@@ -294,7 +332,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">computer</span>
-              <h4 class="card-title"><a href="#">Capacitaciones</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/capacitaciones">Capacitaciones</a></h4>
               <p class="card-text">
                 Herramientas para tu desarrollo y el de tu negocio
               </p>
@@ -303,7 +341,7 @@
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">handshake</span>
-              <h4 class="card-title"><a href="#">Patrocinio BA</a></h4>
+              <h4 class="card-title"><a href="https://buenosaires.gob.ar/desarrolloeconomico/unidad-de-coordinacion-gestion-policitas-productivas/patrocinio-ba">Patrocinio BA</a></h4>
               <p class="card-text">
                 Experiencias únicas para tu marca
               </p>
@@ -318,8 +356,8 @@
         <div class="pb-3">
           <h2 class="mb-4 mt-3">Conocé nuestros programas</h2>
           <div class="card-deck max-cards-2 card-column mb-5">
-            <a class="card" href="#">
-              <img src="../assets/cards/desarrollo-1.png" class="card-img-top" alt="Plan de Empleo Joven" />
+            <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/plan-empleo-joven-una-iniciativa-para-las-empresas-de-la-ciudad">
+              <img src="../assets/desarrollo/desarrollo-1.png" class="card-img-top" alt="Plan de Empleo Joven" />
               <div class="card-body">
                 <h4 class="card-title">Plan de Empleo Joven</h4>
                 <p class="card-text">
@@ -327,8 +365,8 @@
                 </p>
               </div>
             </a>
-            <a class="card" href="#">
-              <img src="../assets/cards/desarrollo-2.png" class="card-img-top" alt="Microcentro Porteño " />
+            <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/plan-de-transformacion-y-reconversion-del-microcentro-porteno">
+              <img src="../assets/desarrollo/desarrollo-2.png" class="card-img-top" alt="Microcentro Porteño " />
               <div class="card-body">
                 <h4 class="card-title">Microcentro Porteño </h4>
                 <p class="card-text">
@@ -336,8 +374,8 @@
                 </p>
               </div>
             </a>
-            <a class="card" href="#">
-              <img src="../assets/cards/desarrollo-3.png" class="card-img-top" alt="Gastronomía" />
+            <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/gastronomia/mercado-argentino-de-productos-y-productores-agroalimentarios-mappa">
+              <img src="../assets/desarrollo/desarrollo-3.png" class="card-img-top" alt="Gastronomía" />
               <div class="card-body">
                 <h4 class="card-title">Gastronomía</h4>
                 <p class="card-text">
@@ -346,8 +384,8 @@
               </div>
             </a>
 
-            <a class="card" href="#">
-              <img src="../assets/cards/desarrollo-4.png" class="card-img-top" alt="Distrito del vino" />
+            <a class="card" href="https://buenosaires.gob.ar/desarrolloeconomico/distrito-del-vino">
+              <img src="../assets/desarrollo/desarrollo-4.png" class="card-img-top" alt="Distrito del vino" />
               <div class="card-body">
                 <h4 class="card-title">Distrito del vino</h4>
                 <p class="card-text">
@@ -364,7 +402,7 @@
       <div class="container">
         <div class="mb-5 py-3">
           <div class="card card-simple panel-horizontal">
-            <img src="../assets/panel/desarrollo-panel.png" class="card-img" alt="Asistente PyME" />
+            <img src="../assets/desarrollo/desarrollo-panel.png" class="card-img" alt="Asistente PyME" />
             <div class="card-body">
               <h2 class="card-title">Asistente PyME</h2>
               <p class="card-text">
@@ -376,9 +414,9 @@
                 <li>Créditos para pymes </li>
               </ul>
               <div class="panel-footer">
-                <button type="button" class="btn btn-lg btn-primary card-link">
+                <a href="https://buenosaires.gob.ar/desarrolloeconomico/ba-pyme/asistente-pyme" type="button" class="btn btn-lg btn-primary card-link">
                   Ingresar ahora
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -391,7 +429,7 @@
         <h2 class="mb-4">Noticias</h2>
         <div class="card-deck max-cards-3 mb-4">
           <a class="card" href="#">
-            <img src="../assets/noticias/noticias-desarrollo-1.png" class="card-img-top" alt="Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad"/>
+            <img src="../assets/desarrollo/noticias-desarrollo-1.png" class="card-img-top" alt="Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad"/>
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-info">Actividades</span>
@@ -406,7 +444,7 @@
             </div>
           </a>
           <a class="card d-none d-sm-block" href="#">
-            <img src="../assets/noticias/noticias-desarrollo-2.png" class="card-img-top" alt="La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas" />
+            <img src="../assets/desarrollo/noticias-desarrollo-2.png" class="card-img-top" alt="La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-secondary">distrito del vino</span>
@@ -421,7 +459,7 @@
             </div>
           </a>
           <a class="card d-none d-lg-block" href="#">
-            <img src="../assets/noticias/noticias-desarrollo-3.png" class="card-img-top" alt="Acelera BA, el programa de capacitaciones para emprendedores" />
+            <img src="../assets/desarrollo/noticias-desarrollo-3.png" class="card-img-top" alt="Acelera BA, el programa de capacitaciones para emprendedores" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-secondary">Actividades</span>
@@ -443,6 +481,7 @@
         </div>
       </div>
       <!-- fin: noticias -->
+
       <!-- inicio alerta -->
       <div class="container">
         <div class="col-12 col-lg-8 pt-3 px-0">
@@ -462,24 +501,24 @@
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 mb-5">
-          <div class="card card-horizontal card-lg bg-transparent">
+          <div class="card card-simple panel-sm-horizontal">
             <img
-              src="../assets/institucional/joseLuisGiusti.png"
-              class="card-img-left"
-              alt="descripción alternativa"
+              src="../assets/desarrollo/jLGiusti.png"
+              alt="José Luis Giusti"
+              class="rounded-lg"
+              width="104"
+              height="104"
             />
             <div class="card-body">
-              <h4 class="card-title">José Luis Giusti</h4>
-              <p class="card-text">
-                Ministro de Desarrollo Económico y Productivo
-              </p>
+              <h3 class="card-title">José Luis Giusti</h3>
+              <p class="card-text">Ministro de Desarrollo Económico y Productivo</p>
             </div>
           </div>
-          <div class="card bg-transparent">
+          <div class="card card-simple panel-sm-horizontal">
             <div class="card-body">
-              <h4 class="card-title">Contacto</h4>
-              <p class="card-text">
-                Teléfono: 4323-9682 <br> Email: <a href="mailto:jlgiusti@buenosaires.gob.ar" target="_blank" rel="noreferrer">jlgiusti@buenosaires.gob.ar</a>
+              <h3 class="card-title">Contacto</h3>
+              <p class="card-text">Teléfono: 5030-9400 <br> 
+                Email: <a href="mailto:jlgiusti@buenosaires.gob.ar" target="_blank" rel="noreferrer">jlgiusti@buenosaires.gob.ar</a>
               </p>
             </div>
           </div>
@@ -488,23 +527,23 @@
           <div class="col-12 col-md-6">
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
-              <a href="#" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+              <a href="https://www.facebook.com/DesarrolloEconomicoBA" class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>
+                  Facebook
+                </span>
               </a>
-              <a href="#" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+              <a href="https://www.instagram.com/desarrolloeconomicoba/" class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>
+                  Instagram
+                </span>
               </a>
-              <a href="#" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+              <a href="https://twitter.com/DesEconomicoBA" class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>
+                  Twitter
+                </span>
               </a>
             </div>
           </div>
@@ -512,13 +551,11 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="mb-1">Ubicación</h4>
-                <p class="mb-3">Dirección: Dirección del Ministerio</p>
-                <img 
-                  class="w-100 mb-3"
-                  src="../assets/noticias/mapa-hospital.png" 
-                  alt="Ubicación" 
-                />
-                <a href="#" class="btn btn-primary btn-lg">Cómo llego</a>
+                <p class="mb-3">Dirección: Av. Martín García 346, 2° piso</p>
+                <div class="w-100 mb-3">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.016027051289!2d-58.37254032437096!3d-34.62903527294525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334cc9e05bf39%3A0x83599f7684881686!2sAv.%20Mart%C3%ADn%20Garc%C3%ADa%20346%2C%20C1165ABP%20CABA!5e0!3m2!1ses!2sar!4v1686856757383!5m2!1ses!2sar" width="100%" height="146" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
+                </div>
+                <a href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.628900&lng=-58.369954&zl=15&modo=transporte&dir=Garcia%2C+Martin+Av.+346" class="btn btn-primary btn-lg">Cómo llego</a>
               </div>
             </div>
           </div>
