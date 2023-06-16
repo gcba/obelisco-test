@@ -20,18 +20,18 @@
   <style type="text/css">
     /*card-atajos*/
     .card-deck.max-cards-3.card-column .card {
-        max-width: calc(calc(100% / 3) - 30px);
+        max-width: calc(calc(100% / 3) - 30px) !important;
     }
 
     @media screen and (max-width: 752px) {
       .card-deck.max-cards-3.card-column .card{
-        max-width: calc(calc(100% / 2) - 30px);
+        max-width: calc(calc(100% / 2) - 30px) !important;
       }
     }
 
     @media screen and (max-width: 592px) {
       .card-deck.max-cards-3.card-column .card{
-        max-width: 100%;
+        max-width: 100% !important;
     } 
   }
   /*fin:card-atajos*/
@@ -39,36 +39,36 @@
   /*panel*/
   @media screen and (max-width: 975.98px) {
     .card.panel-horizontal {
-      flex-direction: column;
+      flex-direction: column !important;
     }
     .card.panel-horizontal .card-img {
-      width: 100%;
-      height: auto;
+      width: 100% !important;
+      height: auto !important;
     }
   }
   .card.panel-horizontal {
-    width: 100%;
-    align-items: center;
+    width: 100% !important;
+    align-items: center !important;
   }
 
   .card.panel-horizontal .card-img {
-    border-radius: 0.5rem;
-    object-fit: cover;
+    border-radius: 0.5rem !important;
+    object-fit: cover !important;
   }
   /*fin:panel*/
   /*accesos*/
   a.list-group-item {
-    padding: 1.5rem;
-    display: flex;
+    padding: 1.5rem !important;
+    display: flex !important;
   }
   a.list-group-item i, a.list-group-item .material-icons-round {
-      font-size: 1.25rem;
-      align-self: center;
-      margin-right: 0.75rem;
-      vertical-align: middle;
+      font-size: 1.25rem !important;
+      align-self: center !important;
+      margin-right: 0.75rem !important;
+      vertical-align: middle !important;
   }
   a.list-group-item .access-content {
-      width: 100%;
+      width: 100% !important;
   } 
   /*fin:accesos*/
   </style>
