@@ -16,31 +16,33 @@
   </link>
   <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <!-- inicio: material icons round -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <style>
+  <!-- fin: material icons round -->
+
+  <!-- inicio: estilos -->
+  <style type="text/css">
+    /* Card-Colum */
     .card-deck.card-column .card,
     .card-deck.card-column .group-access {
-      max-width: calc((100% / 4) - 30px) !important;
+      max-width: calc(calc(100% / 4) - 30px) !important;
     }
 
     @media (max-width: 992px) {
-
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 3) - 30px) !important;
+        max-width: calc(calc(100% / 3) - 30px) !important;
       }
     }
 
     @media (max-width: 768px) {
-
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
-        max-width: calc((100% / 2) - 30px) !important;
+        max-width: calc(calc(100% / 2) - 30px) !important;
       }
     }
 
     @media (max-width: 576px) {
-
       .card-deck.card-column .card,
       .card-deck.card-column .group-access {
         max-width: 100% !important;
@@ -49,11 +51,10 @@
 
     .card-deck.max-cards-3.card-column .card,
     .card-deck.max-cards-3.card-column .group-access {
-      max-width: calc((100% / 3) - 30px) !important;
+      max-width: calc(calc(100% / 3) - 30px) !important;
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-3.card-column .card,
       .card-deck.max-cards-3.card-column .group-access {
         max-width: 100% !important;
@@ -62,11 +63,10 @@
 
     .card-deck.max-cards-2.card-column .card,
     .card-deck.max-cards-2.card-column .group-access {
-      max-width: calc((100% / 2) - 30px) !important;
+      max-width: calc(calc(100% / 2) - 30px) !important;
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-2.card-column .card,
       .card-deck.max-cards-2.card-column .group-access {
         max-width: 100% !important;
@@ -75,7 +75,7 @@
 
     .card-deck.max-cards-1.card-column .card,
     .card-deck.max-cards-1.card-column .group-access {
-      max-width: calc((100% / 3) - 30px) !important;
+      max-width: calc(calc(100% / 3) - 30px) !important;
     }
 
     .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
@@ -83,10 +83,9 @@
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
-        max-width: calc((100% / 2) - 30px) !important;
+        max-width: calc(calc(100% / 2) - 30px) !important;
       }
 
       .card-deck.max-cards-1.card-column .card:nth-of-type(-n + 3) {
@@ -95,48 +94,9 @@
     }
 
     @media (max-width: 576px) {
-
       .card-deck.max-cards-1.card-column .card,
       .card-deck.max-cards-1.card-column .group-access {
         max-width: 100% !important;
-      }
-    }
-
-    .card .card-body {
-      word-break: break-word !important;
-    }
-
-    .card .card-body .btn-lg {
-      font-weight: 700 !important;
-      padding: 0.75rem 1.25rem !important;
-
-      @media screen and (max-width: 592px) {
-        width: 100% !important;
-      }
-    }
-
-    a.list-group-item {
-      padding: 1.5rem !important;
-      display: flex !important;
-    }
-
-    a.list-group-item i,
-    a.list-group-item .material-icons-round {
-      font-size: 1.25rem !important;
-      align-self: center !important;
-      margin-right: 0.75rem !important;
-      vertical-align: middle !important;
-    }
-
-    a.list-group-item .access-content {
-      width: 100% !important;
-    }
-
-    .dropdown .dropdown-menu {
-      min-width: 15rem !important;
-
-      @media screen and (min-width: 752px) {
-        width: 340px !important;
       }
     }
 
@@ -146,16 +106,42 @@
       }
     }
 
+    /* Tarjetas */
+    .card .card-body {
+      word-break: break-word !important;
+    }
+
+    /* Contenedor con mapa */
+    .card .card-body .btn-lg {
+      font-weight: 700 !important;
+      padding: 0.75rem 1.25rem !important;
+    }
+
+    @media screen and (max-width: 592px) {
+      .card .card-body .btn-lg {
+        width: 100% !important;
+      }
+    }
+
+     /* accesos */
+     .list-group a.list-group-item {
+      margin-bottom: 1rem !important;
+    }
+
+    /* panel chico */
     .card.panel-sm-horizontal {
       flex-direction: row !important;
     }
+
     .card.panel-sm-horizontal img+.card-body {
       margin-left: 1.5rem !important;
     }
+
     .card.panel-sm-horizontal .card-body .card-title {
       font-size: 1.3125rem !important;
       font-weight: 600 !important;
     }
+
     .card.panel-sm-horizontal .card-body .card-text {
       margin: 0.25rem 0 0 !important;
     }
@@ -549,11 +535,8 @@
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 card-column mb-3 pb-3">
           <div class="card card-simple panel-sm-horizontal">
-            <img src="../assets/salud/institucional.png" 
-            class="rounded-lg"
-            width="104"
-            height="104"
-            alt="descripción alternativa">
+            <img src="../assets/salud/institucional.png" class="rounded-lg" width="104" height="104"
+              alt="descripción alternativa">
             <div class="card-body">
               <h3 class="card-title">Fernán González Bernaldo de Quirós
               </h3>

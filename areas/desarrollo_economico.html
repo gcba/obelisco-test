@@ -21,37 +21,28 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- fin: material icons round -->
 
-  <!-- inicio: estilos -->
   <style type="text/css">
-    /* dropdown */
+    /* inicio: estilos dropdown */
     .dropdown .dropdown-menu {
       min-width: 15rem !important;
-      @media screen and (min-width: 752px) {
-        width: 340px !important;
-      }   
     }
-    /* panel */
+    @media screen and (min-width: 752px) {
+      .dropdown .dropdown-menu {
+        width: 340px !important;
+      }
+    }  
+    /* fin: estilos dropdown */
+
+    /* inicio: estilos panel */
     .card.panel-horizontal {
       display: flex !important;
       align-items: center !important;
-      @media screen and (max-width: 976px) {
-        width: 100% !important;
-      }
     }
     .card.panel-horizontal .card-body .card-title {
       margin: 0 0 0.8125rem !important;
-      @media screen and (max-width: 976px) {
-        margin: 2rem 0 0.8125rem !important;
-      } 
     }
     .card.panel-horizontal .card-body .card-text {
       margin: 0 !important; 
-    }
-    .card.panel-horizontal .card-img {
-      @media screen and (max-width: 976px) {
-        width: 100% !important;
-        height: auto !important;
-      }
     }
     .card.panel-horizontal .card-body .panel-footer {
       margin-top: 1.5rem !important;
@@ -60,50 +51,73 @@
       font-weight: 700 !important;
       padding: 0.75rem 1.25rem !important;
       margin-right: 0 !important;
-      @media screen and (max-width: 592px) {
-        width: 100% !important;
-      } 
     }
-    /* card-column */
+    @media screen and (max-width: 976px) {
+      .card.panel-horizontal {
+        width: 100% !important;
+      }
+      .card.panel-horizontal .card-body .card-title {
+        margin: 2rem 0 0.8125rem !important;
+      }
+      .card.panel-horizontal .card-img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+    @media screen and (max-width: 592px) {
+      .card.panel-horizontal .card-body .panel-footer .btn-lg {
+          width: 100% !important;
+      }
+    }
+    /* fin: estilos panel */
+    
+    /* inicio: estilos atajos/tarjetas */
     .card-deck.card-column .card {
       max-width: calc(calc(100% / 4) - 30px) !important;
-      @media screen and (max-width: 976px) {
-        max-width: calc((100% / 3) - 30px) !important;
-      }
-      
-      @media screen and (max-width: 752px) {
-        max-width: calc((100% / 2) - 30px) !important;
-      }
-      
-      @media screen and (max-width: 592px) {
-        max-width: 100% !important;
-      }
     }
     .card-deck.max-cards-2.card-column .card {
       max-width: calc(calc(100% / 2) - 30px) !important;
-      @media screen and (max-width: 592px) {
-        max-width: 100% !important;
+    }
+    @media screen and (max-width: 976px) {
+      .card-deck.card-column .card {
+        max-width: calc(calc(100% / 3) - 30px) !important;
       }
     }
-    @media (max-width: 592px) {
+    @media screen and (max-width: 752px) {
+      .card-deck.card-column .card {
+        max-width: calc(calc(100% / 2) - 30px) !important;
+      }
+    }
+    @media screen and (max-width: 592px) {
+      .card-deck.card-column .card, .card-deck.max-cards-2.card-column .card {
+        max-width: 100% !important;
+      }
       .card-deck .card:nth-of-type(2) {
         margin-top: 30px !important;
       }
     }
-    /* accesos */
+    /* fin: estilos atajos/tarjetas */
+
+    /* inicio: estilos accesos */
     .list-group a.list-group-item {
       margin-bottom: 1rem !important;
     }
-    /* contenedor con mapa */
+    /* fin: estilos accesos */
+
+    /* inicio: estilos contenedor con mapa */
     .card .card-body .btn-lg {
       font-weight: 700 !important;
       padding: 0.75rem 1.25rem !important;
-      @media screen and (max-width: 592px) {
-          width: 100% !important;
-      } 
     }
-     /* panel chico horizontal */
-     .card.panel-sm-horizontal {
+    @media screen and (max-width: 592px) {
+      .card .card-body .btn-lg {
+        width: 100% !important;
+      }
+    }
+    /* fin: estilos contenedor con mapa */
+
+    /* inicio: estilos panel chico horizontal */
+    .card.panel-sm-horizontal {
       flex-direction: row !important;
     }
     .card.panel-sm-horizontal img+.card-body {
@@ -116,8 +130,8 @@
     .card.panel-sm-horizontal .card-body .card-text {
       margin: 0.25rem 0 0 !important;
     }
+    /* fin: estilos panel chico horizontal */
   </style>
-  <!-- fin: estilos -->
 </head>
 
 <body>
