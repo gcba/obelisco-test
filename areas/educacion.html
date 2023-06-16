@@ -121,6 +121,10 @@
       align-items: center  !important;
     }
 
+    .card.panel-horizontal .card-body .panel-footer {
+      margin-top: 1.5rem !important;
+    }
+
     .card.panel-horizontal .card-body .panel-footer .btn-lg {
       font-weight: 700  !important;
       padding: 0.75rem 1.25rem  !important;
@@ -168,6 +172,20 @@
       .card-deck .card:nth-of-type(2) {
         margin-top: 30px  !important;
       }
+    }
+
+    .card.panel-sm-horizontal {
+      flex-direction: row !important;
+    }
+    .card.panel-sm-horizontal img+.card-body {
+      margin-left: 1.5rem !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-title {
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-text {
+      margin: 0.25rem 0 0 !important;
     }
   </style>
 </head>
@@ -261,7 +279,6 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Institucional
                   </button>
-                  <!-- Esto es una etiqueta A, si lo cambiamos a una A y le agregamos el href no funcionaa ? V:  -->
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/ministerio-de-educacion">Ministerio de Educación</a></li>
                     <li><a class="dropdown-item" href="/subsecretaria-de-carrera-docente">Subsecretaría de Carrera
@@ -320,7 +337,7 @@
       </header>
       <!-- inicio: tarjetas / atajos -->
       <div class="container mb-5">
-        <div class="card-deck max-cards-3 card-column mb-5">
+        <div class="card-deck max-cards-4 card-column mb-5">
           <div class="card card-simple">
             <div class="card-body">
               <span class="material-icons-round card-icon">group</span>
@@ -744,8 +761,12 @@
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 mb-3 pb-3 card-column">
-          <div class="card card-horizontal card-lg bg-transparent">
-            <img src="../assets/educacion/institucional.png" class="card-img-left" alt="descripción alternativa">
+          <div class="card card-simple panel-sm-horizontal">
+            <img src="../assets/educacion/institucional.png" 
+            class="rounded-lg"
+            width="104"
+            height="104"
+            alt="descripción alternativa">
             <div class="card-body">
               <h4 class="card-title">Soledad Acuña</h4>
               <p class="card-text">
@@ -753,7 +774,7 @@
               </p>
             </div>
           </div>
-          <div class="card bg-transparent">
+          <div class="card card-simple panel-sm-horizontal">
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">
@@ -768,28 +789,24 @@
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
               <a href="https://www.facebook.com/EducacionBA/" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>Facebook
+                </span>
               </a>
               <a href="https://www.instagram.com/educacionba/" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>Instagram
+                </span>
               </a>
-              <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ" class="list-group-item">
-                <i class="bx bxl-youtube"></i>
-                <div class="access-content">
-                  <span class="access-title">Youtube</span>
-                </div>
+              <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ"  class="list-group-item">
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-youtube"></i>Youtube
+                </span>
               </a>
               <a href="https://twitter.com/EducacionBA" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>Twitter
+                </span>
               </a>
             </div>
           </div>

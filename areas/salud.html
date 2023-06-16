@@ -145,6 +145,20 @@
         margin-top: 30px !important;
       }
     }
+
+    .card.panel-sm-horizontal {
+      flex-direction: row !important;
+    }
+    .card.panel-sm-horizontal img+.card-body {
+      margin-left: 1.5rem !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-title {
+      font-size: 1.3125rem !important;
+      font-weight: 600 !important;
+    }
+    .card.panel-sm-horizontal .card-body .card-text {
+      margin: 0.25rem 0 0 !important;
+    }
   </style>
 </head>
 
@@ -534,17 +548,21 @@
       <div class="container mb-3">
         <h2 class="mb-4">Información institucional</h2>
         <div class="card-deck max-cards-2 card-column mb-3 pb-3">
-          <div class="card card-horizontal card-lg bg-transparent">
-            <img src="../assets/salud/institucional.png" class="card-img-left" alt="descripción alternativa">
+          <div class="card card-simple panel-sm-horizontal">
+            <img src="../assets/salud/institucional.png" 
+            class="rounded-lg"
+            width="104"
+            height="104"
+            alt="descripción alternativa">
             <div class="card-body">
-              <h4 class="card-title">Fernán González Bernaldo de Quirós
-              </h4>
+              <h3 class="card-title">Fernán González Bernaldo de Quirós
+              </h3>
               <p class="card-text">
                 Ministro de Salud
               </p>
             </div>
           </div>
-          <div class="card bg-transparent">
+          <div class="card card-simple panel-sm-horizontal">
             <div class="card-body">
               <h4 class="card-title">Contacto</h4>
               <p class="card-text">
@@ -559,22 +577,19 @@
             <h2 class="mb-4">Seguinos en</h2>
             <div class="list-group mb-4 mb-md-0">
               <a href="https://www.facebook.com/BASalud/" class="list-group-item">
-                <i class="bx bxl-facebook-circle"></i>
-                <div class="access-content">
-                  <span class="access-title">Facebook</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-facebook-circle"></i>Facebook
+                </span>
               </a>
               <a href="https://www.instagram.com/saludba/" class="list-group-item">
-                <i class="bx bxl-instagram-alt"></i>
-                <div class="access-content">
-                  <span class="access-title">Instagram</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-instagram-alt"></i>Instagram
+                </span>
               </a>
               <a href="https://twitter.com/BASalud" class="list-group-item">
-                <i class="bx bxl-twitter"></i>
-                <div class="access-content">
-                  <span class="access-title">Twitter</span>
-                </div>
+                <span class="access-title">
+                  <i class="bx bx-sm align-middle mr-2 bxl-twitter"></i>Twitter
+                </span>
               </a>
             </div>
           </div>
