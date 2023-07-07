@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
+
+  <title>Desarrollo Económico y Producción</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar navbar-light navbar-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          class="header-logo"
+          src="../assets/header/logoBA.svg"
+          alt="Logo de la ciudad de buenos aires"
+        />
+      </a>
+      <div class="navbar-search d-responsive ml-auto">
+        <form class="form-search form-search-sm">
+          <div class="form-group">
+            <input
+              type="search"
+              class="form-control form-control-sm input-search"
+              id="header-search-example-3"
+              name="header-search"
+              aria-label="Ingrese su búsqueda"
+              placeholder="Buscar..."
+            />
+            <button class="reset" type="reset"></button>
+          </div>
+        </form>
+      </div>
+      <button
+        class="navbar-toggler collapsed ml-2"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+      >
+        Menú
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="list-group-content d-responsive ml-2">
+        <a
+          href="#"
+          aria-label="Cerrar sesión"
+          class="list-group-item list-group-item-logout logout-sm"
+        >
+          &nbsp;
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active"><span>Inicio</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi actividad</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="Notificaciones" class="nav-link">
+              <i class="bx bxs-bell"></i>
+            </a>
+          </li>
+          <li class="nav-item d-responsive">
+            <div class="navbar-search">
+              <form class="form-search form-search-sm">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    class="form-control form-control-sm input-search"
+                    id="header-search-example-4"
+                    name="header-search"
+                    aria-label="Ingrese su búsqueda"
+                    placeholder="Buscar..."
+                  />
+                  <button class="reset" type="reset"></button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item d-responsive">
+            <a
+              href="#"
+              aria-label="Cerrar sesión"
+              class="list-group-item list-group-item-logout logout-sm"
+            >
+              &nbsp;
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <article class="mb-4 pb-2">
+      <header class="bg-light pt-3 pb-5 mb-5">
+        <div class="container pt-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+            </ol>
+          </nav>
+
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="pt-1">
+                <h1>Desarrollo Económico y Producción</h1>
+                <p class="lead">Desarrollo del talento y la búsqueda de inversiones con el objetivo de fomentar el empleo y contribuir a una mejor calidad de vida de los vecinos de la Ciudad.
+                </p>
+              </div>
+              <div class="d-block d-md-flex pt-3">
+                <div class="dropdown mr-0 mr-md-3 mb-3 mb-md-0">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Institucional
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ministerio de Desarrollo Económico y Producción</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría de Desarrollo Económico</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría Cooperación para el Desarrollo Económico y la Producción</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Transparencia activa
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Informes de Auditoría</a></li>
+                    <li><a class="dropdown-item" href="#">Declaraciones juradas</a></li>
+                    <li><a class="dropdown-item" href="#">Presupuesto</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- inicio: tarjetas/atajos -->
+      <div class="container pb-3">
+        <div class="card-deck card-column pb-4 mb-5">
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">bar_chart</span>
+              <h4 class="card-title"><a href="#">Inversiones</a></h4>
+              <p class="card-text">
+                Oportunidades para hacer crecer tu negocio
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-package card-icon"></i>
+              <h4 class="card-title"><a href="#">Exportaciones y Cooperación</a></h4>
+              <p class="card-text">
+                Tu proyecto en sectores estratégicos
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-briefcase card-icon"></i>
+              <h4 class="card-title"><a href="#">Trabajo</a></h4>
+              <p class="card-text">
+                Enterate de todo lo relativo al mundo laboral en la Ciudad
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">lightbulb</span>
+              <h4 class="card-title"><a href="#">Herramientas para Emprender</a></h4>
+              <p class="card-text">
+                Recursos para potenciar tu empresa
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">bar_chart</span>
+              <h4 class="card-title"><a href="#">Estrategia Productiva</a></h4>
+              <p class="card-text">
+                Políticas productivas y datos económicos
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">shopping_bag</span>
+              <h4 class="card-title"><a href="#">Financiamiento y Beneficios Impositivos</a></h4>
+              <p class="card-text">
+                Línea de créditos y alivio fiscal
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">computer</span>
+              <h4 class="card-title"><a href="#">Capacitaciones</a></h4>
+              <p class="card-text">
+                Herramientas para tu desarrollo y el de tu negocio
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <span class="material-icons-round card-icon">handshake</span>
+              <h4 class="card-title"><a href="#">Patrocinio BA</a></h4>
+              <p class="card-text">
+                Experiencias únicas para tu marca
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin: tarjetas/atajos -->
+
+      <!-- inicio: tarjetas -->
+      <div class="container">
+        <div class="pb-3">
+          <h2 class="mb-4 mt-3">Conocé nuestros programas</h2>
+          <div class="card-deck max-cards-2 card-column mb-5">
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-1.png" class="card-img-top" alt="Plan de Empleo Joven" />
+              <div class="card-body">
+                <h4 class="card-title">Plan de Empleo Joven</h4>
+                <p class="card-text">
+                  Diez mil empleos para jóvenes de 18 a 24 años es posible. Hay chance
+                </p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-2.png" class="card-img-top" alt="Microcentro Porteño " />
+              <div class="card-body">
+                <h4 class="card-title">Microcentro Porteño </h4>
+                <p class="card-text">
+                  Es un plan para su transformación y reconversión en un área urbano, inteligente, sostenible y residencial.
+                </p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-3.png" class="card-img-top" alt="Gastronomía" />
+              <div class="card-body">
+                <h4 class="card-title">Gastronomía</h4>
+                <p class="card-text">
+                  Conocé los programas, eventos y beneficios que ofrecemos para impulsar la industria gastronómica de la Ciudad.
+                </p>
+              </div>
+            </a>
+
+            <a class="card" href="#">
+              <img src="../assets/cards/desarrollo-4.png" class="card-img-top" alt="Distrito del vino" />
+              <div class="card-body">
+                <h4 class="card-title">Distrito del vino</h4>
+                <p class="card-text">
+                  Conocé todo lo que propone y sus beneficios.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- fin: tarjetas -->
+
+      <!-- inicio: panel -->
+      <div class="container">
+        <div class="mb-5 py-3">
+          <div class="card card-simple panel-horizontal">
+            <img src="../assets/panel/desarrollo-panel.png" class="card-img" alt="Asistente PyME" />
+            <div class="card-body">
+              <h2 class="card-title">Asistente PyME</h2>
+              <p class="card-text">
+                Conocé los beneficios para tu PyME y todos los recursos para hacer crecer tu proyecto.
+              </p>
+              <ul>
+                <li>Programas con beneficios.</li>
+                <li>Exención de IIBB y ABL para comercios.</li>
+                <li>Créditos para pymes </li>
+              </ul>
+              <div class="panel-footer">
+                <button type="button" class="btn btn-lg btn-primary card-link">
+                  Ingresar ahora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin: panel -->
+
+      <!-- inicio: noticias -->
+      <div class="container mb-5 pb-3">
+        <h2 class="mb-4">Noticias</h2>
+        <div class="card-deck max-cards-3 mb-4">
+          <a class="card" href="#">
+            <img src="../assets/noticias/noticias-desarrollo-1.png" class="card-img-top" alt="Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad"/>
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-info">Actividades</span>
+              </div>
+              <h4 class="card-title">Potenciá tus oportunidades laborales con Habilidades para la Empleabilidad</h4>
+              <p class="card-text">
+                Descripción del titular de una tarjeta con contenedor que puede contener hasta 2 líneas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>05/05/23</small>
+            </div>
+          </a>
+          <a class="card d-none d-sm-block" href="#">
+            <img src="../assets/noticias/noticias-desarrollo-2.png" class="card-img-top" alt="La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-secondary">distrito del vino</span>
+              </div>
+              <h4 class="card-title">La primera Feria del Distrito del Vino convocó a 20 mil vecinos y turistas</h4>
+              <p class="card-text">
+                Descripción del titular de una tarjeta con contenedor que puede contener hasta 2 líneas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>05/05/23</small>
+            </div>
+          </a>
+          <a class="card d-none d-lg-block" href="#">
+            <img src="../assets/noticias/noticias-desarrollo-3.png" class="card-img-top" alt="Acelera BA, el programa de capacitaciones para emprendedores" />
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge badge-secondary">Actividades</span>
+              </div>
+              <h4 class="card-title">Acelera BA, el programa de capacitaciones para emprendedores</h4>
+              <p class="card-text">
+                Descripción del titular de una tarjeta con contenedor que puede contener hasta 2 líneas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small>05/05/23</small>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class="access" href="#" target="_blank" rel="noreferrer">
+            Ver todas las noticias
+          </a>
+        </div>
+      </div>
+      <!-- fin: noticias -->
+      <!-- inicio alerta -->
+      <div class="container">
+        <div class="col-12 col-lg-8 pt-3 px-0">
+          <div class="alert alert-info" role="alert">
+            <p>
+              <strong>¿No encontraste la información que buscabas?</strong> 
+              Ingresá al siguiente <a href="#" target="_blank" rel="noreferrer">enlace</a> y solicitá información.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- fin alerta -->
+    </article>
+
+    <!-- inicio institucional -->
+    <section class="bg-light py-5">
+      <div class="container mb-3">
+        <h2 class="mb-4">Información institucional</h2>
+        <div class="card-deck max-cards-2 mb-5">
+          <div class="card card-horizontal card-lg bg-transparent">
+            <img
+              src="../assets/institucional/joseLuisGiusti.png"
+              class="card-img-left"
+              alt="descripción alternativa"
+            />
+            <div class="card-body">
+              <h4 class="card-title">José Luis Giusti</h4>
+              <p class="card-text">
+                Ministro de Desarrollo Económico y Productivo
+              </p>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <h4 class="card-title">Contacto</h4>
+              <p class="card-text">
+                Teléfono: 4323-9682 <br> Email: <a href="mailto:jlgiusti@buenosaires.gob.ar" target="_blank" rel="noreferrer">jlgiusti@buenosaires.gob.ar</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2 class="mb-4">Seguinos en</h2>
+            <div class="list-group mb-4 mb-md-0">
+              <a href="#" class="list-group-item">
+                <i class="bx bxl-facebook-circle"></i>
+                <div class="access-content">
+                  <span class="access-title">Facebook</span>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bx bxl-instagram-alt"></i>
+                <div class="access-content">
+                  <span class="access-title">Instagram</span>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bx bxl-twitter"></i>
+                <div class="access-content">
+                  <span class="access-title">Twitter</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="mb-1">Ubicación</h4>
+                <p class="mb-3">Dirección: Dirección del Ministerio</p>
+                <img 
+                  class="w-100 mb-3"
+                  src="../assets/noticias/mapa-hospital.png" 
+                  alt="Ubicación" 
+                />
+                <a href="#" class="btn btn-primary btn-lg">Cómo llego</a>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- fin: institucional -->
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <section>
+        <h4>Teléfonos útiles</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item phone-items">
+            <a href="tel:102">102 - Niñez y Adolescencia</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:103">103 - Emergencias</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:107">107 - SAME</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:911">911 - Policía</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:144">144 - Violencia de género</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:147">147 - Atención ciudadana</a>
+          </li>
+        </ul>
+        <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+          Ver todos los teléfonos
+        </a>
+      </section>
+      <section>
+        <h4>Redes de la ciudad</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item redes-items">
+            <a href="https://www.facebook.com/GCBA">
+              <i class="bx bxl-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.instagram.com/buenosaires">
+              <i class="bx bxl-instagram"></i>
+              Instagram
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://twitter.com/gcba">
+              <i class="bx bxl-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.youtube.com/user/GCBA">
+              <i class="bx bxl-youtube"></i>
+              YouTube
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a
+              href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+            >
+              <i class="bx bxl-linkedin"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <hr class="divider" />
+    <div class="container">
+      <section class="footer-legal-section">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+            <img
+              class="d-lg-none"
+              src="../assets/footer/ciudad-ba-sm.svg"
+              alt="Ciudad de Buenos Aires"
+              height="48"
+            />
+            <img
+              class="d-none d-lg-inline"
+              src="../assets/footer/ciudad-ba.svg"
+              alt="Ciudad de Buenos Aires"
+              height="40"
+            />
+            <img
+              class="img-vamos-ba"
+              src="../assets/footer/vamos-ba.svg"
+              alt="Vamos Buenos Aires"
+            />
+          </div>
+          <div class="col-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
+                >
+                  Términos y condiciones
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/privacidad">
+                  Política de privacidad
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
+                >
+                  Oficios judiciales
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                  Transparencia
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-license-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+          Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </section>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
