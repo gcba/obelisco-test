@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
+
+    <title>Test</title>
+
+    <!-- Obelisco -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="./node_modules/@gcba/obelisco/dist/obelisco.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <style type="text/css">
+      <!--/*--><![CDATA[/* ><!--*/
+      a:focus, li:focus-within {
+          outline: 4px solid #007BC7;
+          outline-offset: 2px;
+        }
+      
+        li > a:focus-within {
+          outline: none;
+        }
+      
+        .bienvenida {
+          background: -webkit-linear-gradient(#E5F1F9 43%, #CEE5F4 43%);
+          background: -o-linear-gradient(#E5F1F9 43%, #CEE5F4 43%);
+          background: linear-gradient(#E5F1F9 43%, #CEE5F4 43%);
+        }
+      
+        .bienvenida--textos {
+          padding: 48px 0 64px 0;
+          color: #38485C;
+        }
+      
+        .bienvenida--textos_copete {
+          font-size: 13px;
+          margin: 0 0 8px 0;
+          color: #38485C;
+          font-family: "Nunito";
+        }
+      
+        .bienvenida--textos_h1 {
+          font-size: 37px;
+          margin-bottom: 12px;
+          color: #38485C;
+          font-family: "Nunito";
+          font-weight: 700;
+          line-height: 44px;
+        }
+      
+        .bienvenida--textos_subtitulo {
+          font-size: 16px;
+          color: #38485C;
+          margin-bottom: 32px;
+        }
+      
+        .breadcrumbEducacion {
+          margin: 32px 0 0 0;
+        }
+      
+        .breadcrumbEducacion--contenedor {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          padding: 0;
+        }
+      
+        .breadcrumbEducacion--item {
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          color: #007BC7;
+          display: flex;
+          justify-content: center;
+        }
+      
+        .breadcrumbEducacion--item:nth-child(2) {
+          display: none;
+        }
+      
+        .breadcrumbEducacion--item_separador {
+          display: inline-block;
+          position: relative;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADB/VeXAAABIklEQVRIDWNgGAWjITAaAoyEgsAnKk+VhZlp1u+/P4O2Lpv+npB6dHkmdAF0PjMz42IGRgYHFhb2g95RmYLo8oT4BC34y8gUzPCf4SHQq7pASw6TaglBC7Ys6n/6h5HRGmjJPaAl2qRaQjAOYEHgF5kvzsTCeAwYXEr/GRiu/vnz05aYOCHoA5gFm5ZPfPmL+Zc1A8P/1yCfsDKzHXJwaGCByeOiibYAZADbP9YQBgZGURD7HwPDpAMHGv6A2PgA0Rb4xxSUAA2fDDLs3///aZsWT5yNz2CYHFFxADKckYmh+z8IMDCkE2s4yBJmmE246IC4gnpGRoY2sNn/GRI2LZk4H5dabOLEBJEgzPCNSyYuwmYIxWJ+8fl2FBsyasCAhQAAEz1Whnh0FtsAAAAASUVORK5CYII=");
+          background-size: cover;
+          width: 24px;
+          height: 24px;
+          bottom: 2px;
+          margin: 0 4px;
+        }
+      
+        a.boton_inscripcion {
+          display: inline-block;
+          width: max-content;
+          color: #38485C;
+          font-size: 18px;
+          font-weight: 600;
+          padding: 12px 24px;
+          background-color: #FFDB2E;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      
+        a.boton_inscripcion:hover {
+          text-decoration: none;
+          background-color: #fdd306;
+        }
+      
+        a.boton_inscripcion:visited {
+          color: #505E70;
+        }
+      
+        .bienvenida--nav {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: 688px;
+          padding: 0;
+        }
+      
+        .bienvenida--nav--item {
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          flex-basis: 212px;
+          width: 48%;
+        }
+      
+        .bienvenida--nav--item:nth-child(1), .bienvenida--nav--item:nth-child(2), .bienvenida--nav--item:nth-child(3) {
+          margin: 8px 8px 8px 0;
+        }
+      
+        .bienvenida--nav--item:nth-child(4), .bienvenida--nav--item:nth-child(5), .bienvenida--nav--item:nth-child(6) {
+          margin: 8px 0 8px 8px;
+        }
+      
+        .bienvenida--nav--item:nth-child(3), .bienvenida--nav--item:nth-child(4) {
+          flex-basis: 169px;
+          background-color: #FFF7E0;
+        }
+      
+        .bienvenida--nav--item:nth-child(1), .bienvenida--nav--item:nth-child(6) {
+          background-color: #E8FBF7;
+        }
+      
+        .bienvenida--nav--item:nth-child(2) {
+          background-color: #FFEFE5;
+        }
+      
+        .bienvenida--nav--item:nth-child(5) {
+          background-color: #E8F4FB;
+        }
+      
+        .bienvenida--nav--item:nth-child(6) {
+          visibility: hidden;
+        }
+      
+        .bienvenida--nav--item_contenido {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          font-family: "Nunito";
+          font-size: 18px;
+          font-weight: 600;
+          color: #5C6A7A;
+          text-decoration: none;
+          padding: 0 24px;
+        }
+      
+        .bienvenida--nav--item_contenido:hover {
+          text-decoration: none;
+        }
+      
+        .bienvenida--nav--item_icono {
+          width: 32px !important;
+          margin-bottom: 8px;
+        }
+      
+        .nuevaExperiencia {
+          padding-top: 64px;
+        }
+      
+        .tituloh2, .tituloh2--preguntasFrecuentes {
+          font-size: 24px;
+          color: #38485C;
+          font-family: "Nunito";
+          font-weight: 700;
+          letter-spacing: -0.05px;
+          margin: 0 0 24px 0;
+        }
+      
+        .accesosExpeciencia--contenedor {
+          list-style: none;
+          padding: 0;
+          margin: 0 0 48px 0;
+        }
+      
+        .accesosExperiencia {
+          background-color: #F3F6F9;
+          border-radius: 4px;
+          margin-bottom: 24px;
+        }
+      
+        .accesosExperiencia:nth-child(3) {
+          margin-bottom: 48px;
+        }
+      
+        .accesosExperiencia--contenido {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          padding: 24px;
+        }
+      
+        .accesosExperiencia--contenido:hover {
+          text-decoration: none;
+        }
+      
+        .accesosExperiencia--contenido_icono {
+          width: 40px !important;
+          margin: 0 0 12px 0;
+        }
+      
+        .accesosExperiencia--contenido_titulo {
+          color: #38485C;
+          font-family: "Nunito";
+          font-weight: 700;
+          font-size: 21px;
+          margin: 0 0 12px 0;
+        }
+      
+        .accesosExperiencia--contenido_subtitulo {
+          color: #505E70;
+          font-family: "Nunito";
+          font-size: 16px;
+          margin: 0;
+        }
+      
+        .contenedor--tarjetaExperiencia {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .tarjetaExperiencia {
+          display: flex;
+          flex-direction: column;
+          border-radius: 8px;
+          border: 2px solid #E6EBF0;
+          text-decoration: none !important;
+          color: #38485C;
+        }
+      
+        .tarjetaExperiencia:hover {
+          text-decoration: none;
+          background-color: #38485C;
+          color: #ffffff;
+        }
+      
+        .tarjetaExperiencia--img_contenedor {
+          width: 100%;
+          max-height: 250px;
+          padding-top: 34px;
+          border-radius: 6px 6px 0 0;
+          display: flex;
+          justify-content: center;
+        }
+      
+        .tarjetaExperiencia--img {
+          object-fit: cover;
+          max-width: 320px;
+        }
+      
+        .tarjetaExperiencia:nth-of-type(1) {
+          margin-bottom: 24px;
+        }
+      
+        .tarjetaExperiencia:nth-of-type(1) .tarjetaExperiencia--img_contenedor {
+          background-color: #9B59B6;
+        }
+      
+        .tarjetaExperiencia:nth-of-type(2) .tarjetaExperiencia--img_contenedor {
+          background-color: #037DBF;
+        }
+      
+        .tarjetaExperiencia--contenido {
+          padding: 24px;
+          width: 100%;
+          color: inherit;
+          border-radius: 0 0 6px 6px;
+        }
+      
+        .tarjetaExperiencia--contenido_copete {
+          font-size: 13px;
+          margin-bottom: 4px;
+          color: inherit;
+        }
+      
+        .tarjetaExperiencia--contenido_titulo {
+          font-family: "Nunito", sans-serif;
+          font-weight: 600;
+          font-size: 21px;
+          color: inherit;
+          margin: 0 0 4px 0;
+        }
+      
+        .tarjetaExperiencia--contenido_subtitulo {
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          font-size: 16px;
+          color: inherit;
+          text-decoration: none;
+          margin: 0;
+        }
+      
+        .tarjetaExperiencia--contenido:hover {
+          background-color: inherit;
+          color: inherit;
+        }
+      
+        .fondoInscripcion {
+          margin-top: 48px;
+          background: linear-gradient(#ffffff 44%, #F3F6F9 44%);
+          padding: 0 0 76px 0;
+        }
+      
+        .alertaInscripcion {
+          border-radius: 4px;
+          border: 2px solid #FFA82E;
+          border-left-width: 6px;
+          background-color: #FCF5F5;
+          padding: 10px 14px 10px 18px;
+          margin-bottom: 32px;
+        }
+      
+        .alertaInscripcion_texto {
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          margin: 0;
+          line-height: 24px;
+        }
+      
+        .descripcionPeriodo {
+          background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0px 0px 26px #0000001A;
+          padding: 32px 16px 24px 16px;
+          margin: 0 0 24px 0;
+          border-left-style: solid;
+          border-left-width: 8px;
+        }
+      
+        .descripcionPeriodo:nth-of-type(1) {
+          border-left-color: #FF6940;
+          color: #FF6940;
+        }
+      
+        .descripcionPeriodo:nth-of-type(2) {
+          border-left-color: #0084CE;
+          color: #0084CE;
+        }
+      
+        .descripcionPeriodo:nth-of-type(3) {
+          border-left-color: #8361BF;
+          color: #8361BF;
+        }
+      
+        .descripcionPeriodo_titulo {
+          font-size: 21px;
+          font-family: "Nunito", sans-serif;
+          font-weight: 400;
+          margin: 0 0 17px 0;
+          letter-spacing: -0.02px;
+        }
+      
+        .descripcionPeriodo_subtitulo {
+          font-size: 21px;
+          font-family: "Nunito", sans-serif !important;
+          font-weight: 200;
+          color: #38485C;
+          line-height: 28px;
+          letter-spacing: -0.02px;
+          margin: 0 0 17px 0;
+        }
+      
+        .descripcionPeriodo_subtitulo-bold {
+          font-weight: 500;
+        }
+      
+        .descripcionPeriodo_texto, .descripcionPeriodo_subtituloPrincipal {
+          color: #505E70;
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          font-size: 16px;
+          margin: 0 0 32px 0;
+        }
+      
+        .descripcionPeriodo_texto:last-child, .descripcionPeriodo_subtituloPrincipal:last-child {
+          margin: 0;
+        }
+      
+        .descripcionPeriodo_bloque + .descripcionPeriodo_bloque {
+          margin-top: 32px;
+        }
+      
+        .card {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          word-wrap: break-word;
+          background-clip: border-box;
+          width: 100%;
+          cursor: pointer;
+          margin-bottom: 12px;
+        }
+      
+        .card:nth-of-type(6) {
+          margin-bottom: 24px;
+        }
+      
+        .card-header, .card-link:focus, .card-header:focus {
+          padding: 16px;
+          background-color: #E6EBF0;
+          border-radius: 5px;
+          border: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        .title-header {
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          color: #38485C;
+          text-decoration: none;
+          padding-right: 48px;
+          margin: 0;
+        }
+      
+        .card-body {
+          -ms-flex: 1 1 auto;
+          margin-top: -5px;
+          flex: 1 1 auto;
+          padding: 16px;
+          border: 2px solid #E6EBF0;
+          border-radius: 0.25rem;
+          border-top: none;
+          font-size: 16px;
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        }
+      
+        .ingresa, .ingresa:hover {
+          font-size: 16px;
+          padding: 0;
+          color: #19c3e3 !important;
+          text-decoration: underline;
+        }
+      
+        @media screen and (min-width: 767px) {
+          .contenedor--tarjetaExperiencia {
+            flex-direction: row;
+          }
+      
+          .tarjetaExperiencia {
+            width: 50%;
+          }
+      
+          .tarjetaExperiencia:nth-of-type(1) {
+            margin: 0 17px 0 0;
+          }
+        }
+      
+        @media screen and (min-width: 1240px) {
+          .bienvenida {
+            background: linear-gradient(to right, #E5F1F9 56%, #CEE5F4 56%);
+          }
+      
+          .bienvenida--header_contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          }
+      
+          .bienvenida--textos {
+            width: 45%;
+          }
+      
+          .bienvenida--textos_h1 {
+            font-size: 51px;
+            line-height: 51px;
+          }
+      
+          .bienvenida--textos_subtitulo {
+            width: 72%;
+          }
+      
+          .bienvenida nav.bienvenida--nav_contenedor {
+            width: 65%;
+          }
+      
+          .bienvenida--nav {
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+            height: 615px;
+          }
+      
+          .bienvenida--nav--item {
+            height: 244px;
+            margin: 0;
+          }
+      
+          .bienvenida--nav--item:nth-child(1),
+          .bienvenida--nav--item:nth-child(2),
+          .bienvenida--nav--item:nth-child(3) {
+            flex-basis: 180px;
+            margin: 79px 0 9px 0;
+          }
+      
+          .bienvenida--nav--item:nth-child(5) {
+            flex-basis: 180px;
+            margin: -64px 0 0 0;
+          }
+      
+          .bienvenida--nav--item:nth-child(4),
+          .bienvenida--nav--item:nth-child(6) {
+            flex-basis: 180px;
+            margin: -114px 0 0 0;
+          }
+      
+          .bienvenida--nav--item:nth-child(1),
+          .bienvenida--nav--item:nth-child(2),
+          .bienvenida--nav--item:nth-child(4),
+          .bienvenida--nav--item:nth-child(5) {
+            margin-right: 9px;
+          }
+      
+          .bienvenida--nav--item:nth-child(2),
+          .bienvenida--nav--item:nth-child(3),
+          .bienvenida--nav--item:nth-child(5),
+          .bienvenida--nav--item:nth-child(6) {
+            margin-left: 9px;
+          }
+      
+          .bienvenida--nav--item:nth-child(1),
+          .bienvenida--nav--item:nth-child(3),
+          .bienvenida--nav--item:nth-child(5) {
+            height: 195px;
+          }
+      
+          .bienvenida--nav--item_contenido {
+            padding: 0 32px;
+          }
+      
+          .breadcrumbEducacion {
+            position: absolute;
+            margin: 48px 0 0 0;
+          }
+      
+          .breadcrumbEducacion--item:nth-child(2) {
+            display: contents;
+          }
+      
+          .tituloh2 {
+            font-size: 37px;
+          }
+      
+          .tituloh2--preguntasFrecuentes {
+            font-size: 37px;
+            width: 45%;
+            margin: 0 0 32px 0;
+            line-height: 44px;
+          }
+      
+          .accesosExpeciencia--contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 36px;
+          }
+      
+          .accesosExpeciencia--contenedor .accesosExperiencia {
+            /*width: 32%;*/
+            flex: 1;
+            margin: 0;
+            background-color: #ffffff;
+          }
+      
+          .accesosExpeciencia--contenedor .accesosExperiencia:hover {
+            background-color: #F3F6F9;
+          }
+      
+          .fondoInscripcion {
+            padding: 80px 0 128px 0;
+          }
+      
+          .descripcionPeriodo {
+            padding: 64px 92px;
+            margin: 0 0 64px 0;
+          }
+      
+          .descripcionPeriodo:last-of-type {
+            margin: 0;
+          }
+      
+          .descripcionPeriodo_bloque {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+      
+          .descripcionPeriodo_texto {
+            width: 518px;
+          }
+      
+          .descripcionPeriodo_subtitulo {
+            width: 30%;
+          }
+      
+          .content {
+            background-image: url(../sass/recursos/fondoNubes.png);
+            background-position: 95% 54%;
+            background-repeat: no-repeat;
+            background-size: 300px 580px;
+          }
+      
+          .card {
+            width: 720px;
+          }
+      
+          .card-body {
+            padding: 24px;
+          }
+      
+          .text-inscripcion .tituloh2 {
+            width: auto;
+          }
+        }
+      
+      /*--><!]]>*/
+      </style>
+
+  </head>
+
+  <body>    
+    
+    <main>
+      <div class="container">
+        <section class="contenedor--tarjetaExperiencia">         
+          <a class="tarjetaExperiencia" href="https://buscatuescuela.buenosaires.gob.ar/">
+            <div class="tarjetaExperiencia--img_contenedor">
+              <img alt="" class="tarjetaExperiencia--img"
+                src="/sites/default/files/media/image/2020/09/21/9797f3cf2f3b21aee13060f2b9fa992928f2e078.png" />
+              </div>
+              <div class="tarjetaExperiencia--contenido">
+                <p class="tarjetaExperiencia--contenido_copete">Visita en línea</p>
+                <h3 class="tarjetaExperiencia--contenido_titulo"> Conocé los establecimientos</h3>
+                <p class="tarjetaExperiencia--contenido_subtitulo">
+                  ¡Explorá las escuelas de la Ciudad! Visitalas en línea y descubrí sus características.
+                </p>
+              </div>            
+          </a> 
+          <a class="tarjetaExperiencia" href="/educacion/conoce-tu-escuela/conoce-mas-sobre-la-oferta-educativa">
+            <div class="tarjetaExperiencia--img_contenedor">
+              <img alt="" class="tarjetaExperiencia--img"
+                src="/sites/default/files/media/image/2020/09/21/94754b047b2b5fa47198e9f92e45fbcb5b007160.png" />
+            </div>
+            <div class="tarjetaExperiencia--contenido">
+              <p class="tarjetaExperiencia--contenido_copete">Contenido multimedia</p>
+              <h3 class="tarjetaExperiencia--contenido_titulo">
+                Conocé más sobre la oferta educativa
+              </h3>
+              <p class="tarjetaExperiencia--contenido_subtitulo">
+                Mirá los videos y accedé a las guías y otros recursos para conocer las distintas ofertas educativas de la
+                Ciudad.
+              </p>
+            </div>
+          </a>
+        </section>
+      </div>
+    </main>
+  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
