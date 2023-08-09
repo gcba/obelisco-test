@@ -146,12 +146,11 @@
                           >Elegí la acción que vas a realizar</label
                         >
                         <select class="custom-select" id="type" disabled="">
-                          <option selected disabled>Seleccionar…</option>
-                          <option>
-                            Actualización de contenido (Por favor completá sólo
-                            los campos que debas actualizar)
+                          <option disabled>Seleccionar…</option>
+                          <option selected value="update">
+                            Actualización de contenido
                           </option>
-                          <option>Nuevo perfil</option>
+                          <option value="new">Nuevo perfil</option>
                         </select>
                       </div>
                     </div>
@@ -167,6 +166,7 @@
                           id="text-input"
                           name="text"
                           aria-describedby="date-help"
+                          value="https://www.ejemplo.com/pagina-a-actualizar"
                         />
                       </div>
                     </div>
@@ -191,6 +191,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Ministerio de Ejemplo"
                         />
                       </div>
                     </div>
@@ -203,7 +204,6 @@
                           como máximo)
                         </label>
                         <textarea
-                          disabled=""
                           disabled=""
                           class="form-control"
                           id="text-area"
@@ -272,8 +272,8 @@
                               Marco normativo - Ley de ministerio (Archivo en
                               PDF)
                             </h4>
-                          </div></a
-                        >
+                          </div>
+                        </a>
                         <a class="card card-horizontal" href="#"
                           ><i class="bx bxs-download card-icon-left"></i>
                           <div class="card-body">
@@ -281,8 +281,8 @@
                               Marco normativo - Decreto reglamentario de
                               misiones y funciones (Archivo en PDF)
                             </h4>
-                          </div></a
-                        >
+                          </div>
+                        </a>
                       </div>
                       <div class="form-group mt-5 mb-5">
                         <label for="file-input">Normativa adicional</label>
@@ -313,6 +313,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Nombre de ejemplo"
                         />
                       </div>
                     </div>
@@ -327,6 +328,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Cargo de ejemplo"
                         />
                       </div>
                     </div>
@@ -379,6 +381,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Calle Ejemplo 123"
                         />
                       </div>
                     </div>
@@ -393,6 +396,7 @@
                           class="form-control"
                           id="number-input"
                           name="number"
+                          value="1234567890"
                         />
                       </div>
                     </div>
@@ -407,6 +411,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Interno 123"
                         />
                       </div>
                     </div>
@@ -423,6 +428,7 @@
                           class="form-control"
                           id="number-input"
                           name="number"
+                          value="1234567890"
                         />
                       </div>
                     </div>
@@ -437,6 +443,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Interno 123"
                         />
                       </div>
                     </div>
@@ -478,6 +485,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="Nombre del Responsable"
                         />
                       </div>
                     </div>
@@ -494,6 +502,7 @@
                           class="form-control"
                           id="name-input"
                           name="name"
+                          value="nombre_usuario"
                         />
                       </div>
                     </div>
@@ -527,6 +536,7 @@
                           id="date-input"
                           name="date"
                           aria-describedby="date-help"
+                          value="2023-08-09"
                         />
                       </div>
                     </div>
@@ -545,9 +555,9 @@
                           >
                         </label>
                         <select class="custom-select" id="type" disabled="">
-                          <option selected disabled>Seleccionar…</option>
-                          <option>Acepto</option>
-                          <option>No acepto</option>
+                          <option disabled>Seleccionar…</option>
+                          <option selected value="accept">Acepto</option>
+                          <option value="reject">No acepto</option>
                         </select>
                       </div>
                     </div>
