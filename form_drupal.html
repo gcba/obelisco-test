@@ -1,730 +1,519 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link
-      rel="shortcut icon"
-      href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png"
-      type="image/png"
-    />
 
-    <title>Formulario - Drupal</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png" />
 
-    <!-- Obelisco -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/@gcba/obelisco/dist/obelisco.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-  </head>
+  <title>Formulario - Drupal</title>
 
-  <body>
-    <header class="navbar navbar-light navbar-lg">
-      <div class="container">
-        <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
-          <img
-            class="header-logo"
-            src="../assets/header/logoBA.svg"
-            alt="Ciudad de buenos aires"
-          />
-        </a>
-        <div class="navbar-search d-responsive ml-auto">
-          <form class="form-search form-search-sm">
-            <div class="form-group">
-              <input
-                disabled=""
-                type="search"
-                class="form-control form-control-sm input-search"
-                id="header-search-example-1"
-                name="header-search"
-                placeholder="Buscar..."
-                aria-label="Ingrese su búsqueda"
-              />
-              <button class="reset" type="reset"></button>
-            </div>
-          </form>
-        </div>
-        <button
-          class="navbar-toggler collapsed ml-2"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="#" class="nav-link active"><span>Inicio</span></a>
-            </li>
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="node_modules/@gcba/obelisco/dist/obelisco.css" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+</head>
 
-            <li class="nav-item d-responsive">
-              <div class="navbar-search">
-                <form class="form-search form-search-sm">
-                  <div class="form-group">
-                    <input
-                      disabled=""
-                      type="search"
-                      class="form-control form-control-sm input-search"
-                      id="header-search-example-2"
-                      name="header-search"
-                      placeholder="Buscar..."
-                      aria-label="Ingrese su búsqueda"
-                    />
-                    <button class="reset" type="reset"></button>
-                  </div>
-                </form>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <!-- Encabezado -->
-        <header class="bg-light pt-3 pb-5">
-          <div class="container pt-1">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
-                <li class="breadcrumb-item"><a href="#">Formulario</a></li>
-              </ol>
-            </nav>
-
-            <div class="row">
-              <div class="col-8">
-                <div class="mt-3">
-                  <h1 class="mb-3">Formulario</h1>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Illum labore veritatis ipsa commodi blanditiis numquam
-                    quidem quas.
-                  </p>
-                </div>
-              </div>
-            </div>
+<body>
+  <header class="navbar navbar-light navbar-lg">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
+        <img class="header-logo" src="../assets/header/logoBA.svg" alt="Ciudad de buenos aires" />
+      </a>
+      <div class="navbar-search d-responsive ml-auto">
+        <form class="form-search form-search-sm">
+          <div class="form-group">
+            <input disabled="" type="search" class="form-control form-control-sm input-search"
+              id="header-search-example-1" name="header-search" placeholder="Buscar..."
+              aria-label="Ingrese su búsqueda" />
+            <button class="reset" type="reset"></button>
           </div>
-        </header>
-        <!-- Fin de Encabezado -->
+        </form>
+      </div>
+      <button class="navbar-toggler collapsed ml-2" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active"><span>Inicio</span></a>
+          </li>
 
-        <!-- Contenido -->
-        <div class="container mb-5 pt-5">
-          <div class="row">
-            <div class="col-8">
-              <form class="mt-4">
-                <!-- Web -->
-                <div>
-                  <h2 class="mb-0">Web</h2>
-                  <hr />
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="form-group mb-5">
-                        <label for="type" class="mb-2"
-                          >Elegí la acción que vas a realizar</label
-                        >
-                        <select class="custom-select" id="type" disabled="">
-                          <option disabled>Seleccionar…</option>
-                          <option selected value="update">
-                            Actualización de contenido
-                          </option>
-                          <option value="new">Nuevo perfil</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="form-group mb-5">
-                        <label for="number-phone-input" class="mb-2"
-                          >Url de la página a actualizar</label
-                        >
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="text-input"
-                          name="text"
-                          aria-describedby="date-help"
-                          value="https://www.ejemplo.com/pagina-a-actualizar"
-                        />
-                      </div>
-                    </div>
-                  </div>
+          <li class="nav-item d-responsive">
+            <div class="navbar-search">
+              <form class="form-search form-search-sm">
+                <div class="form-group">
+                  <input disabled="" type="search" class="form-control form-control-sm input-search"
+                    id="header-search-example-2" name="header-search" placeholder="Buscar..."
+                    aria-label="Ingrese su búsqueda" />
+                  <button class="reset" type="reset"></button>
                 </div>
-                <!-- Fin Web -->
-
-                <!-- Datos de la repartición -->
-                <div>
-                  <h2 class="mb-0">Datos de la repartición</h2>
-                  <hr />
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2"
-                          >Nombre del área (Ministerio, Subsecretaría, Dirección
-                          General, etc)
-                        </label>
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Ministerio de Ejemplo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="text-area"
-                          >Breve resumen de lo que hace el área (150 caracteres
-                          como máximo)
-                        </label>
-                        <textarea
-                          disabled=""
-                          class="form-control"
-                          id="text-area"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="text-area">Misiones y funciones</label>
-                        <textarea
-                          disabled=""
-                          disabled=""
-                          class="form-control"
-                          id="text-area"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="text-area"
-                          >Responsabilidades primarias</label
-                        >
-                        <textarea
-                          disabled=""
-                          disabled=""
-                          class="form-control"
-                          id="text-area"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="text-area">Objetivos</label>
-                        <textarea
-                          disabled=""
-                          class="form-control"
-                          id="text-area"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fin Datos de la repartición -->
-
-                <!-- Archivos -->
-                <div>
-                  <h2 class="mb-0">Archivos</h2>
-                  <hr />
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="card-deck max-cards-1">
-                        <a class="card card-horizontal" href="#"
-                          ><i class="bx bxs-download card-icon-left"></i>
-                          <div class="card-body">
-                            <h4 class="card-title">
-                              Marco normativo - Ley de ministerio (Archivo en
-                              PDF)
-                            </h4>
-                          </div>
-                        </a>
-                        <a class="card card-horizontal" href="#"
-                          ><i class="bx bxs-download card-icon-left"></i>
-                          <div class="card-body">
-                            <h4 class="card-title">
-                              Marco normativo - Decreto reglamentario de
-                              misiones y funciones (Archivo en PDF)
-                            </h4>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="form-group mt-5 mb-5">
-                        <label for="file-input">Normativa adicional</label>
-                        <input
-                          type="file"
-                          class="form-control-file"
-                          id="file-input"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fin Archivos -->
-
-                <!-- Datos del/la funcionario/a -->
-                <div>
-                  <h2 class="mb-0">Datos del/la funcionario/a</h2>
-                  <hr />
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2"
-                          >Nombre y Apellido
-                        </label>
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Nombre de ejemplo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2">Cargo</label>
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Cargo de ejemplo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="text-area"
-                          >Biografía (300 caracteres máximo)
-                        </label>
-                        <textarea
-                          disabled=""
-                          class="form-control"
-                          id="text-area"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="file-input"
-                          >Fotografía institucional (250px x 250px)</label
-                        >
-                        <input
-                          type="file"
-                          class="form-control-file"
-                          id="file-input"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fin Datos del/la funcionario/a -->
-
-                <!-- Datos de contacto institucional del/la funcionario/a -->
-                <div>
-                  <h2 class="mb-0">
-                    Datos de contacto institucional del/la funcionario/a
-                  </h2>
-                  <hr />
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2">Dirección</label>
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Calle Ejemplo 123"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="number-input" class="mb-2">Teléfono</label>
-                        <input
-                          disabled=""
-                          type="number"
-                          class="form-control"
-                          id="number-input"
-                          name="number"
-                          value="1234567890"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2">Interno</label>
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Interno 123"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="number-input" class="mb-2"
-                          >Otro teléfono</label
-                        >
-                        <input
-                          disabled=""
-                          type="number"
-                          class="form-control"
-                          id="number-input"
-                          name="number"
-                          value="1234567890"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2">Interno</label>
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Interno 123"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="email-input" class="mb-2"
-                          >Correo electrónico institucional</label
-                        >
-                        <input
-                          disabled=""
-                          type="email"
-                          class="form-control"
-                          id="email-input"
-                          name="email"
-                          aria-describedby="email-help"
-                          placeholder="nombre@ejemplo.com"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fin Datos de contacto institucional del/la funcionario/a -->
-
-                <!-- Responsable de la carga de contenido -->
-                <div>
-                  <h2 class="mb-0">Responsable de la carga de contenido</h2>
-                  <hr />
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2"
-                          >Nombre y Apellido</label
-                        >
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="Nombre del Responsable"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="name-input" class="mb-2"
-                          >Usuario de Drupal</label
-                        >
-                        <input
-                          disabled=""
-                          type="text"
-                          class="form-control"
-                          id="name-input"
-                          name="name"
-                          value="nombre_usuario"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="email-input" class="mb-2"
-                          >Correo electrónico</label
-                        >
-                        <input
-                          disabled=""
-                          type="email"
-                          class="form-control"
-                          id="email-input"
-                          name="email"
-                          aria-describedby="email-help"
-                          placeholder="nombre@ejemplo.com"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="date-input">Fecha de actualización</label>
-                        <input
-                          disabled=""
-                          type="date"
-                          class="form-control"
-                          id="date-input"
-                          name="date"
-                          aria-describedby="date-help"
-                          value="2023-08-09"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group mb-5">
-                        <label for="type" class="mb-2"
-                          >Me hago responsable de cargar la información
-                          obligatoria en la página institucional según los
-                          lineamientos del
-                          <a
-                            href="https://www.buenosaires.gob.ar/sites/gcaba/files/ta_lineamientos.pdf"
-                            target="_blank"
-                            >Plan de Transparencia Activa</a
-                          >
-                        </label>
-                        <select class="custom-select" id="type" disabled="">
-                          <option disabled>Seleccionar…</option>
-                          <option selected value="accept">Acepto</option>
-                          <option value="reject">No acepto</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fin Responsable de la carga de contenido -->
-
-                <button type="button" class="btn btn-primary">Guardar</button>
               </form>
             </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- Encabezado -->
+      <header class="bg-light pt-3 pb-5">
+        <div class="container pt-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+              <li class="breadcrumb-item"><a href="#">Formulario</a></li>
+            </ol>
+          </nav>
+
+          <div class="row">
+            <div class="col-8">
+              <div class="mt-3">
+                <h1 class="mb-3">Formulario</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Illum labore veritatis ipsa commodi blanditiis numquam
+                  quidem quas.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- </div> -->
+      </header>
+      <!-- Fin de Encabezado -->
 
-        <!-- Fin de Contenido -->
-      </article>
-    </main>
+      <!-- Contenido -->
+      <div class="container mb-5 pt-5">
+        <div class="row">
+          <div class="col-8">
+            <form class="mt-4">
+              <!-- Web -->
+              <div>
+                <h2 class="mb-0">Web</h2>
+                <hr />
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group mb-5">
+                      <label for="type" class="mb-2">Elegí la acción que vas a realizar</label>
+                      <select class="custom-select" id="type" disabled="">
+                        <option disabled>Seleccionar…</option>
+                        <option selected value="update">
+                          Actualización de contenido
+                        </option>
+                        <option value="new">Nuevo perfil</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group mb-5">
+                      <label for="number-phone-input" class="mb-2">Url de la página a actualizar</label>
+                      <input disabled="" type="text" class="form-control" id="text-input" name="text"
+                        aria-describedby="date-help" value="https://www.ejemplo.com/pagina-a-actualizar" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Web -->
 
-    <footer class="main-footer">
-      <div class="container">
-        <section>
-          <h4>Teléfonos útiles</h4>
-          <ul class="list-inline">
-            <li class="list-inline-item phone-items">
-              <a href="tel:102">102 - Niñez y Adolescencia</a>
-            </li>
-            <li class="list-inline-item phone-items">
-              <a href="tel:103">103 - Emergencias</a>
-            </li>
-            <li class="list-inline-item phone-items">
-              <a href="tel:107">107 - SAME</a>
-            </li>
-            <li class="list-inline-item phone-items">
-              <a href="tel:911">911 - Policía</a>
-            </li>
-            <li class="list-inline-item phone-items">
-              <a href="tel:144">144 - Violencia de género</a>
-            </li>
-            <li class="list-inline-item phone-items">
-              <a href="tel:147">147 - Atención ciudadana</a>
-            </li>
-          </ul>
-          <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
-            Ver todos los teléfonos
-          </a>
-        </section>
-        <section>
-          <h4>Redes de la ciudad</h4>
-          <ul class="list-inline">
-            <li class="list-inline-item redes-items">
-              <a href="https://www.facebook.com/GCBA">
-                <i class="bx bxl-facebook-circle"></i>
-                Facebook
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a href="https://www.instagram.com/gcba/">
-                <i class="bx bxl-instagram-alt"></i>
-                Instagram
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a href="https://twitter.com/buenosaires">
-                <i class="bx bxl-twitter"></i>
-                Twitter
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a href="https://www.youtube.com/user/GCBA">
-                <i class="bx bxl-youtube"></i>
-                YouTube
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a
-                href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
-              >
-                <i class="bx bxl-linkedin-square"></i>
-                LinkedIn
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a href="https://www.tiktok.com/@buenosaires">
-                <i class="bx bxl-tiktok"></i>
-                TikTok
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a href="https://www.pinterest.es/buenosaires/">
-                <i class="bx bxl-pinterest"></i>
-                Pinterest
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <hr class="divider" />
-      <div class="container">
-        <section class="footer-legal-section">
-          <div class="row align-items-center">
-            <div class="col-8 col-md-5 col-xl-4 footer-content-img">
-              <img
-                class="d-lg-none"
-                src="../assets/footer/ciudad-ba-sm.svg"
-                alt="Ciudad de Buenos Aires"
-                height="48"
-              />
-              <img
-                class="d-none d-lg-inline"
-                src="../assets/footer/ciudad-ba.svg"
-                alt="Ciudad de Buenos Aires"
-                height="40"
-              />
-              <img
-                class="img-vamos-ba"
-                src="../assets/footer/vamos-ba.svg"
-                alt="Vamos Buenos Aires"
-              />
-            </div>
-            <div class="col-8">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="https://boletinoficial.buenosaires.gob.ar">
-                    Boletín oficial
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
-                  >
-                    Términos y condiciones
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.buenosaires.gob.ar/privacidad">
-                    Política de privacidad
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                  >
-                    Oficios judiciales
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.buenosaires.gob.ar/gobierno/transparencia"
-                  >
-                    Transparencia
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <!-- Datos de la repartición -->
+              <div>
+                <h2 class="mb-0">Datos de la repartición</h2>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Nombre del área (Ministerio, Subsecretaría, Dirección
+                        General, etc)
+                      </label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Ministerio de Ejemplo" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="text-area">Breve resumen de lo que hace el área (150 caracteres
+                        como máximo)
+                      </label>
+                      <textarea disabled="" class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="text-area">Misiones y funciones</label>
+                      <textarea disabled="" disabled="" class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="text-area">Responsabilidades primarias</label>
+                      <textarea disabled="" disabled="" class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="text-area">Objetivos</label>
+                      <textarea disabled="" class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Datos de la repartición -->
+
+              <!-- Archivos -->
+              <div>
+                <h2 class="mb-0">Archivos</h2>
+                <hr />
+                <div class="row">
+                  <div class="col-8">
+                    <div class="card-deck max-cards-1">
+                      <a class="card card-horizontal" href="#"><i class="bx bxs-download card-icon-left"></i>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            Marco normativo - Ley de ministerio (Archivo en
+                            PDF)
+                          </h4>
+                        </div>
+                      </a>
+                      <a class="card card-horizontal" href="#"><i class="bx bxs-download card-icon-left"></i>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            Marco normativo - Decreto reglamentario de
+                            misiones y funciones (Archivo en PDF)
+                          </h4>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="form-group mt-5 mb-5">
+                      <label for="file-input">Normativa adicional</label>
+                      <input type="file" class="form-control-file" id="file-input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Archivos -->
+
+              <!-- Datos del/la funcionario/a -->
+              <div>
+                <h2 class="mb-0">Datos del/la funcionario/a</h2>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Nombre y Apellido
+                      </label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Nombre de ejemplo" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Cargo</label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Cargo de ejemplo" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="text-area">Biografía (300 caracteres máximo)
+                      </label>
+                      <textarea disabled="" class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="file-input">Fotografía institucional (250px x 250px)</label>
+                      <input type="file" class="form-control-file" id="file-input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Datos del/la funcionario/a -->
+
+              <!-- Datos de contacto institucional del/la funcionario/a -->
+              <div>
+                <h2 class="mb-0">
+                  Datos de contacto institucional del/la funcionario/a
+                </h2>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Dirección</label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Calle Ejemplo 123" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="number-input" class="mb-2">Teléfono</label>
+                      <input disabled="" type="number" class="form-control" id="number-input" name="number"
+                        value="1234567890" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Interno</label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Interno 123" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="number-input" class="mb-2">Otro teléfono</label>
+                      <input disabled="" type="number" class="form-control" id="number-input" name="number"
+                        value="1234567890" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Interno</label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Interno 123" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="email-input" class="mb-2">Correo electrónico institucional</label>
+                      <input disabled="" type="email" class="form-control" id="email-input" name="email"
+                        aria-describedby="email-help" placeholder="nombre@ejemplo.com" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Datos de contacto institucional del/la funcionario/a -->
+
+              <!-- Responsable de la carga de contenido -->
+              <div>
+                <h2 class="mb-0">Responsable de la carga de contenido</h2>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Nombre y Apellido</label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="Nombre del Responsable" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="name-input" class="mb-2">Usuario de Drupal</label>
+                      <input disabled="" type="text" class="form-control" id="name-input" name="name"
+                        value="nombre_usuario" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="email-input" class="mb-2">Correo electrónico</label>
+                      <input disabled="" type="email" class="form-control" id="email-input" name="email"
+                        aria-describedby="email-help" placeholder="nombre@ejemplo.com" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="date-input">Fecha de actualización</label>
+                      <input disabled="" type="date" class="form-control" id="date-input" name="date"
+                        aria-describedby="date-help" value="2023-08-09" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-5">
+                      <label for="type" class="mb-2">Me hago responsable de cargar la información
+                        obligatoria en la página institucional según los
+                        lineamientos del
+                        <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/ta_lineamientos.pdf"
+                          target="_blank">Plan de Transparencia Activa</a>
+                      </label>
+                      <select class="custom-select" id="type" disabled="">
+                        <option disabled>Seleccionar…</option>
+                        <option selected value="accept">Acepto</option>
+                        <option value="reject">No acepto</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Responsable de la carga de contenido -->
+
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </form>
           </div>
-        </section>
-        <section>
-          <div class="footer-license-text">
-            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-            Commons Reconocimiento 2.5 Argentina License.
-          </div>
-        </section>
+        </div>
       </div>
-    </footer>
+      <!-- </div> -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+      <!-- Fin de Contenido -->
+    </article>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <section>
+        <h4>Teléfonos útiles</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item phone-items">
+            <a href="tel:102">102 - Niñez y Adolescencia</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:103">103 - Emergencias</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:107">107 - SAME</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:911">911 - Policía</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:144">144 - Violencia de género</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:147">147 - Atención ciudadana</a>
+          </li>
+        </ul>
+        <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+          Ver todos los teléfonos
+        </a>
+      </section>
+      <section>
+        <h4>Redes de la ciudad</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item redes-items">
+            <a href="https://www.facebook.com/GCBA">
+              <i class="bx bxl-facebook-circle"></i>
+              Facebook
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.instagram.com/gcba/">
+              <i class="bx bxl-instagram-alt"></i>
+              Instagram
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://twitter.com/buenosaires">
+              <i class="bx bxl-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.youtube.com/user/GCBA">
+              <i class="bx bxl-youtube"></i>
+              YouTube
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
+              <i class="bx bxl-linkedin-square"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.tiktok.com/@buenosaires">
+              <i class="bx bxl-tiktok"></i>
+              TikTok
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.pinterest.es/buenosaires/">
+              <i class="bx bxl-pinterest"></i>
+              Pinterest
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <hr class="divider" />
+    <div class="container">
+      <section class="footer-legal-section">
+        <div class="row align-items-center">
+          <div class="col-8 col-md-5 col-xl-4 footer-content-img">
+            <img class="d-lg-none" src="../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
+            <img class="d-none d-lg-inline" src="../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
+              height="40" />
+            <img class="img-vamos-ba" src="../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
+          </div>
+          <div class="col-8">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones">
+                  Términos y condiciones
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/privacidad">
+                  Política de privacidad
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
+                  Oficios judiciales
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                  Transparencia
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-license-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+          Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>
