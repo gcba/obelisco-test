@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
+
+  <title>Test</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="./node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <style type="text/css">
+    .calendar {
+      width: 100%;
+      max-width: 328px;
+      background-color: #fff;
+      padding: 0.5rem 0.25rem;
+    }
+
+    @media only screen and (min-width: 752px) {
+      .calendar {
+        max-width: 340px;
+      }
+    }
+
+    .calendar .calendar-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0;
+      height: 24px;
+    }
+
+    .calendar .calendar-header .calendar-title,
+    .calendar .calendar-header .calendar-year {
+      font-weight: 600;
+      font-size: 1.3125rem;
+      line-height: 1.2;
+      font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      margin-bottom: 0;
+    }
+
+    .calendar .calendar-body {
+      padding: 1rem 0 0;
+      color: #69788a;
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.2;
+      font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      margin-bottom: 0;
+    }
+
+    .calendar .calendar-body table {
+      width: 100%;
+      text-align: center;
+    }
+
+    .calendar .calendar-body table th,
+    .calendar .calendar-body table td {
+      padding: 0;
+    }
+
+    .calendar .calendar-body table th span,
+    .calendar .calendar-body table td span {
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      line-height: 40px;
+      border-radius: 50%;
+      margin: 0.25rem 0;
+    }
+
+    .calendar .calendar-body table .calendar-week-header th {
+      font-weight: 700;
+      height: 48px;
+      background-color: #f5f9fc;
+    }
+
+    .calendar .calendar-body table .calendar-week {
+      line-height: 8px;
+    }
+
+    .calendar .calendar-body table .calendar-week:nth-of-type(even) {
+      background-color: #f5f9fc;
+    }
+
+    .calendar .calendar-body table .calendar-week:nth-of-type(odd) td {
+      padding: 0.25rem 0;
+    }
+
+    .calendar .calendar-body table .calendar-week:nth-of-type(6) td {
+      line-height: 48px;
+    }
+
+    .calendar .calendar-body table .calendar-week td {
+      pointer-events: inherit;
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link {
+      border-radius: 50%;
+      margin: 0.25rem 0;
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .active {
+      background-color: #005387;
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .active-secondary {
+      background-color: #5c6a7a;
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-sky {
+      background-color: #6df !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lavender {
+      background-color: #6690ff !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-coral {
+      background-color: #ff8766 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-avocado {
+      background-color: #90ff66 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-citrus {
+      background-color: #ffd466 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lime {
+      background-color: #df6 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-pistachio {
+      background-color: #66ff87 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-berries {
+      background-color: #d466ff !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-musket {
+      background-color: #f6d !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-aqua {
+      background-color: #66ffd4 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-strawberry {
+      background-color: #ff66d8 !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-blackberry {
+      background-color: #8766ff !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-gray {
+      background-color: #ccc !important;
+      color: #252f3c
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:focus {
+      box-shadow: none;
+      backface-visibility: inherit;
+    }
+
+    .calendar .calendar-body table .calendar-week td .calendar-link:focus .active,
+    .calendar .calendar-body table .calendar-week td .calendar-link:focus .active-secondary {
+      box-shadow: 0 0 0 0.125rem #005387;
+    }
+
+    .calendar .calendar-body table .calendar-week td span:after {
+      line-height: 1.5;
+    }
+
+    .calendar .calendar-body table .calendar-week td span.disabled {
+      color: #9eaab8;
+    }
+
+    .calendar .calendar-body table .calendar-week td span.active,
+    .calendar .calendar-body table .calendar-week td span.active-secondary {
+      color: #fff;
+      background-color: #007bc7;
+      cursor: pointer;
+      min-width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    .calendar .calendar-body table .calendar-week td span.active.bg-gray {
+      background-color: #e5e5e5;
+    }
+
+    .calendar .calendar-body table .calendar-week td span.active-secondary {
+      background-color: #38485c
+    }
+
+    .calendar .calendar-body table .calendar-week td span.active.bg-sky,
+    .calendar .calendar-body table .calendar-week td span.active.bg-lavender,
+    .calendar .calendar-body table .calendar-week td span.active.bg-coral,
+    .calendar .calendar-body table .calendar-week td span.active.bg-avocado,
+    .calendar .calendar-body table .calendar-week td span.active.bg-citrus,
+    .calendar .calendar-body table .calendar-week td span.active.bg-lime,
+    .calendar .calendar-body table .calendar-week td span.active.bg-pistachio,
+    .calendar .calendar-body table .calendar-week td span.active.bg-berries,
+    .calendar .calendar-body table .calendar-week td span.active.bg-musket,
+    .calendar .calendar-body table .calendar-week td span.active.bg-gray,
+    .calendar .calendar-body table .calendar-week td span.active.bg-aqua,
+    .calendar .calendar-body table .calendar-week td span.active.bg-strawberry,
+    .calendar .calendar-body table .calendar-week td span.active.bg-blackberry {
+      color: #38485c;
+    }
+
+    .calendar .calendar-footer .calendar-footer-list {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      border-top: 1px solid #e6ebf0;
+      padding: 1rem 0.5rem 0;
+    }
+
+    .calendar .calendar-footer .calendar-footer-list li {
+      font-size: 0.8125rem;
+      list-style-type: none;
+    }
+
+    .calendar .calendar-footer .calendar-footer-list li:not(:last-child) {
+      margin-bottom: 0.25rem;
+    }
+
+    .calendar .calendar-footer .accordion {
+      margin-top: 1rem;
+    }
+
+    .calendar .calendar-footer .accordion .card {
+      margin-bottom: 0;
+    }
+
+    .calendar .calendar-footer .accordion .card .calendar-footer-list {
+      margin: 0;
+      border-top: none;
+      padding: 0;
+    }
+
+    .calendar-deck {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      justify-content: center;
+    }
+
+    @media only screen and (min-width: 1120px) {
+      .calendar-deck {
+        column-gap: 19px;
+      }
+    }
+
+    .calendar-references {
+      border: 1px solid #f3f6f9;
+      border-radius: 8px;
+      padding: 16px;
+      width: min-content;
+    }
+
+    .calendar-references .calendar-references-text {
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .calendar-references .calendar-references-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .calendar-references .calendar-references-box .calendar-references-row {
+      display: flex;
+      gap: 48px;
+    }
+
+    .calendar-references .calendar-references-box .calendar-references-row .color-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      min-width: 105px;
+    }
+
+    .calendar-references .calendar-references-box .calendar-references-row .color-box .color {
+      min-width: 1rem;
+      max-height: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 1px;
+      color: transparent;
+    }
+
+    .calendar-references .calendar-references-box .calendar-references-row .color-box .color.bg-gray {
+      background-color: #e5e5e5;
+    }
+
+    @media only screen and (max-width: 976px) {
+      .calendar-references .calendar-references-box .calendar-references-row {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .calendar-references .calendar-references-box {
+        gap: 48px;
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <article class="pb-5 mb-4">
+      <header class="pt-5 pb-5 mb-5 text-white bg-dark">
+        <div class="container pt-1">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Obelisco test</h1>
+                <p class="lead"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+
+          <!-- INICIO CALENDARIO AUDIENCIAS 2024 -->          
+          <h1 class="mb-4">Actualización de calendario</h1>
+          <!-- CALENDARIO LIMPIO -->
+          
+          <div class="calendar-deck">
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Enero</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>14</span></td>
+                <td><a href="https://buenosaires.gob.ar/jefaturadegabinete/atencion-ciudadana-y-gestion-comunal/gestion-comunal/tratamiento-de-la-4" class="calendar-link">
+                  <span class="active">15</span>
+                </a></td> 
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          
+          <div class="calendar-footer">
+          <ul class="calendar-footer-list">
+            <li><strong>15.</strong> <strong>Objeto</strong>: Tratamiento de la modificación de la tarifa para la explotación del Servicio Público 
+              de Automóviles de Alquiler con Taxímetro de la Ciudad Autónoma de Buenos Aires. <br>  
+              <strong>Fecha y hora</strong>: Lunes 15 de enero, 12 hs.<br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma 
+              telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: 
+              Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). 
+              Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales 
+              podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta 
+              Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+          </ul>
+          </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Febrero</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span> </span></td>
+                <td><span>17</span> </span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          </div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Marzo</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><a href="https://buenosaires.gob.ar/espaciopublicoehigieneurbana/gestion-comunal/tratamiento-la-modificacion-del-cuadro-tarifario-ausa" class="calendar-link">
+                  <span class="active">15</span>
+                </a></td> 
+                <td><span>16</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>31</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->        
+          
+          <div class="calendar-footer">
+            <ul class="calendar-footer-list">
+              <li><strong>15.</strong><strong>Objeto</strong>: Tratamiento a la modificación del cuadro tarifario AUSA y Servicio Subte. <br>  
+               <strong>Fecha y hora</strong>: Viernes 15 de marzo, 12 hs. y 15 hs., respectivamente. <br>
+                <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+            </ul>
+            </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Abril</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/tratamiento-la-tarifa-tecnica-y-modificacion-del-cuadro-tarifario-del-servicio-de-subte" class="calendar-link">
+                  <span class="active">25</span>
+                </a></td>  
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          
+          <div class="calendar-footer">
+          <ul class="calendar-footer-list">
+            <li><strong>25.</strong><strong>Objeto</strong>: Tratamiento a la tarifa técnica y modificación del cuadro tarifario para la explotación del Servicio Subte. <br> 
+              <strong>Fecha y hora</strong>: Jueves 25 de abril, 12 hs. <br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+          </ul>
+          </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Mayo</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          </div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Junio</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>                
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-centros-de-concentracion-logistica-bagala-sa" class="calendar-link">
+                  <span class="active">7</span>
+                </a></td>                 
+                <td><span>8</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-estacion-de-servicio" class="calendar-link">
+                  <span class="active">27</span>
+                </a></td>                
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>30</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          
+          <div class="calendar-footer">
+          <ul class="calendar-footer-list">
+            <li><strong>7.</strong><strong>Objeto</strong>:Análisis del proyecto centros de concentración logística, BAGALA S.A. <br> 
+              <strong>Fecha y hora</strong>:Viernes 7 de junio, 12.30 hs. <br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición</li>
+            <li><strong>27.</strong><strong>Objeto</strong>:Análisis del proyecto "Bajo Puente Bosch", bajo titularidad de Autopistas Urbanas S.A. <br> 
+              <strong>Fecha y hora</strong>:Jueves 27 de junio, 12.30 hs. <br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+          </ul>
+          </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Julio</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/audiencia-publica-paso-bajo-nivel-larrazabal-ffcc-belgrano-sur-bajo" class="calendar-link">
+                  <span class="active">1</span>
+                </a></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/tratamiento-la-estrategia-de-economia-circular" class="calendar-link">
+                  <span class="active">4</span>
+                </a></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>7</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-distribuidor-de-parque-de-la-innovacion" class="calendar-link">
+                  <span class="active">8</span>
+                </a></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>14</span></td>
+                <td><a href="https://buenosaires.gob.ar/espaciopublicoehigieneurbana/gestion-comunal/tratamiento-la-tarifa-para-el-servicio-de-taxis-y" class="calendar-link">
+                  <span class="active">15</span>
+                </a></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-estacion-de-servicio" class="calendar-link">
+                  <span class="active">24</span>
+                </a></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          <div class="calendar-footer">
+            <div class="accordion">
+               <div class="card">
+                  <button class="card-header collapsed" data-toggle="collapse" data-target="#collapseJulio">
+                     <i class="bx bx-calendar"></i>
+                     <span class="collapse-title">Referencias</span>
+                  </button>
+                  <div id="collapseJulio" class="collapse">
+                        <div class="card-body">
+                              <ul class="calendar-footer-list">
+                                <li><strong>1.</strong> <strong>Objeto</strong>: Análisis del proyecto “Paso Bajo Nivel Larrazábal FFCC Belgrano Sur”, bajo titularidad de Autopistas Urbanas S.A. <br> 
+                                  <strong>Fecha y hora</strong>: Lunes 1 de julio, 12.30 hs. <br>
+                                  <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+                                  <li><strong>4.</strong><strong>Objeto</strong>: Tratamiento a la Estrategia de Economía Circular. <br>  
+                                  <strong>Fecha y hora</strong>: Jueves 4 de julio, 12 hs. <br>
+                                  <strong> Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+                                  <li><strong>8.</strong><strong>Objeto</strong>:Análisis del proyecto “Obra: Distribuidor de Parque de la Innovación”.  
+                                    <strong>Fecha y hora</strong>:Lunes 8 de julio, 12.30 hs. <br>
+                                    <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA</a> (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+                                  <li><strong>15.</strong><strong>Objeto</strong>: Tratamiento a la tarifa para el servicio de taxis y modificación de tarifa del estacionamiento regulado. <br> 
+                                    <strong>Fecha y hora</strong>: Lunes 15 de julio, 12 hs. y 15 hs., respectivamente. <br>
+                                    <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA </a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+                                  <li><strong>24.</strong><strong>Objeto</strong>: Análisis del proyecto “Estación de Servicio”. <br>  
+                                  <strong>Fecha y hora</strong>: miércoles 24 de julio, 12.30 hs. <br>
+                                  <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="Youtube: Canal Audiencias Públicas GCBA 
+                                    https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA </a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 1, sita en las calles <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.620690&lng=-58.369358&zl=15&modo=transporte&dir=Sede+Comunal+1&ilat=-34.620690&ilng=-58.369358&fid=sedes_de_comunas%7C1">Humberto 1° 250 / Balcarce 1110</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+                              </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Agosto</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>25</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-estacion-de-servicio-0" class="calendar-link">
+                  <span class="active">26</span>
+                </a></td>                
+                <td><span>27</span></td>
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-estacion-de-servicio-1" class="calendar-link">
+                  <span class="active">28</span>
+                </a></td>                
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          
+          <div class="calendar-footer">
+          <ul class="calendar-footer-list">
+            <li><strong>26.</strong> <strong>Objeto</strong>: Análisis del proyecto “Estación de Servicio”. <br> 
+              <strong>Fecha y hora</strong>: Lunes 26 de agosto, 12.30 hs. <br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA </a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 9, sita en <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.659611&lng=-58.504982&zl=15&modo=transporte&dir=Sede+Comunal+9&ilat=-34.659611&ilng=-58.504982&fid=sedes_de_comunas%7C9">Timoteo Gordillo 2212</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+            <li><strong>28.</strong><strong>Objeto</strong>: Análisis del proyecto “Estación de Servicio AU Perito Moreno”.<br>
+              <strong>Fecha y hora</strong>: Miércoles 28 de agosto, 12.30 hs. <br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892">Youtube: Canal Audiencias Públicas GCBA </a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 9, sita en <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.659611&lng=-58.504982&zl=15&modo=transporte&dir=Sede+Comunal+9&ilat=-34.659611&ilng=-58.504982&fid=sedes_de_comunas%7C9">Timoteo Gordillo 2212</a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+          </ul>
+          </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Septiembre</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>                
+                <td><a href="https://buenosaires.gob.ar/gobierno/atencion-ciudadana/analisis-del-proyecto-costa-urbana" class="calendar-link">
+                  <span class="active">4</span>
+                </a></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          
+          <div class="calendar-footer">
+          <ul class="calendar-footer-list">
+            <li><strong>4.</strong><strong>Objeto</strong>: Análisis del proyecto “Costa Urbana”. <br> 
+              <strong>Fecha y hora</strong>: Miércoles 4 de septiembre, 12.30 hs. <br>
+              <strong>Lugar</strong>: La Audiencia Pública se desarrollará bajo la modalidad virtual. Se realizará a través de la plataforma telemática Zoom App (acceso para oradores inscriptos) y la plataforma <a href="https://www.youtube.com/@audienciaspublicasgcba892"> Youtube: Canal Audiencias Públicas GCBA </a> - (no inscriptos y público en general). Aquellos participantes que se hayan inscripto telefónicamente por no contar con acceso a medios virtuales podrán asistir presencialmente a la Sede Comunal 4, sita en <a href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.650350&lng=-58.424671&zl=15&modo=transporte&dir=Barco+Centenera+Del+2906&ilat=-34.650472&ilng=-58.424654"> Del Barco Centenera 2906 </a>, de esta Ciudad Autónoma de Buenos Aires, donde se dispondrá una terminal telemática para realizar su exposición.</li>
+          </ul>
+          </div>
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Octubre</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Noviembre</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          <!-- Referencia sin colapsable Fin --></div>
+          
+          <div class="calendar">
+          <div class="calendar-header">
+          <h2 class="calendar-title">Diciembre</h2>
+          <span class="calendar-year">2024</span></div>
+          
+          <div class="calendar-body">
+          <table>
+            <thead>
+              <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="calendar-week">
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+              </tr>
+              <tr class="calendar-week">
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="calendar-week">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- Referencia sin colapsable Inicio -->
+          <!-- Referencia sin colapsable Fin -->
+          </div>
+          </div>
+          <!-- CALENDARIO LIMPIO FIN -->
+          
+
+
+
+
+
+      </div>
+    </article>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
