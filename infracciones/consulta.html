@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
+
+    <title>consulta infracciones</title>
+
+    <!-- Obelisco -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
+    <link rel="stylesheet" href="./scoring.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <style rel="stylesheet" type="text/css">
+      .container-border {
+        box-shadow: 0 0 0 2px #D1D8E0;
+      }
+      .custom-list-style {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+      }
+      .custom-list-style > li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .align-icon {
+        display: flex;
+        align-items: center;
+      }
+
+      .cost-and-discount > .crossing-out{
+        text-decoration: line-through;
+        color: #9EAAB8;
+      }
+
+      .text-yellow {
+        color: #FFA82E;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <header class="navbar navbar-light navbar-lg">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
+          <img
+            class="header-logo"
+            src="../assets/header/logoBA.svg"
+            alt="Ciudad de buenos aires"
+          />
+        </a>
+        <div class="navbar-search d-responsive ml-auto">
+          <form class="form-search form-search-sm">
+            <div class="form-group">
+              <input
+                type="search"
+                class="form-control form-control-sm input-search"
+                id="header-search-example-3"
+                name="header-search"
+                aria-label="Ingrese su búsqueda"
+                placeholder="Buscar..."
+              />
+              <button class="reset" type="reset"></button>
+            </div>
+          </form>
+        </div>
+        <button
+          class="navbar-toggler collapsed ml-2"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          Menú
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="list-group-content d-responsive ml-2">
+          <a
+            href="#"
+            aria-label="Cerrar sesión"
+            class="list-group-item list-group-item-logout logout-sm"
+          >
+            &nbsp;
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link active"><span>Inicio</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Mi actividad</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" aria-label="Notificaciones" class="nav-link">
+                <i class="bx bxs-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item d-responsive">
+              <div class="navbar-search">
+                <form class="form-search form-search-sm">
+                  <div class="form-group">
+                    <input
+                      type="search"
+                      class="form-control form-control-sm input-search"
+                      id="header-search-example-4"
+                      name="header-search"
+                      aria-label="Ingrese su búsqueda"
+                      placeholder="Buscar..."
+                    />
+                    <button class="reset" type="reset"></button>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item d-responsive">
+              <a
+                href="#"
+                aria-label="Cerrar sesión"
+                class="list-group-item list-group-item-logout logout-sm"
+              >
+                &nbsp;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <article class="pb-5 mb-4">
+        <header class="bg-light pt-3 pb-5 mb-5">
+          <div class="container pt-1">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Jefatura de Gabinete</a></li>
+                <li class="breadcrumb-item"><a href="#">Infracciones</a></li>
+                <li class="breadcrumb-item"><a href="#">Consulta de infracciones de tránsito y scoring</a></li>
+              </ol>
+            </nav>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="mt-2 pt-1">
+                  <h1 class="mb-3">Consulta de infracciones de tránsito y scoring</h1>
+                  <p class="lead">Accedé a la información de tránsito pendiente de pago y tu puntaje en la ciudad de Buenos Aires.</p>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <p class="lead">Modalidad: </p>
+                  </div>
+                  <div>
+                    <span class="badge badge-secondary ml-2 mt-1">Presencial</span>
+                    <span class="badge badge-secondary">en línea</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="container pt-3 pb-2">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+
+              <!-- inicio: organismos -->   
+              <h2 class="mb-3">Infracciones de tránsito asociadas a tu documento</h2>
+              <p class="lead mb-4">Los puntos se descuentan a la persona titular del vehículo, a exepción que se demuestre que la infracción fue cometida por otra persona autorizada. Los puntos se resignan una vez realizado y aprobado el curso pertinente.</p>
+              
+              <!--Organismo Datos ingresados-->
+              <div class="card container-border mb-4 p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="m-0">
+                    Datos ingresados
+                  </h3>
+                  <button type="button" class="btn btn-link btn-sm">Editar</button>
+                </div>
+                <hr class="my-4">
+                <small class="mb-1">Opción seleccionada</small>
+                <h6 class="m-0">
+                  Documento
+                </h6>
+                <hr class="my-4">
+                <small class="mb-1">Tipo de documento</small>
+                <h6 class="m-0">
+                  DNI
+                </h6>
+                <hr class="my-4">
+                <small class="mb-1">Número de documento</small>
+                <h6 class="m-0">
+                  34271863
+                </h6>
+              </div>
+
+              <!--Organismo Puntaje actual -->
+              <div class="card container-border mb-3 p-4">
+                <div>
+                  <h3 class="mb-0">
+                    Puntaje actual: 20 puntos
+                  </h3>
+                  <small class="mb-1">
+                    <a href="#">¿Cómo funciona el sistema de puntos?</a>
+                  </small>
+                </div>
+                <hr class="my-4">
+                <small>Puntos:</small>
+                <ul class="custom-list-style">
+                  <li>
+                    <div class="align-icon">
+                      <span class="material-icons-round mr-1 text-danger">warning</span>
+                    </div>
+                    <div class="align-icon">
+                      <small>Total a descontar: <strong class="text-danger">15</strong></small>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="align-icon">
+                      <span class="material-icons-round mr-1 text-success">check_circle</span>
+                    </div>
+                    <div class="align-icon">
+                      <small>Total a reasignar: <strong class="text-success">3</strong></small>
+                    </div>
+                  </li>
+                </ul>
+                <hr class="my-4">
+                <p class="m-0">Licencia emitida por CABA. Tenés puntaje y actas de infracciones.</p>
+              </div>
+
+              <!--Organismo infracciones cometidas-->
+              <div class="card container-border mb-4 p-4">
+                <div>
+                  <p class="m-0">
+                    Infracciones cometidas
+                  </p>
+                  <h6 class="m-0">
+                    32 infracciones
+                  </h6>
+                </div>
+                <hr class="my-4">
+                <div class="list-group">
+                  <div class="group-access">
+                    <div class="card-access shadow-none">
+                      <div class="card-access-body reverse p-0">
+                        <div class="d-block">
+                          <h6 class="mb-1">Monto total:</h6>
+                          <small class="mb-0">Hasta: 16-06-2023</small>
+                          <div class="cost-and-discount">
+                            <small class="crossing-out">$76.823,00</small>
+                            <small class="without-crossing-out">
+                              <strong>$60.835,00</strong>
+                            </small>
+                          </div>
+                        </div>
+                        <span class="card-access-icon material-icons-round">monetization_on</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- fin: organismos -->
+            </div>
+          </div>
+        </div>
+
+        <!-- inicio: Formulario -->
+        
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <form>
+                <h2>Tus infracciones</h2>
+                <h6>Infracciones totales: 32</h6>
+                <div class="custom-control custom-checkbox my-2">
+                  <input
+                    class="custom-control-input"
+                    type="checkbox"
+                    id="skills-development-input"
+                    name="skills"
+                    value="development"
+                  />
+                  <label class="custom-control-label" for="skills-development-input">
+                    Seleccionar todas las infracciones
+                  </label>
+                </div>
+    
+                <!--Accordion 1-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne" type="button">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseOne-input" name="skills" value="collapseOne">
+                      <label class="custom-control-label" for="skills-collapseOne-input"></label>
+                    </div>
+                      <div class="d-block">
+                        <span class="collapse-label">Acta N°E00416407 - 15-05-2018 13:12</span>
+                        <h4 class="collapse-title">Conducir utilizando celular/Auricular/Reproductor de video</h4>
+                        <span class="collapse-subtitle">$1.785,00</span>
+                      </div>
+                    </button>
+                    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>
+                            <h5>
+                              N° de infracción:
+                            </h5>
+                            <span>
+                              6780
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a descontar:
+                            </h5>
+                            <span class="text-danger">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a resignar:
+                            </h5>
+                            <span class="text-success">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Lugar:
+                            </h5>
+                            <span>
+                              Bartolomé Mitre 900
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Estado del acta:
+                            </h5>
+                            <span>
+                              Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
+                              65 de 14:00 hs. a 19:30 hs.
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Legajo:
+                            </h5>
+                            <span>
+                              537405-000/18
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Controlador:
+                            </h5>
+                            <span>
+                              4
+                            </span>
+                          </li>
+                        </ul>
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" download>
+                          Descargar foto
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!--Accordion 2-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo" type="button">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseTwo-input" name="skills" value="collapseTwo" checked>
+                      <label class="custom-control-label" for="skills-collapseTwo-input"></label>
+                    </div>
+                      <div class="d-block">
+                        <span class="collapse-label">Acta N°Q17773119 - 15-05-2018 14:10</span>
+                        <h4 class="collapse-title ">Prohib. circular según día/hora/carac. vehíc.</h4>
+                        <span class="collapse-subtitle">$1.785,00</span>
+                      </div>
+                    </button>
+                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>
+                            <h5>
+                              N° de infracción:
+                            </h5>
+                            <span>
+                              6780
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a descontar:
+                            </h5>
+                            <span class="text-danger">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                            <li>
+                            <h5>
+                              Puntos a resignar:
+                            </h5>
+                            <span class="text-success">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Lugar:
+                            </h5>
+                            <span>
+                              Bartolomé Mitre 900
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Estado del acta:
+                            </h5>
+                            <span>
+                              Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
+                              65 de 14:00 hs. a 19:30 hs.
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Legajo:
+                            </h5>
+                            <span>
+                              537405-000/18
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Controlador:
+                            </h5>
+                            <span>
+                              4
+                            </span>
+                          </li>
+                        </ul>
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" download>
+                          Descargar foto
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!--Accordion 3-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header  card-link" data-toggle="collapse" data-target="#collapseThree" type="button">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseThree-input" name="skills" value="collapseThree" checked>
+                      <label class="custom-control-label" for="skills-collapseThree-input"></label>
+                    </div>
+                      <div class="d-block">
+                        <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
+                        <h4 class="collapse-title">Estac. lugar prohib./forma indebida/antirreglamentaria</h4>
+                        <span class="collapse-subtitle">$1.785,00</span>
+                      </div>
+                    </button>
+                    <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>
+                            <h5>
+                              N° de infracción:
+                            </h5>
+                            <span>
+                              6780
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a descontar:
+                            </h5>
+                            <span class="text-danger">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                            <li>
+                            <h5>
+                              Puntos a resignar:
+                            </h5>
+                            <span class="text-success">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Lugar:
+                            </h5>
+                            <span>
+                              Bartolomé Mitre 900
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Estado del acta:
+                            </h5>
+                            <span>
+                              Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
+                              65 de 14:00 hs. a 19:30 hs.
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Legajo:
+                            </h5>
+                            <span>
+                              537405-000/18
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Controlador:
+                            </h5>
+                            <span>
+                              4
+                            </span>
+                          </li>
+                        </ul>
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" download>
+                          Descargar foto
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!--Accordion 4-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFour" type="button">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseFour-input" name="skills" value="collapseFour">
+                      <label class="custom-control-label" for="skills-collapseFour-input"></label>
+                    </div>
+                      <div class="d-block">
+                        <span class="collapse-label">Acta N°I01697830 - 21-01-2022 14:51</span>
+                        <h4 class="collapse-title">Exceso de velocidad de 30% más de la velocidad permitida hasta 140 Km/h (particualres)</h4>
+                        <span class="collapse-subtitle">$1.785,00</span>
+                      </div>
+                    </button>
+                    <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>
+                            <h5>
+                              N° de infracción:
+                            </h5>
+                            <span>
+                              6780
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a descontar:
+                            </h5>
+                            <span class="text-danger">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                            <li>
+                            <h5>
+                              Puntos a resignar:
+                            </h5>
+                            <span class="text-success">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Lugar:
+                            </h5>
+                            <span>
+                              Bartolomé Mitre 900
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Estado del acta:
+                            </h5>
+                            <span>
+                              Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
+                              65 de 14:00 hs. a 19:30 hs.
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Legajo:
+                            </h5>
+                            <span>
+                              537405-000/18
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Controlador:
+                            </h5>
+                            <span>
+                              4
+                            </span>
+                          </li>
+                        </ul>
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" download>
+                          Descargar foto
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!--Accordion 5-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header card-link" data-toggle="collapse" data-target="#collapseFive" type="button">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseFive-input" name="skills" value="collapseFive">
+                      <label class="custom-control-label" for="skills-collapseFive-input"></label>
+                    </div>
+                      <div class="d-block">
+                        <span class="collapse-label">Acta N°E00111086 - 105-12-2017 11:10</span>
+                        <h4 class="collapse-title">No usó cinturón de seguridad</h4>
+                        <span class="collapse-subtitle">$1.785,00</span>
+                      </div>
+                    </button>
+                    <div id="collapseFive" class="collapse show" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>
+                            <h5>
+                              N° de infracción:
+                            </h5>
+                            <span>
+                              6780
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a descontar:
+                            </h5>
+                            <span class="text-danger">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                            <li>
+                            <h5>
+                              Puntos a resignar:
+                            </h5>
+                            <span class="text-success">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Lugar:
+                            </h5>
+                            <span>
+                              Bartolomé Mitre 900
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Estado del acta:
+                            </h5>
+                            <span>
+                              Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
+                              65 de 14:00 hs. a 19:30 hs.
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Legajo:
+                            </h5>
+                            <span>
+                              537405-000/18
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Controlador:
+                            </h5>
+                            <span>
+                              4
+                            </span>
+                          </li>
+                        </ul>
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" download>
+                          Descargar foto
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!--Accordion 6-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSix" type="button">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="skills-collapseSix-input" name="skills" value="collapseSix" checked>
+                      <label class="custom-control-label" for="skills-collapseSix-input"></label>
+                    </div>
+                      <div class="d-block">
+                        <span class="collapse-label">Acta N°Q22535977 - 11-03-2021 14:52</span>
+                        <h4 class="collapse-title">Violar luz roja</h4>
+                        <div class="cost-and-discount">
+                          <small class="crossing-out">$76.823,00</small>
+                          <small class="without-crossing-out">
+                            <strong>$60.835,00</strong>
+                            <strong class="text-yellow">(Hasta: 16-06-2023)</strong>
+                          </small>
+                        </div>
+                      </div>
+                    </button>
+                    <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>
+                            <h5>
+                              N° de infracción:
+                            </h5>
+                            <span>
+                              6780
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Puntos a descontar:
+                            </h5>
+                            <span class="text-danger">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                            <li>
+                            <h5>
+                              Puntos a resignar:
+                            </h5>
+                            <span class="text-success">
+                              0 puntos a descontar
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Lugar:
+                            </h5>
+                            <span>
+                              Bartolomé Mitre 900
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Estado del acta:
+                            </h5>
+                            <span>
+                              Radicada en la UACF N° 4 en UACF - Av. Regimiento de Patricios
+                              65 de 14:00 hs. a 19:30 hs.
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Legajo:
+                            </h5>
+                            <span>
+                              537405-000/18
+                            </span>
+                          </li>
+                          <li>
+                            <h5>
+                              Controlador:
+                            </h5>
+                            <span>
+                              4
+                            </span>
+                          </li>
+                        </ul>
+                        <a class="btn btn-secondary btn-sm download-link mt-2" href="#" download>
+                          Descargar foto
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!--Total infraccion-->
+                <div class="accordion accordion-form" id="accordionExample">
+                  <div class="card">
+                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSeven" type="button">
+                      <div class="d-block">
+                        <span class="collapse-label">Total infracción de tránsito seleccionadas</span>
+                        <h4 class="collapse-title">$00.00</h4>
+                      </div>
+                    </button>
+                    <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-success">$1.785,00</small>
+                            <h5 class="mb-0">Prohib. circular según día/hora/carac. vehíc.</h5>
+                            <small>Boleta N° 2549-48758798</small>
+                          </div>
+                          <div>
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                class="custom-control-input"
+                                type="checkbox"
+                                id="skills-develop-input"
+                                name="skills"
+                                value="develop"
+                                checked
+                              />
+                              <label class="custom-control-label" for="skills-develop-input"></label>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-success">$1.785,00</small>
+                            <h5 class="mb-0">Estac. lugar prohib./forma indebida/antirreglamentaria</h5>
+                            <small>Boleta N° 2549-48758798</small>
+                          </div>
+                          <div>
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                class="custom-control-input"
+                                type="checkbox"
+                                id="skills-design-input"
+                                name="skills"
+                                value="design"
+                                checked
+                              />
+                              <label class="custom-control-label" for="skills-design-input"></label>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-success">$1.785,00</small>
+                            <h5 class="mb-0">Violar luz roja</h5>
+                            <small>Boleta N° 2549-48758798</small>
+                          </div>
+                          <div>
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                class="custom-control-input"
+                                type="checkbox"
+                                id="skills-content-input"
+                                name="skills"
+                                value="content"
+                                checked
+                              />
+                              <label class="custom-control-label" for="skills-content-input"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100 mt-3 pt-3 text-right">
+                  <button type="submit" disabled class="btn btn-primary btn-lg">Pagar seleccionadas</button>
+                </div>
+              </form>
+            </div>  
+          </div>
+        </div>
+        
+        <div class="container mt-5 py-2">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="card container-border p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="m-0">
+                    Legajos pendientes de pago                 
+                  </h4>
+                  <button type="button" class="btn btn-secondary btn-sm">Consultar legajos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-2 py-2">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="card container-border p-4">
+                <div class="row">
+                  <div class="col-12 col-md-9">
+                    <h4 class="mb-1">
+                      Infracciones cometidas por otra persona
+                    </h4>
+                    <p class="m-0">
+                      Si las infracciones asociadas a tu vehículo fueron cometidas por otra persona, podés solicitar la revisión de quita de puntos y su resignación con un controlador.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-3 d-flex align-items-center justify-content-md-end justify-content-center">
+                    <button type="button" class="btn btn-link btn-sm d-none d-lg-block">Sacar turno</button>
+                    <button type="button" class="btn btn-link d-lg-none mt-3">Sacar turno</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- inicio: Cards -->
+        <div class="container mt-5 py-2">
+          <h2>Trámites relacionados</h2>
+
+          <div class="row pt-3">
+            <div class="col-12 col-lg-4">
+              <div class="mb-3 pb-2">
+                <a class="card" href="#">
+                  <div class="card-body">
+                    <h4 class="card-title">Realizá tus consultas y solicitudes</h4>
+                    <p class="card-text">
+                      Consultá en Gestión colaborativa tus solicitudes relacionadas a infracciones.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="mb-3 pb-2">
+                <a class="card" href="#">
+                  <div class="card-body">
+                    <h4 class="card-title">Denuncia por venta de dominio</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="mb-3 pb-2">
+                <a class="card" href="#">
+                  <div class="card-body">
+                    <h4 class="card-title">Transporte de personas con discapacidad</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  
+    <footer class="main-footer">
+      <div class="container">
+        <section>
+          <h4>Teléfonos útiles</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item phone-items">
+              <a href="tel:102">102 - Niñez y Adolescencia</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:103">103 - Emergencias</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:107">107 - SAME</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:911">911 - Policía</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:144">144 - Violencia de género</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:147">147 - Atención ciudadana</a>
+            </li>
+          </ul>
+          <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+            Ver todos los teléfonos
+          </a>
+        </section>
+        <section>
+          <h4>Redes de la ciudad</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item redes-items">
+              <a href="https://www.facebook.com/GCBA">
+                <i class="bx bxl-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.instagram.com/buenosaires">
+                <i class="bx bxl-instagram"></i>
+                Instagram
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://twitter.com/gcba">
+                <i class="bx bxl-twitter"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.youtube.com/user/GCBA">
+                <i class="bx bxl-youtube"></i>
+                YouTube
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a
+                href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+              >
+                <i class="bx bxl-linkedin"></i>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <hr class="divider" />
+      <div class="container">
+        <section class="footer-legal-section">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+              <img
+                class="d-lg-none"
+                src="../assets/footer/ciudad-ba-sm.svg"
+                alt="Ciudad de Buenos Aires"
+                height="48"
+              />
+              <img
+                class="d-none d-lg-inline"
+                src="../assets/footer/ciudad-ba.svg"
+                alt="Ciudad de Buenos Aires"
+                height="40"
+              />
+              <img
+                class="img-vamos-ba"
+                src="../assets/footer/vamos-ba.svg"
+                alt="Vamos Buenos Aires"
+              />
+            </div>
+            <div class="col-12">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://boletinoficial.buenosaires.gob.ar">
+                    Boletín oficial
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
+                  >
+                    Términos y condiciones
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/privacidad">
+                    Política de privacidad
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">
+                    Oficios judiciales
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                    Transparencia activa
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="footer-license-text">
+            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+            Commons Reconocimiento 2.5 Argentina License.
+          </div>
+        </section>
+      </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
